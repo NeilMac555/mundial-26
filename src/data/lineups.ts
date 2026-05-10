@@ -636,6 +636,68 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'ESPN lineup tool (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Senegal: {
+    nation: 'Senegal',
+    formation: '4-3-3',
+    kit: { primary: '#00853f', accent: '#fdef42', outline: '#00541f', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Mané', pos: 'LW' },
+        { name: 'Jackson', pos: 'ST' },
+        { name: 'I. Ndiaye', pos: 'RW' },
+      ],
+      [
+        { name: 'P. Gueye', pos: 'CM' },
+        { name: 'I. Gueye', pos: 'CM' },
+        { name: 'Diarra', pos: 'CM' },
+      ],
+      [
+        { name: 'Diouf', pos: 'LB' },
+        { name: 'Niakhaté', pos: 'CB' },
+        { name: 'Koulibaly', pos: 'CB' },
+        { name: 'Diatta', pos: 'RB' },
+      ],
+      [
+        { name: 'Mendy', pos: 'GK' },
+      ],
+    ],
+    bench: ['Dieng', 'Seck', 'Sabaly', 'Pape Matar Sarr', 'Camara', 'I. Sarr', 'Dia'],
+    source: 'ESPN lineup tool (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  USA: {
+    nation: 'USA',
+    formation: '3-4-2-1',
+    kit: { primary: '#1a3766', accent: '#c8102e', outline: '#0c1f3d', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Balogun', pos: 'ST' },
+      ],
+      [
+        { name: 'McKennie', pos: 'LAM' },
+        { name: 'Pulisic', pos: 'RAM' },
+      ],
+      [
+        { name: 'Robinson', pos: 'LWB' },
+        { name: 'Tessmann', pos: 'CM' },
+        { name: 'Adams', pos: 'CM' },
+        { name: 'Dest', pos: 'RWB' },
+      ],
+      [
+        { name: 'Ream', pos: 'LCB' },
+        { name: 'Richards', pos: 'CB' },
+        { name: 'McKenzie', pos: 'RCB' },
+      ],
+      [
+        { name: 'Freese', pos: 'GK' },
+      ],
+    ],
+    bench: ['Turner', 'Scally', 'Cardoso', 'Musah', 'Reyna', 'Aaronson', 'Pepi'],
+    source: 'ESPN lineup tool (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
