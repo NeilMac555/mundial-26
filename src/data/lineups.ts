@@ -1476,6 +1476,72 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess) — Lukaku as backup CF per Neil',
     asOf: '2026-05-10',
   },
+
+  Norway: {
+    nation: 'Norway',
+    formation: '4-3-2-1',
+    kit: { primary: '#ed2939', accent: '#00205b', outline: '#8a1820', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Haaland', pos: 'ST' },
+      ],
+      [
+        { name: 'Nusa', pos: 'LAM' },
+        { name: 'Sørloth', pos: 'RAM' },
+      ],
+      [
+        { name: 'Berg', pos: 'CM' },
+        { name: 'Ødegaard', pos: 'CM' },
+      ],
+      [
+        { name: 'Berge', pos: 'CDM' },
+      ],
+      [
+        { name: 'Wolfe', pos: 'LB' },
+        { name: 'Østgaard', pos: 'CB' },
+        { name: 'Ajer', pos: 'CB' },
+        { name: 'Ryerson', pos: 'RB' },
+      ],
+      [
+        { name: 'Nyland', pos: 'GK' },
+      ],
+    ],
+    bench: ['Dyngeland', 'Strandberg', 'Bjørkan', 'Bobb', 'Vetlesen', 'Strand Larsen', 'Solbakken'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Iraq: {
+    nation: 'Iraq',
+    formation: '4-2-2-2',
+    kit: { primary: '#007a3d', accent: '#ce1126', outline: '#00451f', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Al Hamadi', pos: 'ST' },
+        { name: 'Aymen Hussein', pos: 'ST' },
+      ],
+      [
+        { name: 'Ibrahim Bayesh', pos: 'LAM' },
+        { name: 'Youssef Amyn', pos: 'RAM' },
+      ],
+      [
+        { name: 'Al Ammari', pos: 'CM' },
+        { name: 'Iqbal', pos: 'CM' },
+      ],
+      [
+        { name: 'Merchas Doski', pos: 'LB' },
+        { name: 'Hashim Rahman', pos: 'CB' },
+        { name: 'Zaid Tahseen', pos: 'CB' },
+        { name: 'Hussein Ali', pos: 'RB' },
+      ],
+      [
+        { name: 'Al Fadhli', pos: 'GK' },
+      ],
+    ],
+    bench: ['Jalal Hassan', 'Bayar Tahir', 'Maranan', 'Mohanad Ali', 'Salem Al-Ferdaws', 'Mostafa Saadoun', 'Akam Hashim'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
