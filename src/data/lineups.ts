@@ -303,6 +303,43 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Morocco: {
+    nation: 'Morocco',
+    formation: '4-1-2-3',
+    kit: { primary: '#c1272d', accent: '#006233', outline: '#8a1c20', number: '#ffffff' },
+    rows: [
+      // Front three
+      [
+        { name: 'Ezzalzouli', pos: 'LW' },
+        { name: 'El Kaabi', pos: 'ST' },
+        { name: 'Brahim Díaz', pos: 'RW' },
+      ],
+      // Two CMs
+      [
+        { name: 'Ounahi', pos: 'CM' },
+        { name: 'Saïbari', pos: 'CM' },
+      ],
+      // Single pivot
+      [
+        { name: 'El Aynaoui', pos: 'CDM' },
+      ],
+      // Back four
+      [
+        { name: 'Mazraoui', pos: 'LB' },
+        { name: 'Saïss', pos: 'CB' },
+        { name: 'Aguerd', pos: 'CB' },
+        { name: 'Hakimi', pos: 'RB' },
+      ],
+      // Goalkeeper — Bono
+      [
+        { name: 'Bounou', pos: 'GK' },
+      ],
+    ],
+    bench: ['Munir', 'Benoun', 'Adli', 'Bilal El Khannouss', 'Ben Seghir', 'Aboukhlal', 'En-Nesyri'],
+    source: 'ESPN lineup tool (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
