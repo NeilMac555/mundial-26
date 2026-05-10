@@ -229,6 +229,43 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Argentina: {
+    nation: 'Argentina',
+    formation: '4-2-3-1',
+    kit: { primary: '#6cace4', accent: '#ffffff', outline: '#1a3a6a', number: '#1a3a6a' },
+    rows: [
+      // Lone striker — Lautaro
+      [
+        { name: 'L. Martínez', pos: 'ST' },
+      ],
+      // Front three behind the striker — flat line in the source image
+      [
+        { name: 'Álvarez', pos: 'LW' },
+        { name: 'Mac Allister', pos: 'CAM' },
+        { name: 'Messi', pos: 'RW' },
+      ],
+      // Double pivot
+      [
+        { name: 'De Paul', pos: 'CM' },
+        { name: 'Fernández', pos: 'CM' },
+      ],
+      // Back four
+      [
+        { name: 'Tagliafico', pos: 'LB' },
+        { name: 'Otamendi', pos: 'CB' },
+        { name: 'Romero', pos: 'CB' },
+        { name: 'Molina', pos: 'RB' },
+      ],
+      // Goalkeeper — Dibu
+      [
+        { name: 'E. Martínez', pos: 'GK' },
+      ],
+    ],
+    bench: ['Rulli', 'Lisandro Martínez', 'Paredes', 'Lo Celso', 'Almada', 'Garnacho', 'N. González'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
