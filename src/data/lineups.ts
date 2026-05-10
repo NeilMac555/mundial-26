@@ -446,6 +446,38 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Colombia: {
+    nation: 'Colombia',
+    formation: '4-2-3-1',
+    kit: { primary: '#FCD116', accent: '#003893', outline: '#8a7308', number: '#003893' },
+    rows: [
+      [
+        { name: 'Suárez', pos: 'ST' },
+      ],
+      [
+        { name: 'Díaz', pos: 'LW' },
+        { name: 'Rodríguez', pos: 'CAM' },
+        { name: 'Arias', pos: 'RW' },
+      ],
+      [
+        { name: 'Lerma', pos: 'CM' },
+        { name: 'Ríos', pos: 'CM' },
+      ],
+      [
+        { name: 'Mojica', pos: 'LB' },
+        { name: 'Lucumí', pos: 'CB' },
+        { name: 'Sánchez', pos: 'CB' },
+        { name: 'Muñoz', pos: 'RB' },
+      ],
+      [
+        { name: 'Vargas', pos: 'GK' },
+      ],
+    ],
+    bench: ['Mier', 'Mina', 'Cuesta', 'Barrios', 'Uribe', 'Borja', 'Cuadrado'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
