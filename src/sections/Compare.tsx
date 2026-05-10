@@ -24,6 +24,8 @@ import { flagEmoji } from '../data/flags';
 import { TLabel, TMono, TPill, type PillTone } from '../components/terminal/atoms';
 import { fifaCodeForNation } from '../data/bracketTeams';
 import { getBracketOdds, type BracketOdds } from '../data/bracketOdds';
+import { lineupForNation, type Lineup } from '../data/lineups';
+import { Pitch } from '../components/Pitch';
 
 export function Compare() {
   const [aNation, setANation] = useState('Argentina');
@@ -80,6 +82,7 @@ interface TeamView {
   xg: TeamXg | null;
   xgAgg: XgAggregate | null;
   odds: BracketOdds | null;
+  lineup: Lineup | null;
 }
 
 function buildTeam(nation: string): TeamView {
@@ -93,7 +96,8 @@ function buildTeam(nation: string): TeamView {
   const xgAgg = xg ? aggregate(xg) : null;
   const fifa = fifaCodeForNation(nation);
   const odds = fifa ? getBracketOdds(fifa) ?? null : null;
-  return { nation, manager, elo, squad, sos, perf, xg, xgAgg, odds };
+  const lineup = lineupForNation(nation);
+  return { nation, manager, elo, squad, sos, perf, xg, xgAgg, odds, lineup };
 }
 
 function NationPicker({ value, onChange }: { value: string; onChange: (v: string) => void }) {
@@ -125,7 +129,7 @@ function NationPicker({ value, onChange }: { value: string; onChange: (v: string
 }
 
 function TeamCard({ t }: { t: TeamView }) {
-  const { nation, manager, elo, squad, sos, perf, xg, xgAgg, odds } = t;
+  const { nation, manager, elo, squad, sos, perf, xg, xgAgg, odds, lineup } = t;
   return (
     <div
       style={{
@@ -245,6 +249,14 @@ function TeamCard({ t }: { t: TeamView }) {
         }
       >
         {xg && xgAgg ? <XgBlock xg={xg} a={xgAgg} /> : <Empty>No qualifying xG data loaded</Empty>}
+      </Section>
+
+      <Section label="Likely XI">
+        {lineup ? (
+          <Pitch lineup={lineup} />
+        ) : (
+          <Empty>Lineup not yet plotted — coming soon</Empty>
+        )}
       </Section>
 
       <Section label="Manager">
