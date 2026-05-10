@@ -1608,6 +1608,38 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Egypt: {
+    nation: 'Egypt',
+    formation: '3-4-1-2',
+    kit: { primary: '#cf0921', accent: '#ffffff', outline: '#8a070f', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Marmoush', pos: 'ST' },
+        { name: 'Salah', pos: 'ST' },
+      ],
+      [
+        { name: 'Ashour', pos: 'CAM' },
+      ],
+      [
+        { name: 'El Fetouh', pos: 'LM' },
+        { name: 'Trezeguet', pos: 'CM' },
+        { name: 'Attia', pos: 'CM' },
+        { name: 'Hany', pos: 'RM' },
+      ],
+      [
+        { name: 'Rabia', pos: 'LCB' },
+        { name: 'Abdelmonem', pos: 'CB' },
+        { name: 'El Hanafi', pos: 'RCB' },
+      ],
+      [
+        { name: 'El Shenawy', pos: 'GK' },
+      ],
+    ],
+    bench: ['Gabaski', 'Hegazi', 'Sobhi', 'Mostafa Mohamed', 'Saleh Gomaa', 'Tarek Hamed', 'Mahmoud Hassan'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
