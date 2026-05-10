@@ -340,6 +340,43 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'ESPN lineup tool (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Portugal: {
+    nation: 'Portugal',
+    formation: '4-2-3-1',
+    kit: { primary: '#a32638', accent: '#006a44', outline: '#6b1825', number: '#ffffff' },
+    rows: [
+      // Lone striker — Ronaldo at 41, still picking himself
+      [
+        { name: 'Ronaldo', pos: 'ST' },
+      ],
+      // Front three — flat line behind the striker
+      [
+        { name: 'Leão', pos: 'LW' },
+        { name: 'Fernandes', pos: 'CAM' },
+        { name: 'Silva', pos: 'RW' },
+      ],
+      // Double pivot — J. Neves (PSG) over Rúben Neves
+      [
+        { name: 'J. Neves', pos: 'CM' },
+        { name: 'Vitinha', pos: 'CM' },
+      ],
+      // Back four
+      [
+        { name: 'Mendes', pos: 'LB' },
+        { name: 'Inácio', pos: 'CB' },
+        { name: 'Dias', pos: 'CB' },
+        { name: 'Cancelo', pos: 'RB' },
+      ],
+      // Goalkeeper — Diogo Costa
+      [
+        { name: 'Costa', pos: 'GK' },
+      ],
+    ],
+    bench: ['José Sá', 'A. Silva', 'Dalot', 'R. Neves', 'P. Neto', 'J. Félix', 'G. Ramos'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
