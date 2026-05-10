@@ -956,6 +956,74 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  'Curaçao': {
+    nation: 'Curaçao',
+    formation: '4-3-2-1',
+    kit: { primary: '#002b7f', accent: '#fdef42', outline: '#001645', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Kastaneer', pos: 'ST' },
+      ],
+      [
+        { name: 'Gorré', pos: 'LAM' },
+        { name: 'Antonisse', pos: 'RAM' },
+      ],
+      [
+        { name: 'J. Bacuna', pos: 'CM' },
+        { name: 'L. Bacuna', pos: 'CM' },
+      ],
+      [
+        { name: 'Comenencia', pos: 'CDM' },
+      ],
+      [
+        { name: 'Floranus', pos: 'LB' },
+        { name: 'Obispo', pos: 'CB' },
+        { name: 'Gaari', pos: 'CB' },
+        { name: 'Sambo', pos: 'RB' },
+      ],
+      [
+        { name: 'Room', pos: 'GK' },
+      ],
+    ],
+    bench: ['Jong', 'Bitton', 'Brenet', 'Chong', 'Janga', 'Diemers', 'Gunsa'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  "Côte d'Ivoire": {
+    nation: "Côte d'Ivoire",
+    formation: '4-3-2-1',
+    kit: { primary: '#f77f1b', accent: '#009e60', outline: '#8a4500', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Guessand', pos: 'ST' },
+      ],
+      [
+        { name: 'Diomandé', pos: 'LAM' },
+        { name: 'Diallo', pos: 'RAM' },
+      ],
+      [
+        { name: 'Oulai', pos: 'CM' },
+        { name: 'Kessié', pos: 'CM' },
+      ],
+      [
+        { name: 'Sangaré', pos: 'CDM' },
+      ],
+      [
+        { name: 'Konan', pos: 'LB' },
+        { name: "N'Dicka", pos: 'CB' },
+        { name: 'Kossounou', pos: 'CB' },
+        { name: 'Doué', pos: 'RB' },
+      ],
+      [
+        { name: 'Fofana', pos: 'GK' },
+      ],
+    ],
+    bench: ['Mandé', 'Singo', 'Boly', 'Aurier', 'Bayo', 'Pépé', 'Haller'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
