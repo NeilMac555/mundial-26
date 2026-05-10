@@ -1282,6 +1282,70 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Haiti: {
+    nation: 'Haiti',
+    formation: '4-2-3-1',
+    kit: { primary: '#00209f', accent: '#d21034', outline: '#001263', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Isidor', pos: 'ST' },
+      ],
+      [
+        { name: 'Providence', pos: 'LW' },
+        { name: 'Casimir', pos: 'CAM' },
+        { name: 'Deedson', pos: 'RW' },
+      ],
+      [
+        { name: 'Pierre', pos: 'CM' },
+        { name: 'Bellegarde', pos: 'CM' },
+      ],
+      [
+        { name: 'Lacroix', pos: 'LB' },
+        { name: 'Delcroix', pos: 'CB' },
+        { name: 'Ade', pos: 'CB' },
+        { name: 'Arcus', pos: 'RB' },
+      ],
+      [
+        { name: 'Placide', pos: 'GK' },
+      ],
+    ],
+    bench: ['Genevois', 'Pierre-Gabriel', 'Belfort', 'Sainté', 'Pierrot', 'Charles', 'Boniface'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Scotland: {
+    nation: 'Scotland',
+    formation: '4-2-3-1',
+    kit: { primary: '#0e1a3d', accent: '#ffffff', outline: '#050d1c', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Adams', pos: 'ST' },
+      ],
+      [
+        { name: 'Gilmour', pos: 'LW' },
+        { name: 'McTominay', pos: 'CAM' },
+        { name: 'McGinn', pos: 'RW' },
+      ],
+      [
+        { name: 'Ferguson', pos: 'CM' },
+        { name: 'Christie', pos: 'CM' },
+      ],
+      [
+        { name: 'Robertson', pos: 'LB' },
+        { name: 'Hanley', pos: 'CB' },
+        { name: 'Souttar', pos: 'CB' },
+        { name: 'Ralston', pos: 'RB' },
+      ],
+      [
+        { name: 'Gunn', pos: 'GK' },
+      ],
+    ],
+    bench: ['Kelly', 'Tierney', 'Cooper', 'Doak', 'Armstrong', 'Dykes', 'Forrest'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
