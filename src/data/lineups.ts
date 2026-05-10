@@ -606,6 +606,36 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess) — Palmer → Gordon swap per Neil',
     asOf: '2026-05-10',
   },
+
+  Netherlands: {
+    nation: 'Netherlands',
+    formation: '4-3-3',
+    kit: { primary: '#ff7900', accent: '#ffffff', outline: '#a04500', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Gakpo', pos: 'LW' },
+        { name: 'Depay', pos: 'ST' },
+        { name: 'Malen', pos: 'RW' },
+      ],
+      [
+        { name: 'Reijnders', pos: 'CM' },
+        { name: 'De Jong', pos: 'CM' },
+        { name: 'Gravenberch', pos: 'CM' },
+      ],
+      [
+        { name: 'Van de Ven', pos: 'LB' },
+        { name: 'Van Dijk', pos: 'CB' },
+        { name: 'Timber', pos: 'CB' },
+        { name: 'Dumfries', pos: 'RB' },
+      ],
+      [
+        { name: 'Verbruggen', pos: 'GK' },
+      ],
+    ],
+    bench: ['Flekken', 'Aké', 'Hato', 'Schouten', 'Xavi Simons', 'Brobbey', 'Weghorst'],
+    source: 'ESPN lineup tool (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
