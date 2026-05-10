@@ -574,6 +574,38 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  England: {
+    nation: 'England',
+    formation: '4-2-3-1',
+    kit: { primary: '#ffffff', accent: '#1d3a5f', outline: '#1a1a1a', number: '#ce1126' },
+    rows: [
+      [
+        { name: 'Kane', pos: 'ST' },
+      ],
+      [
+        { name: 'Gordon', pos: 'LW' },
+        { name: 'Bellingham', pos: 'CAM' },
+        { name: 'Saka', pos: 'RW' },
+      ],
+      [
+        { name: 'Rice', pos: 'CM' },
+        { name: 'Anderson', pos: 'CM' },
+      ],
+      [
+        { name: 'O’Reilly', pos: 'LB' },
+        { name: 'Guéhi', pos: 'CB' },
+        { name: 'Konsa', pos: 'CB' },
+        { name: 'James', pos: 'RB' },
+      ],
+      [
+        { name: 'Pickford', pos: 'GK' },
+      ],
+    ],
+    bench: ['D. Henderson', 'Stones', 'Trippier', 'Mainoo', 'Foden', 'Watkins', 'Eze'],
+    source: 'futbolfantasy.com (May 2026 best-guess) — Palmer → Gordon swap per Neil',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
