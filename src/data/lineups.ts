@@ -266,6 +266,43 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Algeria: {
+    nation: 'Algeria',
+    formation: '4-2-2-2',
+    kit: { primary: '#006233', accent: '#d21034', outline: '#003a1d', number: '#ffffff' },
+    rows: [
+      // Strike pair
+      [
+        { name: 'Gouiri', pos: 'ST' },
+        { name: 'Amoura', pos: 'ST' },
+      ],
+      // Narrow #10s
+      [
+        { name: 'Aouar', pos: 'LAM' },
+        { name: 'Mahrez', pos: 'RAM' },
+      ],
+      // Double pivot
+      [
+        { name: 'Bennacer', pos: 'CM' },
+        { name: 'Boudaoui', pos: 'CM' },
+      ],
+      // Back four
+      [
+        { name: 'Aït Nouri', pos: 'LB' },
+        { name: 'Bensebaini', pos: 'CB' },
+        { name: 'Mandi', pos: 'CB' },
+        { name: 'Belghali', pos: 'RB' },
+      ],
+      // Goalkeeper — Luca Zidane
+      [
+        { name: 'Zidane', pos: 'GK' },
+      ],
+    ],
+    bench: ['M’Bolhi', 'Atal', 'Tougai', 'Zorgane', 'Brahimi', 'Belaili', 'Slimani'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
