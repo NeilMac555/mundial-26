@@ -667,8 +667,8 @@ export const LINEUPS: Record<string, Lineup> = {
     asOf: '2026-05-10',
   },
 
-  USA: {
-    nation: 'USA',
+  'United States': {
+    nation: 'United States',
     formation: '3-4-2-1',
     kit: { primary: '#1a3766', accent: '#c8102e', outline: '#0c1f3d', number: '#ffffff' },
     rows: [
@@ -861,8 +861,8 @@ export const LINEUPS: Record<string, Lineup> = {
     asOf: '2026-05-10',
   },
 
-  Turkey: {
-    nation: 'Turkey',
+  'Türkiye': {
+    nation: 'Türkiye',
     formation: '4-2-3-1',
     kit: { primary: '#e30a17', accent: '#ffffff', outline: '#8a060e', number: '#ffffff' },
     rows: [
