@@ -149,6 +149,46 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  France: {
+    nation: 'France',
+    formation: '4-2-3-1',
+    kit: { primary: '#002654', accent: '#ed2939', outline: '#001a3a', number: '#ffffff' },
+    rows: [
+      // Lone striker
+      [
+        { name: 'Mbappé', pos: 'ST' },
+      ],
+      // Wingers
+      [
+        { name: 'Cherki', backup: 'Barcola', pos: 'LW' },
+        { name: 'Dembélé', pos: 'RW' },
+      ],
+      // #10 dropping between lines
+      [
+        { name: 'Olise', pos: 'CAM' },
+      ],
+      // Double pivot
+      [
+        { name: 'Rabiot', pos: 'CM' },
+        { name: 'Tchouaméni', pos: 'CM' },
+      ],
+      // Back four
+      [
+        { name: 'Theo', pos: 'LB' },
+        { name: 'Upamecano', backup: 'Konaté', pos: 'CB' },
+        { name: 'Saliba', pos: 'CB' },
+        { name: 'Koundé', pos: 'RB' },
+      ],
+      // Goalkeeper
+      [
+        { name: 'Maignan', pos: 'GK' },
+      ],
+    ],
+    bench: ['Samba', 'Pavard', 'Lucas Hernández', 'Camavinga', 'Zaire-Emery', 'Thuram', 'Kolo Muani'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
