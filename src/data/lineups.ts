@@ -1542,6 +1542,72 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Iran: {
+    nation: 'Iran',
+    formation: '4-3-2-1',
+    kit: { primary: '#ffffff', accent: '#239f40', outline: '#1a1a1a', number: '#da0000' },
+    rows: [
+      [
+        { name: 'Taremi', pos: 'ST' },
+      ],
+      [
+        { name: 'Hosseinzadeh', pos: 'LAM' },
+        { name: 'Ghayedi', pos: 'RAM' },
+      ],
+      [
+        { name: 'Noorafkan', pos: 'CM' },
+        { name: 'Ghoddos', pos: 'CM' },
+      ],
+      [
+        { name: 'Ezatolahi', pos: 'CDM' },
+      ],
+      [
+        { name: 'Mohammadi', pos: 'LB' },
+        { name: 'Khalilzadeh', pos: 'CB' },
+        { name: 'Nemati', pos: 'CB' },
+        { name: 'Esmaeilifar', pos: 'RB' },
+      ],
+      [
+        { name: 'Beiranvand', pos: 'GK' },
+      ],
+    ],
+    bench: ['Hosseini', 'Pouraliganji', 'Hajsafi', 'Azmoun', 'Jahanbakhsh', 'Karimi', 'Mohebi'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  'New Zealand': {
+    nation: 'New Zealand',
+    formation: '4-2-3-1',
+    kit: { primary: '#ffffff', accent: '#000000', outline: '#1a1a1a', number: '#000000' },
+    rows: [
+      [
+        { name: 'Wood', pos: 'ST' },
+      ],
+      [
+        { name: 'Singh', pos: 'LW' },
+        { name: 'Garbett', pos: 'CAM' },
+        { name: 'Just', pos: 'RW' },
+      ],
+      [
+        { name: 'Bell', pos: 'CM' },
+        { name: 'Stamenic', pos: 'CM' },
+      ],
+      [
+        { name: 'Old', pos: 'LB' },
+        { name: 'Bindon', pos: 'CB' },
+        { name: 'Boxall', pos: 'CB' },
+        { name: 'Cacace', pos: 'RB' },
+      ],
+      [
+        { name: 'Crocombe', pos: 'GK' },
+      ],
+    ],
+    bench: ['Sail', 'Tuiloma', 'Reid', 'Smith', 'Wynne', 'Surman', 'Waine'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
