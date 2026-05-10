@@ -796,6 +796,70 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Paraguay: {
+    nation: 'Paraguay',
+    formation: '4-2-2-2',
+    kit: { primary: '#d52b1e', accent: '#ffffff', outline: '#8a1813', number: '#003a8c' },
+    rows: [
+      [
+        { name: 'Enciso', pos: 'ST' },
+        { name: 'Sanabria', pos: 'ST' },
+      ],
+      [
+        { name: 'Almirón', pos: 'LAM' },
+        { name: 'Sosa', pos: 'RAM' },
+      ],
+      [
+        { name: 'Cubas', pos: 'CM' },
+        { name: 'D. Gómez', pos: 'CM' },
+      ],
+      [
+        { name: 'Alonso', pos: 'LB' },
+        { name: 'G. Gómez', pos: 'CB' },
+        { name: 'Alderete', pos: 'CB' },
+        { name: 'Cáceres', pos: 'RB' },
+      ],
+      [
+        { name: 'Gill', pos: 'GK' },
+      ],
+    ],
+    bench: ['Olivier', 'R. Rojas', 'Caballero', 'Bobadilla', 'Galarza', 'Avalos', 'Bareiro'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Australia: {
+    nation: 'Australia',
+    formation: '3-4-2-1',
+    kit: { primary: '#ffcd00', accent: '#00471b', outline: '#8a7300', number: '#00471b' },
+    rows: [
+      [
+        { name: 'Touré', pos: 'ST' },
+      ],
+      [
+        { name: 'Irankunda', pos: 'LAM' },
+        { name: 'Boyle', pos: 'RAM' },
+      ],
+      [
+        { name: 'Bos', pos: 'LWB' },
+        { name: 'Irvine', pos: 'CM' },
+        { name: 'McGree', pos: 'CM' },
+        { name: 'Italiano', pos: 'RWB' },
+      ],
+      [
+        { name: 'Burgess', pos: 'LCB' },
+        { name: 'Souttar', pos: 'CB' },
+        { name: 'Circati', pos: 'RCB' },
+      ],
+      [
+        { name: 'Ryan', pos: 'GK' },
+      ],
+    ],
+    bench: ['Vukovic', 'Rowles', 'Behich', 'Hrustic', 'Mooy', 'Duke', 'Borello'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
