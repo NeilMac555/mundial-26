@@ -860,6 +860,38 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Turkey: {
+    nation: 'Turkey',
+    formation: '4-2-3-1',
+    kit: { primary: '#e30a17', accent: '#ffffff', outline: '#8a060e', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Aktürkoğlu', pos: 'ST' },
+      ],
+      [
+        { name: 'Yıldız', pos: 'LW' },
+        { name: 'Güler', pos: 'CAM' },
+        { name: 'Yılmaz', pos: 'RW' },
+      ],
+      [
+        { name: 'Yüksek', pos: 'CM' },
+        { name: 'Çalhanoğlu', pos: 'CM' },
+      ],
+      [
+        { name: 'Kadıoğlu', pos: 'LB' },
+        { name: 'Bardakcı', pos: 'CB' },
+        { name: 'Demiral', pos: 'CB' },
+        { name: 'Çelik', pos: 'RB' },
+      ],
+      [
+        { name: 'Çakır', pos: 'GK' },
+      ],
+    ],
+    bench: ['Bayındır', 'Müldür', 'Söyüncü', 'Kökçü', 'Yokuşlu', 'Akgün', 'Tosun'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
