@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mundial · Terminal — Analytics for serious football bettors</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <style>
+    html, body { margin: 0; padding: 0; background: #0b0f17; }
+    body { font-family: "Inter", system-ui, sans-serif; }
+    *::-webkit-scrollbar { width: 8px; height: 8px; }
+    *::-webkit-scrollbar-track { background: transparent; }
+    *::-webkit-scrollbar-thumb { background: rgba(154,164,182,0.18); border-radius: 999px; }
+    *::-webkit-scrollbar-thumb:hover { background: rgba(154,164,182,0.32); }
+    button, select { font-family: inherit; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="data.jsx"></script>
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="terminal-data.jsx"></script>
+  <script type="text/babel" src="terminal-shell.jsx"></script>
+  <script type="text/babel" src="terminal-achievers.jsx"></script>
+  <script type="text/babel" src="terminal-pages.jsx"></script>
+
+  <script type="text/babel">
+    const { useState } = React;
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "density": "comfortable",
+      "sidebarCollapsed": false
+    }/*EDITMODE-END*/;
+
+    function TerminalRoot() {
+      const [t, setTweak] = window.useTweaks(TWEAK_DEFAULTS);
+      const [active, setActive] = useState('achievers');
+      const vars = window.T_THEME;
+
+      const PageMap = {
+        overview:   <window.TOverview />,
+        achievers:  <window.TAchievers />,
+        sos:        <window.TSos />,
+        qxg:        <window.TQxg />,
+        mv:         <window.TMv />,
+        heat:       <window.TConditions title="Heat vulnerability"     lede="Index of heat-stress exposure given June US/MEX venue WBGT norms and squad fitness profile. Higher = more vulnerable to performance drop in hot windows." key="heatIdx"     unit="" />,
+        altitude:   <window.TConditions title="Altitude exposure"      lede="Altitude penalty index for the three Mexico City fixtures and Salt Lake City. Higher = more affected by 2,240m+ play."                                            key="altIdx"      unit="" />,
+        americas:   <window.TConditions title="Americas-host effect"   lede="Composite of travel familiarity, time-zone overlap, and recent CONMEBOL/CONCACAF results in North American venues. Higher = more comfortable on host soil."        key="americasIdx" unit="" />,
+        goldenboot: <window.TGoldenBoot />,
+        compare:    <window.TCompare />,
+        fixtures:   <window.TFixtures />,
+        rules:      <window.TRules />,
+      };
+
+      return (
+        <window.DesignCanvas>
+          <window.DCSection id="terminal" title="Mundial · Terminal" subtitle="Analytics terminal for serious football bettors. The default landing — Over/Under-Achievers — is the canonical example of the system; click any sidebar item to see how it applies elsewhere.">
+            <window.DCArtboard id="terminal-app" label="A · TERMINAL" width={1440} height={1900}>
+              <div style={{ width: '100%', height: '100%', display: 'flex', ...vars, background: 'var(--bg)', color: 'var(--text)', fontFamily: 'var(--font)' }}>
+                <window.TSidebar active={active} setActive={setActive} collapsed={!!t.sidebarCollapsed} />
+                <main style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', overflow: 'auto' }}>
+                  <window.TTopbar active={active} />
+                  {PageMap[active] || <div style={{ padding: 28 }}><window.TLabel>Page coming soon</window.TLabel></div>}
+                  <footer style={{
+                    padding: '18px 28px', marginTop: 'auto',
+                    borderTop: '1px solid var(--border)', background: 'var(--bg-2)',
+                    display: 'flex', justifyContent: 'space-between',
+                  }}>
+                    <window.TMono size={10} color="var(--text-3)">© MUNDIAL · TERMINAL — INDEPENDENT</window.TMono>
+                    <window.TMono size={10} color="var(--text-3)">DATA AS OF {window.T_META.snapshot}</window.TMono>
+                    <window.TMono size={10} color="var(--text-3)">21+ · BET RESPONSIBLY</window.TMono>
+                  </footer>
+                </main>
+              </div>
+            </window.DCArtboard>
+          </window.DCSection>
+
+          <window.TweaksPanel>
+            <window.TweakSection label="Layout" />
+            <window.TweakToggle
+              label="Collapse sidebar"
+              value={!!t.sidebarCollapsed}
+              onChange={(v) => setTweak('sidebarCollapsed', v)}
+            />
+            <window.TweakSection label="Active page" />
+            <window.TweakSelect
+              label="Page"
+              value={active}
+              options={window.T_NAV.flatMap(g => g.items.map(i => ({ value: i.id, label: `${g.section} · ${i.label}` })))}
+              onChange={setActive}
+            />
+          </window.TweaksPanel>
+        </window.DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<TerminalRoot />);
+  </script>
+</body>
+</html>

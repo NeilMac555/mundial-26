@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MUNDIAL TERMINAL — analytics-terminal palette.
+   Dark slate · soft gold accent · red/green only for genuine
+   delta semantics. Inter for body, JetBrains Mono for numerics.
+   ============================================================ */
+
+@theme {
+  --font-sans:    "Inter", "Geist", system-ui, -apple-system, sans-serif;
+  --font-mono:    "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-display: "Inter", "Geist", system-ui, sans-serif;
+  --font-serif:   "Inter", system-ui, sans-serif;
+
+  /* ── Surfaces ── */
+  --color-bg:        #0b0f17;
+  --color-bg-2:      #0d121b;
+  --color-surface:   #10151e;
+  --color-surface-2: #151c27;
+  --color-surface-3: #1c2532;
+  --color-row-hov:   #131925;
+
+  /* ── Borders ── */
+  --color-border:    #1d2531;
+  --color-border-2:  #2a3243;
+
+  /* ── Text ladder ── */
+  --color-text:      #e6eaf2;
+  --color-text-2:    #9aa4b6;
+  --color-text-3:    #5f6a7d;
+  --color-text-4:    #3e4757;
+
+  /* ── Gold accent (the only highlight colour) ── */
+  --color-gold:      #e8b94a;
+  --color-gold-2:    #f3cf76;
+  --color-gold-3:    #c89a3e;
+  --color-gold-d:    #5a4318;
+
+  /* ── Delta semantics — minimal, mono-toned where possible ── */
+  --color-red:       #d65a6c;
+  --color-red-2:     #a64a55;
+  --color-red-d:     #7a2535;
+  --color-green:     #5ec88a;
+  --color-green-2:   #4aa370;
+}
+
+/* Body — dark slate, primary text */
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.005em;
+}
+
+#root { position: relative; min-height: 100vh; }
+
+/* Tabular numerics whenever .num is applied */
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Mono utility — for labels, codes, methodology lines */
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Terminal "label" — small uppercase mono, used for KPI labels, captions, tier headings */
+.t-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-3);
+  font-weight: 500;
+}
+
+/* Eyebrow — like t-label but slightly bigger and with a dot */
+.t-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-2);
+}
+.t-eyebrow::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-gold);
+}
+
+/* Heading utilities — mostly redundant since we use Tailwind, but headings should never be Bungee here */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: -0.018em;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-surface-3); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-border-2); }
+
+a, button { transition: all 0.14s ease-out; }
+
+html { scroll-behavior: smooth; }

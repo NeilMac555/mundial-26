@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WorldCupWatch.io — Bettors Companion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <style>
+    html, body { margin: 0; padding: 0; background: #0b121a; }
+    body { font-family: "Inter", system-ui, sans-serif; }
+    *::-webkit-scrollbar { width: 8px; height: 8px; }
+    *::-webkit-scrollbar-track { background: transparent; }
+    *::-webkit-scrollbar-thumb { background: rgba(143,163,184,0.18); border-radius: 999px; }
+    *::-webkit-scrollbar-thumb:hover { background: rgba(143,163,184,0.32); }
+    button { font-family: inherit; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="data.jsx"></script>
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="steam-app.jsx"></script>
+  <script type="text/babel" src="steam-views.jsx"></script>
+  <script type="text/babel" src="steam-mobile.jsx"></script>
+
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "theme": "steam",
+      "density": "comfortable"
+    }/*EDITMODE-END*/;
+
+    function themeVars(key) {
+      const t = window.STEAM_THEMES[key] || window.STEAM_THEMES.steam;
+      const out = {};
+      Object.entries(t).forEach(([k, v]) => { if (k.startsWith('--')) out[k] = v; });
+      return out;
+    }
+
+    function ThemedFrame({ children, scrollable = true }) {
+      return (
+        <div style={{
+          background: 'var(--bg)', position: 'relative',
+          width: '100%', height: '100%',
+          overflow: scrollable ? 'auto' : 'hidden',
+          fontFamily: 'var(--font-body)', color: 'var(--text)',
+        }}>{children}</div>
+      );
+    }
+
+    function Root() {
+      const [t, setTweak] = window.useTweaks(TWEAK_DEFAULTS);
+      const vars = themeVars(t.theme);
+
+      const [tab, setTab] = useState('OVERVIEW');
+      const [group, setGroup] = useState('ALL');
+
+      return (
+        <window.DesignCanvas>
+          <window.DCSection id="desktop" title="WorldCupWatch.io" subtitle="Steam-radar style — sparklines, drift chips, mono numerics. Click tabs to switch views.">
+            <window.DCArtboard id="dt-app" label="A · DESKTOP" width={1320} height={2100}>
+              <div style={{ width: '100%', height: '100%', ...vars }}>
+                <ThemedFrame>
+                  <window.SHeader tab={tab} setTab={setTab} group={group} setGroup={setGroup} />
+                  <window.STicker />
+                  {tab === 'OVERVIEW' && <>
+                    <window.SOverview group={group} />
+                    <window.SDrifters />
+                    <window.SMovementChart />
+                  </>}
+                  {tab === 'GROUPS'   && <window.SGroups />}
+                  {tab === 'BRACKET'  && <window.SBracket />}
+                  {tab === 'TEAM P/L' && <window.STeamPL />}
+                  {tab === 'WIRE'     && <window.SWire />}
+                  {tab === 'TOOLS'    && <div style={{ padding: 28 }}><window.SLabel>Tools — coming soon</window.SLabel></div>}
+                  <footer style={{
+                    borderTop: '1px solid var(--border)', padding: '20px 28px',
+                    display: 'flex', justifyContent: 'space-between', background: 'var(--surface)',
+                  }}>
+                    <window.SLabel>© WorldCupWatch.io · Independent</window.SLabel>
+                    <window.SLabel>For informational use only · 21+ · Bet responsibly</window.SLabel>
+                    <window.SLabel>v 0.3 · '26 edition</window.SLabel>
+                  </footer>
+                </ThemedFrame>
+              </div>
+            </window.DCArtboard>
+          </window.DCSection>
+
+          <window.DCSection id="mobile" title="Pocket companion" subtitle="iOS — same data, condensed.">
+            <window.DCArtboard id="mb-app" label="B · MOBILE" width={440} height={900}>
+              <window.IOSDevice width={402} height={874} dark>
+                <div style={{ width: '100%', height: '100%', ...vars }}>
+                  <ThemedFrame scrollable={false}>
+                    <window.SMobileApp />
+                  </ThemedFrame>
+                </div>
+              </window.IOSDevice>
+            </window.DCArtboard>
+          </window.DCSection>
+
+          <window.TweaksPanel>
+            <window.TweakSection label="House style" />
+            <window.TweakRadio
+              label="Theme"
+              value={t.theme}
+              options={[
+                { value: 'steam',    label: 'Trophy gold' },
+                { value: 'pitch',    label: 'Champagne' },
+                { value: 'obsidian', label: 'Bullion' },
+              ]}
+              onChange={(v) => setTweak('theme', v)}
+            />
+          </window.TweaksPanel>
+        </window.DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<Root />);
+  </script>
+</body>
+</html>

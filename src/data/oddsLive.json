@@ -1,0 +1,2018 @@
+{
+  "generatedAt": "2026-05-07T14:28:33.261Z",
+  "source": "the-odds-api.com",
+  "regions": "us,us2,uk,eu,au",
+  "outrights": {
+    "teams": [
+      {
+        "code": "FRA",
+        "name": "France",
+        "best": 6,
+        "median": 6,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "ESP",
+        "name": "Spain",
+        "best": 6.4,
+        "median": 6,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "ENG",
+        "name": "England",
+        "best": 8.6,
+        "median": 7.5,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "ARG",
+        "name": "Argentina",
+        "best": 11.5,
+        "median": 9.5,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "BRA",
+        "name": "Brazil",
+        "best": 10,
+        "median": 10,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "POR",
+        "name": "Portugal",
+        "best": 13,
+        "median": 12,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "GER",
+        "name": "Germany",
+        "best": 18.5,
+        "median": 13,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "NED",
+        "name": "Netherlands",
+        "best": 28,
+        "median": 21,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "NOR",
+        "name": "Norway",
+        "best": 40,
+        "median": 29,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "BEL",
+        "name": "Belgium",
+        "best": 50,
+        "median": 34,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "COL",
+        "name": "Colombia",
+        "best": 48,
+        "median": 41,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "MAR",
+        "name": "Morocco",
+        "best": 67,
+        "median": 51,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "JPN",
+        "name": "Japan",
+        "best": 67,
+        "median": 51,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "USA",
+        "name": "USA",
+        "best": 75,
+        "median": 61,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "SUI",
+        "name": "Switzerland",
+        "best": 95,
+        "median": 67,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "URU",
+        "name": "Uruguay",
+        "best": 85,
+        "median": 81,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "MEX",
+        "name": "Mexico",
+        "best": 90,
+        "median": 81,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "CRO",
+        "name": "Croatia",
+        "best": 120,
+        "median": 81,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "ECU",
+        "name": "Ecuador",
+        "best": 101,
+        "median": 100,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "TUR",
+        "name": "Turkey",
+        "best": 101,
+        "median": 100,
+        "samples": 8,
+        "bookmakers": [
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "SWE",
+        "name": "Sweden",
+        "best": 140,
+        "median": 101,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "SEN",
+        "name": "Senegal",
+        "best": 111,
+        "median": 101,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "PAR",
+        "name": "Paraguay",
+        "best": 300,
+        "median": 151,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "AUT",
+        "name": "Austria",
+        "best": 210,
+        "median": 151,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": null,
+        "name": "Italy",
+        "best": 180,
+        "median": 180,
+        "samples": 3,
+        "bookmakers": [
+          "Betfair"
+        ]
+      },
+      {
+        "code": "CAN",
+        "name": "Canada",
+        "best": 300,
+        "median": 201,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "SCO",
+        "name": "Scotland",
+        "best": 251,
+        "median": 250,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "BIH",
+        "name": "Bosnia & Herzegovina",
+        "best": 520,
+        "median": 251,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "CIV",
+        "name": "Ivory Coast",
+        "best": 301,
+        "median": 300,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "CZE",
+        "name": "Czech Republic",
+        "best": 410,
+        "median": 301,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "EGY",
+        "name": "Egypt",
+        "best": 430,
+        "median": 301,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "GHA",
+        "name": "Ghana",
+        "best": 580,
+        "median": 401,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "ALG",
+        "name": "Algeria",
+        "best": 600,
+        "median": 401,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "KOR",
+        "name": "South Korea",
+        "best": 501,
+        "median": 410,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "TUN",
+        "name": "Tunisia",
+        "best": 870,
+        "median": 501,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "AUS",
+        "name": "Australia",
+        "best": 670,
+        "median": 501,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "IRN",
+        "name": "Iran",
+        "best": 800,
+        "median": 501,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "COD",
+        "name": "DR Congo",
+        "best": 1000,
+        "median": 751,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "RSA",
+        "name": "South Africa",
+        "best": 1001,
+        "median": 1000,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "IRQ",
+        "name": "Iraq",
+        "best": 1501,
+        "median": 1000,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": null,
+        "name": "Denmark",
+        "best": 1000,
+        "median": 1000,
+        "samples": 3,
+        "bookmakers": [
+          "Betfair"
+        ]
+      },
+      {
+        "code": null,
+        "name": "Poland",
+        "best": 1000,
+        "median": 1000,
+        "samples": 3,
+        "bookmakers": [
+          "Betfair"
+        ]
+      },
+      {
+        "code": null,
+        "name": "Bolivia",
+        "best": 1000,
+        "median": 1000,
+        "samples": 3,
+        "bookmakers": [
+          "Betfair"
+        ]
+      },
+      {
+        "code": null,
+        "name": "Jamaica",
+        "best": 1000,
+        "median": 1000,
+        "samples": 3,
+        "bookmakers": [
+          "Betfair"
+        ]
+      },
+      {
+        "code": null,
+        "name": "Kosovo",
+        "best": 1000,
+        "median": 1000,
+        "samples": 3,
+        "bookmakers": [
+          "Betfair"
+        ]
+      },
+      {
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "best": 2001,
+        "median": 1001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "CPV",
+        "name": "Cape Verde",
+        "best": 2001,
+        "median": 1001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "KSA",
+        "name": "Saudi Arabia",
+        "best": 1001,
+        "median": 1001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "QAT",
+        "name": "Qatar",
+        "best": 1001,
+        "median": 1001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "PAN",
+        "name": "Panama",
+        "best": 1501,
+        "median": 1001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "NZL",
+        "name": "New Zealand",
+        "best": 1501,
+        "median": 1001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "CUR",
+        "name": "Curaçao",
+        "best": 2001,
+        "median": 2001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "JOR",
+        "name": "Jordan",
+        "best": 2501,
+        "median": 2001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      },
+      {
+        "code": "HAI",
+        "name": "Haiti",
+        "best": 3001,
+        "median": 2001,
+        "samples": 9,
+        "bookmakers": [
+          "DraftKings",
+          "Unibet",
+          "FanDuel",
+          "Betfair",
+          "BetRivers",
+          "William Hill",
+          "TAB"
+        ]
+      }
+    ],
+    "asOf": "2026-05-07T14:28:33.464Z"
+  },
+  "matches": {
+    "matches": [
+      {
+        "id": "80d82d1113934bfbea4ce8daf37a2433",
+        "commenceTime": "2026-06-11T19:00:00Z",
+        "home": {
+          "name": "Mexico",
+          "code": "MEX",
+          "best": 1.57,
+          "median": 1.51,
+          "samples": 54
+        },
+        "away": {
+          "name": "South Africa",
+          "code": "RSA",
+          "best": 7,
+          "median": 6,
+          "samples": 54
+        },
+        "draw": {
+          "best": 4.5,
+          "median": 4.1,
+          "samples": 54
+        },
+        "bookmakerCount": 54
+      },
+      {
+        "id": "384cbb5d76b535896a24fe65f93cfac8",
+        "commenceTime": "2026-06-12T02:00:00Z",
+        "home": {
+          "name": "South Korea",
+          "code": "KOR",
+          "best": 2.7,
+          "median": 2.65,
+          "samples": 54
+        },
+        "away": {
+          "name": "Czech Republic",
+          "code": "CZE",
+          "best": 2.88,
+          "median": 2.7,
+          "samples": 54
+        },
+        "draw": {
+          "best": 3.3,
+          "median": 3.1,
+          "samples": 54
+        },
+        "bookmakerCount": 54
+      },
+      {
+        "id": "d1f4f946c70a0b4e81f5d43e9d32361c",
+        "commenceTime": "2026-06-12T19:00:00Z",
+        "home": {
+          "name": "Canada",
+          "code": "CAN",
+          "best": 1.88,
+          "median": 1.8,
+          "samples": 56
+        },
+        "away": {
+          "name": "Bosnia & Herzegovina",
+          "code": "BIH",
+          "best": 4.6,
+          "median": 4.2,
+          "samples": 56
+        },
+        "draw": {
+          "best": 4,
+          "median": 3.65,
+          "samples": 56
+        },
+        "bookmakerCount": 56
+      },
+      {
+        "id": "c12986f447a515fbe641addd786dbb24",
+        "commenceTime": "2026-06-13T01:00:00Z",
+        "home": {
+          "name": "USA",
+          "code": "USA",
+          "best": 2.15,
+          "median": 2,
+          "samples": 56
+        },
+        "away": {
+          "name": "Paraguay",
+          "code": "PAR",
+          "best": 4.1,
+          "median": 3.6,
+          "samples": 56
+        },
+        "draw": {
+          "best": 3.7,
+          "median": 3.5,
+          "samples": 56
+        },
+        "bookmakerCount": 56
+      },
+      {
+        "id": "26634922d3f78c146440816023e40de8",
+        "commenceTime": "2026-06-13T19:00:00Z",
+        "home": {
+          "name": "Qatar",
+          "code": "QAT",
+          "best": 12.25,
+          "median": 9,
+          "samples": 56
+        },
+        "away": {
+          "name": "Switzerland",
+          "code": "SUI",
+          "best": 1.36,
+          "median": 1.29,
+          "samples": 56
+        },
+        "draw": {
+          "best": 6.5,
+          "median": 5.5,
+          "samples": 56
+        },
+        "bookmakerCount": 56
+      },
+      {
+        "id": "f6c8748a16516e0998f95de14235432a",
+        "commenceTime": "2026-06-13T22:00:00Z",
+        "home": {
+          "name": "Brazil",
+          "code": "BRA",
+          "best": 1.68,
+          "median": 1.6,
+          "samples": 56
+        },
+        "away": {
+          "name": "Morocco",
+          "code": "MAR",
+          "best": 6.25,
+          "median": 5.75,
+          "samples": 56
+        },
+        "draw": {
+          "best": 4.2,
+          "median": 3.85,
+          "samples": 56
+        },
+        "bookmakerCount": 56
+      },
+      {
+        "id": "5ae41a06735c926eeb7f74006933adce",
+        "commenceTime": "2026-06-14T01:00:00Z",
+        "home": {
+          "name": "Haiti",
+          "code": "HAI",
+          "best": 8,
+          "median": 6.47,
+          "samples": 56
+        },
+        "away": {
+          "name": "Scotland",
+          "code": "SCO",
+          "best": 1.49,
+          "median": 1.43,
+          "samples": 56
+        },
+        "draw": {
+          "best": 5.2,
+          "median": 4.7,
+          "samples": 56
+        },
+        "bookmakerCount": 56
+      },
+      {
+        "id": "564084f52cc9f1abcc18187c168a7cdc",
+        "commenceTime": "2026-06-14T04:00:00Z",
+        "home": {
+          "name": "Australia",
+          "code": "AUS",
+          "best": 5.05,
+          "median": 4.5,
+          "samples": 53
+        },
+        "away": {
+          "name": "Turkey",
+          "code": "TUR",
+          "best": 1.88,
+          "median": 1.77,
+          "samples": 53
+        },
+        "draw": {
+          "best": 3.8,
+          "median": 3.6,
+          "samples": 53
+        },
+        "bookmakerCount": 53
+      },
+      {
+        "id": "d79edbd6aaeb578d33e313446b18d333",
+        "commenceTime": "2026-06-14T17:00:00Z",
+        "home": {
+          "name": "Germany",
+          "code": "GER",
+          "best": 1.07,
+          "median": 1.03,
+          "samples": 49
+        },
+        "away": {
+          "name": "Curaçao",
+          "code": "CUR",
+          "best": 91,
+          "median": 41,
+          "samples": 49
+        },
+        "draw": {
+          "best": 26,
+          "median": 18,
+          "samples": 49
+        },
+        "bookmakerCount": 49
+      },
+      {
+        "id": "32ec06abda2398ac41501c86eb9aa376",
+        "commenceTime": "2026-06-14T20:00:00Z",
+        "home": {
+          "name": "Netherlands",
+          "code": "NED",
+          "best": 2.05,
+          "median": 1.97,
+          "samples": 54
+        },
+        "away": {
+          "name": "Japan",
+          "code": "JPN",
+          "best": 3.92,
+          "median": 3.55,
+          "samples": 54
+        },
+        "draw": {
+          "best": 3.85,
+          "median": 3.55,
+          "samples": 54
+        },
+        "bookmakerCount": 54
+      },
+      {
+        "id": "05752bb341e197001387b64f3a06b9b2",
+        "commenceTime": "2026-06-14T23:00:00Z",
+        "home": {
+          "name": "Ivory Coast",
+          "code": "CIV",
+          "best": 3.54,
+          "median": 3.4,
+          "samples": 53
+        },
+        "away": {
+          "name": "Ecuador",
+          "code": "ECU",
+          "best": 2.55,
+          "median": 2.38,
+          "samples": 53
+        },
+        "draw": {
+          "best": 3.25,
+          "median": 2.9,
+          "samples": 53
+        },
+        "bookmakerCount": 53
+      },
+      {
+        "id": "b55f9569de3f4d731bc5537ff5ff43e4",
+        "commenceTime": "2026-06-15T02:00:00Z",
+        "home": {
+          "name": "Sweden",
+          "code": "SWE",
+          "best": 2,
+          "median": 1.9,
+          "samples": 53
+        },
+        "away": {
+          "name": "Tunisia",
+          "code": "TUN",
+          "best": 4.45,
+          "median": 4.1,
+          "samples": 53
+        },
+        "draw": {
+          "best": 3.54,
+          "median": 3.35,
+          "samples": 53
+        },
+        "bookmakerCount": 53
+      },
+      {
+        "id": "c54f00b11925751d2b62988775c6c239",
+        "commenceTime": "2026-06-15T16:00:00Z",
+        "home": {
+          "name": "Spain",
+          "code": "ESP",
+          "best": 1.12,
+          "median": 1.08,
+          "samples": 52
+        },
+        "away": {
+          "name": "Cape Verde",
+          "code": "CPV",
+          "best": 37,
+          "median": 23,
+          "samples": 52
+        },
+        "draw": {
+          "best": 13,
+          "median": 10.5,
+          "samples": 52
+        },
+        "bookmakerCount": 52
+      },
+      {
+        "id": "fbfb95c62003fd6d828b309f96ee1f9b",
+        "commenceTime": "2026-06-15T19:00:00Z",
+        "home": {
+          "name": "Belgium",
+          "code": "BEL",
+          "best": 1.73,
+          "median": 1.61,
+          "samples": 50
+        },
+        "away": {
+          "name": "Egypt",
+          "code": "EGY",
+          "best": 5.4,
+          "median": 5,
+          "samples": 50
+        },
+        "draw": {
+          "best": 4.25,
+          "median": 4,
+          "samples": 50
+        },
+        "bookmakerCount": 50
+      },
+      {
+        "id": "64b91c5f2db61c7358a4f05459e83c52",
+        "commenceTime": "2026-06-15T22:00:00Z",
+        "home": {
+          "name": "Saudi Arabia",
+          "code": "KSA",
+          "best": 7,
+          "median": 6,
+          "samples": 55
+        },
+        "away": {
+          "name": "Uruguay",
+          "code": "URU",
+          "best": 1.61,
+          "median": 1.53,
+          "samples": 55
+        },
+        "draw": {
+          "best": 4.6,
+          "median": 4,
+          "samples": 55
+        },
+        "bookmakerCount": 55
+      },
+      {
+        "id": "ec51b9c44ad5e34552f3ab53f7262813",
+        "commenceTime": "2026-06-16T01:00:00Z",
+        "home": {
+          "name": "Iran",
+          "code": "IRN",
+          "best": 1.79,
+          "median": 1.74,
+          "samples": 46
+        },
+        "away": {
+          "name": "New Zealand",
+          "code": "NZL",
+          "best": 6.1,
+          "median": 4.5,
+          "samples": 46
+        },
+        "draw": {
+          "best": 3.9,
+          "median": 3.65,
+          "samples": 46
+        },
+        "bookmakerCount": 46
+      },
+      {
+        "id": "73a4fcd14cc9766b9b9bfd50b8ca153a",
+        "commenceTime": "2026-06-16T19:00:00Z",
+        "home": {
+          "name": "France",
+          "code": "FRA",
+          "best": 1.49,
+          "median": 1.43,
+          "samples": 52
+        },
+        "away": {
+          "name": "Senegal",
+          "code": "SEN",
+          "best": 7.7,
+          "median": 6.75,
+          "samples": 52
+        },
+        "draw": {
+          "best": 5.2,
+          "median": 4.4,
+          "samples": 52
+        },
+        "bookmakerCount": 52
+      },
+      {
+        "id": "4d4f2b9b78182b557d4fbf8dcf4f4af2",
+        "commenceTime": "2026-06-16T22:00:00Z",
+        "home": {
+          "name": "Iraq",
+          "code": "IRQ",
+          "best": 13.75,
+          "median": 9,
+          "samples": 52
+        },
+        "away": {
+          "name": "Norway",
+          "code": "NOR",
+          "best": 1.33,
+          "median": 1.29,
+          "samples": 52
+        },
+        "draw": {
+          "best": 6.5,
+          "median": 5.35,
+          "samples": 52
+        },
+        "bookmakerCount": 52
+      },
+      {
+        "id": "f31b2ee9e1cc6f7e641467f8237eaa21",
+        "commenceTime": "2026-06-17T01:00:00Z",
+        "home": {
+          "name": "Argentina",
+          "code": "ARG",
+          "best": 1.44,
+          "median": 1.4,
+          "samples": 55
+        },
+        "away": {
+          "name": "Algeria",
+          "code": "ALG",
+          "best": 9.6,
+          "median": 7.5,
+          "samples": 55
+        },
+        "draw": {
+          "best": 4.8,
+          "median": 4.35,
+          "samples": 55
+        },
+        "bookmakerCount": 55
+      },
+      {
+        "id": "25161cf6cf0cd9be17ae2e7e224a1f45",
+        "commenceTime": "2026-06-17T04:00:00Z",
+        "home": {
+          "name": "Austria",
+          "code": "AUT",
+          "best": 1.39,
+          "median": 1.33,
+          "samples": 52
+        },
+        "away": {
+          "name": "Jordan",
+          "code": "JOR",
+          "best": 11,
+          "median": 8,
+          "samples": 52
+        },
+        "draw": {
+          "best": 6,
+          "median": 5.1,
+          "samples": 52
+        },
+        "bookmakerCount": 52
+      },
+      {
+        "id": "6cc871c121a1869b4612d3fb22fa9d55",
+        "commenceTime": "2026-06-17T17:00:00Z",
+        "home": {
+          "name": "Portugal",
+          "code": "POR",
+          "best": 1.35,
+          "median": 1.29,
+          "samples": 52
+        },
+        "away": {
+          "name": "DR Congo",
+          "code": "COD",
+          "best": 12.25,
+          "median": 9.25,
+          "samples": 52
+        },
+        "draw": {
+          "best": 6.2,
+          "median": 5.15,
+          "samples": 52
+        },
+        "bookmakerCount": 52
+      },
+      {
+        "id": "689096c8cd7e2753b9fec95321943c5d",
+        "commenceTime": "2026-06-17T20:00:00Z",
+        "home": {
+          "name": "England",
+          "code": "ENG",
+          "best": 1.73,
+          "median": 1.65,
+          "samples": 52
+        },
+        "away": {
+          "name": "Croatia",
+          "code": "CRO",
+          "best": 5.3,
+          "median": 4.9,
+          "samples": 52
+        },
+        "draw": {
+          "best": 4,
+          "median": 3.9,
+          "samples": 52
+        },
+        "bookmakerCount": 52
+      },
+      {
+        "id": "87afdb85c977b451e1c00f5e3e632601",
+        "commenceTime": "2026-06-17T23:00:00Z",
+        "home": {
+          "name": "Ghana",
+          "code": "GHA",
+          "best": 2.07,
+          "median": 1.96,
+          "samples": 53
+        },
+        "away": {
+          "name": "Panama",
+          "code": "PAN",
+          "best": 4,
+          "median": 3.5,
+          "samples": 53
+        },
+        "draw": {
+          "best": 3.86,
+          "median": 3.6,
+          "samples": 53
+        },
+        "bookmakerCount": 53
+      },
+      {
+        "id": "22083e7a8e5362c711bc05c1e1319a1f",
+        "commenceTime": "2026-06-18T02:00:00Z",
+        "home": {
+          "name": "Uzbekistan",
+          "code": "UZB",
+          "best": 9,
+          "median": 7.5,
+          "samples": 51
+        },
+        "away": {
+          "name": "Colombia",
+          "code": "COL",
+          "best": 1.46,
+          "median": 1.41,
+          "samples": 51
+        },
+        "draw": {
+          "best": 5.1,
+          "median": 4.5,
+          "samples": 51
+        },
+        "bookmakerCount": 51
+      },
+      {
+        "id": "66ebb9e3f949caded535d97ce686ca09",
+        "commenceTime": "2026-06-18T16:00:00Z",
+        "home": {
+          "name": "Czech Republic",
+          "code": "CZE",
+          "best": 2.15,
+          "median": 2.06,
+          "samples": 17
+        },
+        "away": {
+          "name": "South Africa",
+          "code": "RSA",
+          "best": 3.94,
+          "median": 3.9,
+          "samples": 17
+        },
+        "draw": {
+          "best": 3.24,
+          "median": 3.05,
+          "samples": 17
+        },
+        "bookmakerCount": 17
+      },
+      {
+        "id": "289bc2e9f5adad8ae4d9a75a7c5461ad",
+        "commenceTime": "2026-06-18T19:00:00Z",
+        "home": {
+          "name": "Switzerland",
+          "code": "SUI",
+          "best": 1.73,
+          "median": 1.64,
+          "samples": 31
+        },
+        "away": {
+          "name": "Bosnia & Herzegovina",
+          "code": "BIH",
+          "best": 5.44,
+          "median": 5.3,
+          "samples": 31
+        },
+        "draw": {
+          "best": 4.2,
+          "median": 3.65,
+          "samples": 31
+        },
+        "bookmakerCount": 31
+      },
+      {
+        "id": "fa9502285b257b03e62968d50d9229fc",
+        "commenceTime": "2026-06-18T22:00:00Z",
+        "home": {
+          "name": "Canada",
+          "code": "CAN",
+          "best": 1.66,
+          "median": 1.6,
+          "samples": 31
+        },
+        "away": {
+          "name": "Qatar",
+          "code": "QAT",
+          "best": 6.05,
+          "median": 5.8,
+          "samples": 31
+        },
+        "draw": {
+          "best": 4,
+          "median": 3.7,
+          "samples": 31
+        },
+        "bookmakerCount": 31
+      },
+      {
+        "id": "0f2aeae6ac8e77223848d23a4ca86b0d",
+        "commenceTime": "2026-06-19T01:00:00Z",
+        "home": {
+          "name": "Mexico",
+          "code": "MEX",
+          "best": 1.98,
+          "median": 1.93,
+          "samples": 30
+        },
+        "away": {
+          "name": "South Korea",
+          "code": "KOR",
+          "best": 4.31,
+          "median": 4.2,
+          "samples": 30
+        },
+        "draw": {
+          "best": 3.6,
+          "median": 3.2,
+          "samples": 30
+        },
+        "bookmakerCount": 30
+      },
+      {
+        "id": "065b3573e875f8d23803357f73e5b99e",
+        "commenceTime": "2026-06-19T19:00:00Z",
+        "home": {
+          "name": "USA",
+          "code": "USA",
+          "best": 1.84,
+          "median": 1.74,
+          "samples": 27
+        },
+        "away": {
+          "name": "Australia",
+          "code": "AUS",
+          "best": 6,
+          "median": 4.9,
+          "samples": 27
+        },
+        "draw": {
+          "best": 4.25,
+          "median": 3.45,
+          "samples": 27
+        },
+        "bookmakerCount": 27
+      },
+      {
+        "id": "4cd769aa7bae0ad9762bd69b80ef2903",
+        "commenceTime": "2026-06-19T22:00:00Z",
+        "home": {
+          "name": "Scotland",
+          "code": "SCO",
+          "best": 3.98,
+          "median": 3.65,
+          "samples": 18
+        },
+        "away": {
+          "name": "Morocco",
+          "code": "MAR",
+          "best": 2.11,
+          "median": 2.08,
+          "samples": 18
+        },
+        "draw": {
+          "best": 3.35,
+          "median": 3.15,
+          "samples": 18
+        },
+        "bookmakerCount": 18
+      },
+      {
+        "id": "ef0f74a991d3e35798ae5af77667bce1",
+        "commenceTime": "2026-06-20T00:30:00Z",
+        "home": {
+          "name": "Brazil",
+          "code": "BRA",
+          "best": 1.07,
+          "median": 1.03,
+          "samples": 17
+        },
+        "away": {
+          "name": "Haiti",
+          "code": "HAI",
+          "best": 46,
+          "median": 41,
+          "samples": 17
+        },
+        "draw": {
+          "best": 13.75,
+          "median": 13,
+          "samples": 17
+        },
+        "bookmakerCount": 17
+      },
+      {
+        "id": "f955d4b3395ce6e3b5ac1031ca52ca4e",
+        "commenceTime": "2026-06-20T03:00:00Z",
+        "home": {
+          "name": "Turkey",
+          "code": "TUR",
+          "best": 2.28,
+          "median": 2.28,
+          "samples": 15
+        },
+        "away": {
+          "name": "Paraguay",
+          "code": "PAR",
+          "best": 4.72,
+          "median": 3.35,
+          "samples": 15
+        },
+        "draw": {
+          "best": 3.83,
+          "median": 3.05,
+          "samples": 15
+        },
+        "bookmakerCount": 15
+      },
+      {
+        "id": "4f0c518545b0096c68326daf25bffc1e",
+        "commenceTime": "2026-06-20T17:00:00Z",
+        "home": {
+          "name": "Netherlands",
+          "code": "NED",
+          "best": 1.79,
+          "median": 1.71,
+          "samples": 30
+        },
+        "away": {
+          "name": "Sweden",
+          "code": "SWE",
+          "best": 4.75,
+          "median": 4.6,
+          "samples": 30
+        },
+        "draw": {
+          "best": 4,
+          "median": 3.75,
+          "samples": 30
+        },
+        "bookmakerCount": 30
+      },
+      {
+        "id": "f1ab0f69832972a329243522ceaa7804",
+        "commenceTime": "2026-06-20T20:00:00Z",
+        "home": {
+          "name": "Germany",
+          "code": "GER",
+          "best": 1.62,
+          "median": 1.51,
+          "samples": 29
+        },
+        "away": {
+          "name": "Ivory Coast",
+          "code": "CIV",
+          "best": 6,
+          "median": 5.8,
+          "samples": 29
+        },
+        "draw": {
+          "best": 4.4,
+          "median": 4.2,
+          "samples": 29
+        },
+        "bookmakerCount": 29
+      },
+      {
+        "id": "681895f294b670b4c7b14495dfb583bc",
+        "commenceTime": "2026-06-21T00:00:00Z",
+        "home": {
+          "name": "Ecuador",
+          "code": "ECU",
+          "best": 1.27,
+          "median": 1.22,
+          "samples": 31
+        },
+        "away": {
+          "name": "Curaçao",
+          "code": "CUR",
+          "best": 18,
+          "median": 12,
+          "samples": 31
+        },
+        "draw": {
+          "best": 6.25,
+          "median": 6,
+          "samples": 31
+        },
+        "bookmakerCount": 31
+      },
+      {
+        "id": "dfc5202cf1b8ae002cf952cd04f235b9",
+        "commenceTime": "2026-06-21T04:00:00Z",
+        "home": {
+          "name": "Tunisia",
+          "code": "TUN",
+          "best": 5.25,
+          "median": 4.6,
+          "samples": 30
+        },
+        "away": {
+          "name": "Japan",
+          "code": "JPN",
+          "best": 1.89,
+          "median": 1.83,
+          "samples": 30
+        },
+        "draw": {
+          "best": 3.6,
+          "median": 3.3,
+          "samples": 30
+        },
+        "bookmakerCount": 30
+      },
+      {
+        "id": "73529a242e319a86bf3d00ddb4accc37",
+        "commenceTime": "2026-06-21T16:00:00Z",
+        "home": {
+          "name": "Spain",
+          "code": "ESP",
+          "best": 1.18,
+          "median": 1.13,
+          "samples": 30
+        },
+        "away": {
+          "name": "Saudi Arabia",
+          "code": "KSA",
+          "best": 22.5,
+          "median": 19.88,
+          "samples": 30
+        },
+        "draw": {
+          "best": 8,
+          "median": 7.5,
+          "samples": 30
+        },
+        "bookmakerCount": 30
+      },
+      {
+        "id": "852a3abe6d46820720febc0fedebff9a",
+        "commenceTime": "2026-06-21T22:00:00Z",
+        "home": {
+          "name": "Uruguay",
+          "code": "URU",
+          "best": 1.5,
+          "median": 1.44,
+          "samples": 30
+        },
+        "away": {
+          "name": "Cape Verde",
+          "code": "CPV",
+          "best": 7.5,
+          "median": 6.75,
+          "samples": 30
+        },
+        "draw": {
+          "best": 4.8,
+          "median": 4.4,
+          "samples": 30
+        },
+        "bookmakerCount": 30
+      },
+      {
+        "id": "c1ec9a65f4b4cf74477b368a7d6282de",
+        "commenceTime": "2026-06-22T01:00:00Z",
+        "home": {
+          "name": "New Zealand",
+          "code": "NZL",
+          "best": 5.25,
+          "median": 4.8,
+          "samples": 30
+        },
+        "away": {
+          "name": "Egypt",
+          "code": "EGY",
+          "best": 1.76,
+          "median": 1.73,
+          "samples": 30
+        },
+        "draw": {
+          "best": 3.78,
+          "median": 3.5,
+          "samples": 30
+        },
+        "bookmakerCount": 30
+      },
+      {
+        "id": "be6c63f416c67bca1300a98f5b89c3af",
+        "commenceTime": "2026-06-22T17:00:00Z",
+        "home": {
+          "name": "Argentina",
+          "code": "ARG",
+          "best": 1.64,
+          "median": 1.64,
+          "samples": 29
+        },
+        "away": {
+          "name": "Austria",
+          "code": "AUT",
+          "best": 6.38,
+          "median": 5.3,
+          "samples": 29
+        },
+        "draw": {
+          "best": 4.05,
+          "median": 3.65,
+          "samples": 29
+        },
+        "bookmakerCount": 29
+      },
+      {
+        "id": "7ad7a0ce2ef2618bb59b066da5642f70",
+        "commenceTime": "2026-06-22T21:00:00Z",
+        "home": {
+          "name": "France",
+          "code": "FRA",
+          "best": 1.17,
+          "median": 1.12,
+          "samples": 17
+        },
+        "away": {
+          "name": "Iraq",
+          "code": "IRQ",
+          "best": 23,
+          "median": 23,
+          "samples": 17
+        },
+        "draw": {
+          "best": 8.4,
+          "median": 7.5,
+          "samples": 17
+        },
+        "bookmakerCount": 17
+      },
+      {
+        "id": "3f48473742ca0fd2a85930554720c75e",
+        "commenceTime": "2026-06-23T00:00:00Z",
+        "home": {
+          "name": "Norway",
+          "code": "NOR",
+          "best": 2.17,
+          "median": 2.12,
+          "samples": 30
+        },
+        "away": {
+          "name": "Senegal",
+          "code": "SEN",
+          "best": 3.6,
+          "median": 3.5,
+          "samples": 30
+        },
+        "draw": {
+          "best": 3.6,
+          "median": 3.2,
+          "samples": 30
+        },
+        "bookmakerCount": 30
+      },
+      {
+        "id": "fd8533b650e655030f6a7946f8795db2",
+        "commenceTime": "2026-06-23T03:00:00Z",
+        "home": {
+          "name": "Jordan",
+          "code": "JOR",
+          "best": 6.75,
+          "median": 6.35,
+          "samples": 31
+        },
+        "away": {
+          "name": "Algeria",
+          "code": "ALG",
+          "best": 1.66,
+          "median": 1.57,
+          "samples": 31
+        },
+        "draw": {
+          "best": 4.2,
+          "median": 3.45,
+          "samples": 31
+        },
+        "bookmakerCount": 31
+      },
+      {
+        "id": "8ba93d190f1f934e33862a97a6353a6e",
+        "commenceTime": "2026-06-23T17:00:00Z",
+        "home": {
+          "name": "Portugal",
+          "code": "POR",
+          "best": 1.25,
+          "median": 1.17,
+          "samples": 17
+        },
+        "away": {
+          "name": "Uzbekistan",
+          "code": "UZB",
+          "best": 15,
+          "median": 15,
+          "samples": 17
+        },
+        "draw": {
+          "best": 6.75,
+          "median": 6.75,
+          "samples": 17
+        },
+        "bookmakerCount": 17
+      },
+      {
+        "id": "2f49dd8deae3079dc4eb2d634d18a99c",
+        "commenceTime": "2026-06-23T20:00:00Z",
+        "home": {
+          "name": "England",
+          "code": "ENG",
+          "best": 1.4,
+          "median": 1.34,
+          "samples": 31
+        },
+        "away": {
+          "name": "Ghana",
+          "code": "GHA",
+          "best": 10,
+          "median": 8.5,
+          "samples": 31
+        },
+        "draw": {
+          "best": 5.25,
+          "median": 4.8,
+          "samples": 31
+        },
+        "bookmakerCount": 31
+      },
+      {
+        "id": "c1bc8c26480cd42b89a0de5329581314",
+        "commenceTime": "2026-06-23T23:00:00Z",
+        "home": {
+          "name": "Panama",
+          "code": "PAN",
+          "best": 8.25,
+          "median": 8,
+          "samples": 31
+        },
+        "away": {
+          "name": "Croatia",
+          "code": "CRO",
+          "best": 1.47,
+          "median": 1.42,
+          "samples": 31
+        },
+        "draw": {
+          "best": 4.75,
+          "median": 4.1,
+          "samples": 31
+        },
+        "bookmakerCount": 31
+      },
+      {
+        "id": "68bfc965eb267508e04d8e8d75c1a0ae",
+        "commenceTime": "2026-06-24T02:00:00Z",
+        "home": {
+          "name": "Colombia",
+          "code": "COL",
+          "best": 1.53,
+          "median": 1.53,
+          "samples": 29
+        },
+        "away": {
+          "name": "DR Congo",
+          "code": "COD",
+          "best": 7.75,
+          "median": 6.25,
+          "samples": 29
+        },
+        "draw": {
+          "best": 4.4,
+          "median": 3.9,
+          "samples": 29
+        },
+        "bookmakerCount": 29
+      },
+      {
+        "id": "885ba95805db310a7bcc3fb1a7a6dd28",
+        "commenceTime": "2026-06-24T22:00:00Z",
+        "home": {
+          "name": "Scotland",
+          "code": "SCO",
+          "best": 8.2,
+          "median": 7.5,
+          "samples": 17
+        },
+        "away": {
+          "name": "Brazil",
+          "code": "BRA",
+          "best": 1.4,
+          "median": 1.4,
+          "samples": 17
+        },
+        "draw": {
+          "best": 5.1,
+          "median": 4.7,
+          "samples": 17
+        },
+        "bookmakerCount": 17
+      },
+      {
+        "id": "67ae5751c401a98409b8566ae4897069",
+        "commenceTime": "2026-06-27T23:30:00Z",
+        "home": {
+          "name": "Colombia",
+          "code": "COL",
+          "best": 3.12,
+          "median": 3,
+          "samples": 16
+        },
+        "away": {
+          "name": "Portugal",
+          "code": "POR",
+          "best": 2.33,
+          "median": 2.25,
+          "samples": 16
+        },
+        "draw": {
+          "best": 3.54,
+          "median": 3.1,
+          "samples": 16
+        },
+        "bookmakerCount": 16
+      }
+    ],
+    "asOf": "2026-05-07T14:28:33.950Z"
+  }
+}

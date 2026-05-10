@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mundial '26 — Bettors Companion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Roboto+Slab:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <style>
+    html, body { margin: 0; padding: 0; background: #d8cfb9; }
+    body { font-family: "Roboto Slab", Georgia, serif; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+    /* Paper grain — applied via opacity var --grain */
+    .om-paper-grain::before {
+      content: '';
+      position: absolute; inset: 0; pointer-events: none;
+      opacity: var(--grain, 0.5);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.13 0 0 0 0 0.10 0 0 0 0 0.06 0 0 0 0.42 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+      z-index: 1;
+    }
+    .om-paper-grain > * { position: relative; z-index: 2; }
+    /* Scanlines for broadcast theme */
+    .om-paper-grain::after {
+      content: '';
+      position: absolute; inset: 0; pointer-events: none;
+      opacity: var(--scanlines, 0);
+      background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.35) 0 1px, transparent 1px 3px);
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="data.jsx"></script>
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="app-desktop.jsx"></script>
+  <script type="text/babel" src="app-views.jsx"></script>
+  <script type="text/babel" src="app-team-news.jsx"></script>
+  <script type="text/babel" src="app-mobile.jsx"></script>
+
+  <script type="text/babel">
+    const { useState, useEffect, useMemo } = React;
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "theme": "panini78",
+      "oddsFormat": "decimal",
+      "showGrain": true
+    }/*EDITMODE-END*/;
+
+    function ThemedFrame({ children, scrollable = true }) {
+      return (
+        <div className="om-paper-grain" style={{
+          background: 'var(--bg)', position: 'relative',
+          width: '100%', height: '100%',
+          overflow: scrollable ? 'auto' : 'hidden',
+          fontFamily: 'var(--font-serif)', color: 'var(--ink)',
+        }}>
+          {children}
+        </div>
+      );
+    }
+
+    function FullDesktopApp() {
+      const [tab, setTab] = useState('DASHBOARD');
+      const [team, setTeam] = useState('BRA');
+      const [picks, setPicks] = useState({});
+      const [oddsFormat, setOddsFormat] = useState('decimal');
+
+      return (
+        <div style={{ minHeight: 900 }}>
+          <window.Masthead tab={tab} setTab={setTab} oddsFormat={oddsFormat} />
+          {tab === 'DASHBOARD' && <window.DashboardView oddsFormat={oddsFormat} picks={picks} setPicks={setPicks} setTab={setTab} setTeam={setTeam} />}
+          {tab === 'GROUPS' && <window.GroupsView setTeam={setTeam} setTab={setTab} />}
+          {tab === 'BRACKET' && <window.BracketView />}
+          {tab === 'TEAMS' && <window.TeamView team={team} setTeam={setTeam} />}
+          {tab === 'NEWS' && <window.NewsView />}
+
+          {/* Footer plate */}
+          <footer style={{
+            borderTop: '3px double var(--rule)', marginTop: 30,
+            padding: '14px 24px', background: 'var(--paper2)',
+            display: 'flex', justifyContent: 'space-between',
+            fontFamily: 'var(--font-mono)', fontSize: 10,
+            color: 'var(--ink2)', letterSpacing: '0.12em',
+          }}>
+            <span>© MUNDIAL COMPANION · NOT AFFILIATED WITH ANY GOVERNING BODY</span>
+            <span>ODDS PROVIDED FOR INFORMATIONAL PURPOSES · BET RESPONSIBLY</span>
+            <span>v 0.1 · ’26 EDITION</span>
+          </footer>
+        </div>
+      );
+    }
+
+    // Apply theme vars to a DOM node
+    function applyTheme(node, themeKey, showGrain) {
+      const t = window.THEMES[themeKey] || window.THEMES.panini78;
+      Object.entries(t).forEach(([k, v]) => {
+        if (k.startsWith('--')) node.style.setProperty(k, v);
+      });
+      if (!showGrain) {
+        node.style.setProperty('--grain', '0');
+        node.style.setProperty('--scanlines', '0');
+      }
+    }
+
+    function App() {
+      const [t, setTweak] = window.useTweaks(TWEAK_DEFAULTS);
+      const desktopRef = React.useRef(null);
+      const mobileRef = React.useRef(null);
+
+      useEffect(() => {
+        if (desktopRef.current) applyTheme(desktopRef.current, t.theme, t.showGrain);
+        if (mobileRef.current) applyTheme(mobileRef.current, t.theme, t.showGrain);
+      }, [t.theme, t.showGrain]);
+
+      return (
+        <window.DesignCanvas>
+          <window.DCSection id="desktop" title="Desktop · Bettors Companion" subtitle="Full app — dashboard, groups, bracket, team profile (with tabs), news feed">
+            <window.DCArtboard id="dt-app-old" label="A · MUNDIAL ’26 — DESKTOP" width={1320} height={1700}>
+              <div ref={desktopRef} style={{ width: '100%', height: '100%' }}>
+                <ThemedFrame>
+                  <FullDesktopApp />
+                </ThemedFrame>
+              </div>
+            </window.DCArtboard>
+          </window.DCSection>
+
+          <window.DCSection id="mobile-old" title="Mobile companion" subtitle="iPhone view — quick check on live odds, groups, team & wire">
+            <window.DCArtboard id="mb-today" label="B · MOBILE — TODAY / LIVE" width={440} height={900}>
+              <window.IOSDevice width={402} height={874}>
+                <div ref={mobileRef} style={{ width: '100%', height: '100%' }}>
+                  <ThemedFrame scrollable={false}>
+                    <window.MobileApp />
+                  </ThemedFrame>
+                </div>
+              </window.IOSDevice>
+            </window.DCArtboard>
+          </window.DCSection>
+
+          <window.TweaksPanel>
+            <window.TweakSection label="Retro era" />
+            <window.TweakRadio
+              label="Theme"
+              value={t.theme}
+              options={[
+                { value: 'panini78', label: "Panini ’78" },
+                { value: 'broadcast94', label: "Broadcast ’94" },
+                { value: 'newsprint', label: "Newsprint" },
+              ]}
+              onChange={(v) => setTweak('theme', v)}
+            />
+            <window.TweakSection label="Display" />
+            <window.TweakSelect
+              label="Odds format"
+              value={t.oddsFormat}
+              options={[
+                { value: 'decimal', label: 'Decimal (1.85)' },
+                { value: 'fractional', label: 'Fractional (17/20)' },
+                { value: 'american', label: 'American (-118)' },
+              ]}
+              onChange={(v) => setTweak('oddsFormat', v)}
+            />
+            <window.TweakToggle
+              label="Paper grain / texture"
+              value={t.showGrain}
+              onChange={(v) => setTweak('showGrain', v)}
+            />
+          </window.TweaksPanel>
+        </window.DesignCanvas>
+      );
+    }
+
+    // Pass odds format down via a small bridge — we re-mount the desktop with key when format changes.
+    // Simpler: re-read t.oddsFormat from a custom hook context. Going minimal here:
+    function Root() {
+      const [t, setTweak] = window.useTweaks(TWEAK_DEFAULTS);
+      const desktopRef = React.useRef(null);
+      const mobileRef = React.useRef(null);
+
+      useEffect(() => {
+        if (desktopRef.current) applyTheme(desktopRef.current, t.theme, t.showGrain);
+        if (mobileRef.current) applyTheme(mobileRef.current, t.theme, t.showGrain);
+      }, [t.theme, t.showGrain]);
+
+      const [tab, setTab] = useState('DASHBOARD');
+      const [team, setTeam] = useState('BRA');
+      const [picks, setPicks] = useState({});
+
+      return (
+        <window.DesignCanvas>
+          <window.DCSection id="desktop" title="Desktop · Bettors Companion" subtitle="Dashboard, groups, bracket, team profile (Squad/Form/News tabs), news feed">
+            <window.DCArtboard id="dt-app" label="A · MUNDIAL ’26 — DESKTOP" width={1320} height={1900}>
+              <div ref={desktopRef} style={{ width: '100%', height: '100%' }}>
+                <ThemedFrame>
+                  <window.Masthead tab={tab} setTab={setTab} oddsFormat={t.oddsFormat} />
+                  {tab === 'DASHBOARD' && <window.DashboardView oddsFormat={t.oddsFormat} picks={picks} setPicks={setPicks} setTab={setTab} setTeam={setTeam} />}
+                  {tab === 'GROUPS' && <window.GroupsView setTeam={setTeam} setTab={setTab} />}
+                  {tab === 'BRACKET' && <window.BracketView />}
+                  {tab === 'TEAMS' && <window.TeamView team={team} setTeam={setTeam} />}
+                  {tab === 'NEWS' && <window.NewsView />}
+                  <footer style={{
+                    borderTop: '3px double var(--rule)', marginTop: 30,
+                    padding: '14px 24px', background: 'var(--paper2)',
+                    display: 'flex', justifyContent: 'space-between',
+                    fontFamily: 'var(--font-mono)', fontSize: 10,
+                    color: 'var(--ink2)', letterSpacing: '0.12em',
+                  }}>
+                    <span>© MUNDIAL COMPANION · UNAFFILIATED</span>
+                    <span>FOR INFORMATIONAL USE · BET RESPONSIBLY · 21+</span>
+                    <span>v 0.1 · ’26 EDITION</span>
+                  </footer>
+                </ThemedFrame>
+              </div>
+            </window.DCArtboard>
+          </window.DCSection>
+
+          <window.DCSection id="mobile" title="Mobile companion" subtitle="iPhone view — same data, in-pocket. Tap tabs at the bottom.">
+            <window.DCArtboard id="mb-app" label="B · MOBILE COMPANION" width={440} height={900}>
+              <window.IOSDevice width={402} height={874}>
+                <div ref={mobileRef} style={{ width: '100%', height: '100%' }}>
+                  <ThemedFrame scrollable={false}>
+                    <window.MobileApp />
+                  </ThemedFrame>
+                </div>
+              </window.IOSDevice>
+            </window.DCArtboard>
+          </window.DCSection>
+
+          <window.TweaksPanel>
+            <window.TweakSection label="Retro era" />
+            <window.TweakRadio
+              label="Theme"
+              value={t.theme}
+              options={[
+                { value: 'panini78', label: "Panini ’78" },
+                { value: 'broadcast94', label: "Broadcast ’94" },
+                { value: 'newsprint', label: "Newsprint" },
+              ]}
+              onChange={(v) => setTweak('theme', v)}
+            />
+            <window.TweakSection label="Display" />
+            <window.TweakSelect
+              label="Odds format"
+              value={t.oddsFormat}
+              options={[
+                { value: 'decimal', label: 'Decimal (1.85)' },
+                { value: 'fractional', label: 'Fractional (17/20)' },
+                { value: 'american', label: 'American (-118)' },
+              ]}
+              onChange={(v) => setTweak('oddsFormat', v)}
+            />
+            <window.TweakToggle
+              label="Paper grain / scanlines"
+              value={t.showGrain}
+              onChange={(v) => setTweak('showGrain', v)}
+            />
+          </window.TweaksPanel>
+        </window.DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<Root />);
+  </script>
+</body>
+</html>

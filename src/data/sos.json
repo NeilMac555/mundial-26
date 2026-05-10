@@ -1,0 +1,485 @@
+{
+ "asOf": "2026-05-02",
+ "rows": [
+  {
+   "team": "Paraguay",
+   "confederation": "CONMEBOL",
+   "sosRank": 1,
+   "gamesPlayed": 18,
+   "teamElo": 1833,
+   "avgOppElo": 1853,
+   "sosScore": 0.146,
+   "difficulty": "Extremely difficult"
+  },
+  {
+   "team": "Uruguay",
+   "confederation": "CONMEBOL",
+   "sosRank": 2,
+   "gamesPlayed": 18,
+   "teamElo": 1892,
+   "avgOppElo": 1846,
+   "sosScore": 0.149,
+   "difficulty": "Extremely difficult"
+  },
+  {
+   "team": "Ecuador",
+   "confederation": "CONMEBOL",
+   "sosRank": 3,
+   "gamesPlayed": 18,
+   "teamElo": 1933,
+   "avgOppElo": 1842,
+   "sosScore": 0.151,
+   "difficulty": "Extremely difficult"
+  },
+  {
+   "team": "Colombia",
+   "confederation": "CONMEBOL",
+   "sosRank": 4,
+   "gamesPlayed": 18,
+   "teamElo": 1975,
+   "avgOppElo": 1837,
+   "sosScore": 0.153,
+   "difficulty": "Extremely difficult"
+  },
+  {
+   "team": "Brazil",
+   "confederation": "CONMEBOL",
+   "sosRank": 5,
+   "gamesPlayed": 18,
+   "teamElo": 1984,
+   "avgOppElo": 1836,
+   "sosScore": 0.153,
+   "difficulty": "Extremely difficult"
+  },
+  {
+   "team": "Argentina",
+   "confederation": "CONMEBOL",
+   "sosRank": 6,
+   "gamesPlayed": 18,
+   "teamElo": 2113,
+   "avgOppElo": 1822,
+   "sosScore": 0.157,
+   "difficulty": "Extremely difficult"
+  },
+  {
+   "team": "Sweden",
+   "confederation": "UEFA",
+   "sosRank": 7,
+   "gamesPlayed": 8,
+   "teamElo": 1719,
+   "avgOppElo": 1763,
+   "sosScore": 0.189,
+   "difficulty": "Extremely difficult"
+  },
+  {
+   "team": "Switzerland",
+   "confederation": "UEFA",
+   "sosRank": 8,
+   "gamesPlayed": 6,
+   "teamElo": 1889,
+   "avgOppElo": 1711,
+   "sosScore": 0.229,
+   "difficulty": "Very difficult"
+  },
+  {
+   "team": "Scotland",
+   "confederation": "UEFA",
+   "sosRank": 9,
+   "gamesPlayed": 6,
+   "teamElo": 1767,
+   "avgOppElo": 1712,
+   "sosScore": 0.259,
+   "difficulty": "Very difficult"
+  },
+  {
+   "team": "Türkiye",
+   "confederation": "UEFA",
+   "sosRank": 10,
+   "gamesPlayed": 8,
+   "teamElo": 1902,
+   "avgOppElo": 1742,
+   "sosScore": 0.281,
+   "difficulty": "Very difficult"
+  },
+  {
+   "team": "Spain",
+   "confederation": "UEFA",
+   "sosRank": 11,
+   "gamesPlayed": 6,
+   "teamElo": 2165,
+   "avgOppElo": 1677,
+   "sosScore": 0.306,
+   "difficulty": "Difficult"
+  },
+  {
+   "team": "Portugal",
+   "confederation": "UEFA",
+   "sosRank": 12,
+   "gamesPlayed": 6,
+   "teamElo": 1984,
+   "avgOppElo": 1591,
+   "sosScore": 0.385,
+   "difficulty": "Difficult"
+  },
+  {
+   "team": "Germany",
+   "confederation": "UEFA",
+   "sosRank": 13,
+   "gamesPlayed": 6,
+   "teamElo": 1923,
+   "avgOppElo": 1570,
+   "sosScore": 0.407,
+   "difficulty": "Above average"
+  },
+  {
+   "team": "France",
+   "confederation": "UEFA",
+   "sosRank": 14,
+   "gamesPlayed": 6,
+   "teamElo": 2082,
+   "avgOppElo": 1559,
+   "sosScore": 0.431,
+   "difficulty": "Above average"
+  },
+  {
+   "team": "Bosnia & Herzegovina",
+   "confederation": "UEFA",
+   "sosRank": 15,
+   "gamesPlayed": 10,
+   "teamElo": 1610,
+   "avgOppElo": 1474,
+   "sosScore": 0.475,
+   "difficulty": "Above average"
+  },
+  {
+   "team": "Norway",
+   "confederation": "UEFA",
+   "sosRank": 16,
+   "gamesPlayed": 8,
+   "teamElo": 1912,
+   "avgOppElo": 1523,
+   "sosScore": 0.486,
+   "difficulty": "Above average"
+  },
+  {
+   "team": "Czech Republic",
+   "confederation": "UEFA",
+   "sosRank": 17,
+   "gamesPlayed": 10,
+   "teamElo": 1726,
+   "avgOppElo": 1507,
+   "sosScore": 0.491,
+   "difficulty": "Above average"
+  },
+  {
+   "team": "Saudi Arabia",
+   "confederation": "AFC",
+   "sosRank": 18,
+   "gamesPlayed": 18,
+   "teamElo": 1568,
+   "avgOppElo": 1457,
+   "sosScore": 0.528,
+   "difficulty": "Average"
+  },
+  {
+   "team": "England",
+   "confederation": "UEFA",
+   "sosRank": 19,
+   "gamesPlayed": 8,
+   "teamElo": 2020,
+   "avgOppElo": 1448,
+   "sosScore": 0.539,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Iraq",
+   "confederation": "AFC",
+   "sosRank": 20,
+   "gamesPlayed": 21,
+   "teamElo": 1607,
+   "avgOppElo": 1466,
+   "sosScore": 0.542,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Belgium",
+   "confederation": "UEFA",
+   "sosRank": 21,
+   "gamesPlayed": 8,
+   "teamElo": 1866,
+   "avgOppElo": 1405,
+   "sosScore": 0.546,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Netherlands",
+   "confederation": "UEFA",
+   "sosRank": 22,
+   "gamesPlayed": 8,
+   "teamElo": 1961,
+   "avgOppElo": 1450,
+   "sosScore": 0.56,
+   "difficulty": "Average"
+  },
+  {
+   "team": "DR Congo",
+   "confederation": "CAF",
+   "sosRank": 23,
+   "gamesPlayed": 13,
+   "teamElo": 1655,
+   "avgOppElo": 1455,
+   "sosScore": 0.56,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Jordan",
+   "confederation": "AFC",
+   "sosRank": 24,
+   "gamesPlayed": 16,
+   "teamElo": 1690,
+   "avgOppElo": 1414,
+   "sosScore": 0.561,
+   "difficulty": "Average"
+  },
+  {
+   "team": "South Korea",
+   "confederation": "AFC",
+   "sosRank": 25,
+   "gamesPlayed": 16,
+   "teamElo": 1752,
+   "avgOppElo": 1440,
+   "sosScore": 0.57,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Uzbekistan",
+   "confederation": "AFC",
+   "sosRank": 26,
+   "gamesPlayed": 16,
+   "teamElo": 1727,
+   "avgOppElo": 1435,
+   "sosScore": 0.575,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Japan",
+   "confederation": "AFC",
+   "sosRank": 27,
+   "gamesPlayed": 16,
+   "teamElo": 1904,
+   "avgOppElo": 1421,
+   "sosScore": 0.582,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Iran",
+   "confederation": "AFC",
+   "sosRank": 28,
+   "gamesPlayed": 16,
+   "teamElo": 1760,
+   "avgOppElo": 1427,
+   "sosScore": 0.582,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Australia",
+   "confederation": "AFC",
+   "sosRank": 29,
+   "gamesPlayed": 16,
+   "teamElo": 1783,
+   "avgOppElo": 1422,
+   "sosScore": 0.584,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Qatar",
+   "confederation": "AFC",
+   "sosRank": 30,
+   "gamesPlayed": 18,
+   "teamElo": 1425,
+   "avgOppElo": 1409,
+   "sosScore": 0.591,
+   "difficulty": "Average"
+  },
+  {
+   "team": "Austria",
+   "confederation": "UEFA",
+   "sosRank": 31,
+   "gamesPlayed": 8,
+   "teamElo": 1827,
+   "avgOppElo": 1344,
+   "sosScore": 0.602,
+   "difficulty": "Below average"
+  },
+  {
+   "team": "Croatia",
+   "confederation": "UEFA",
+   "sosRank": 32,
+   "gamesPlayed": 8,
+   "teamElo": 1930,
+   "avgOppElo": 1387,
+   "sosScore": 0.603,
+   "difficulty": "Below average"
+  },
+  {
+   "team": "South Africa",
+   "confederation": "CAF",
+   "sosRank": 33,
+   "gamesPlayed": 10,
+   "teamElo": 1524,
+   "avgOppElo": 1419,
+   "sosScore": 0.607,
+   "difficulty": "Below average"
+  },
+  {
+   "team": "Cape Verde",
+   "confederation": "CAF",
+   "sosRank": 34,
+   "gamesPlayed": 10,
+   "teamElo": 1549,
+   "avgOppElo": 1360,
+   "sosScore": 0.639,
+   "difficulty": "Below average"
+  },
+  {
+   "team": "Haiti",
+   "confederation": "CONCACAF",
+   "sosRank": 35,
+   "gamesPlayed": 10,
+   "teamElo": 1532,
+   "avgOppElo": 1334,
+   "sosScore": 0.64,
+   "difficulty": "Below average"
+  },
+  {
+   "team": "Senegal",
+   "confederation": "CAF",
+   "sosRank": 36,
+   "gamesPlayed": 10,
+   "teamElo": 1879,
+   "avgOppElo": 1357,
+   "sosScore": 0.668,
+   "difficulty": "Below average"
+  },
+  {
+   "team": "Panama",
+   "confederation": "CONCACAF",
+   "sosRank": 37,
+   "gamesPlayed": 10,
+   "teamElo": 1737,
+   "avgOppElo": 1324,
+   "sosScore": 0.696,
+   "difficulty": "Below average"
+  },
+  {
+   "team": "Algeria",
+   "confederation": "CAF",
+   "sosRank": 38,
+   "gamesPlayed": 10,
+   "teamElo": 1743,
+   "avgOppElo": 1296,
+   "sosScore": 0.723,
+   "difficulty": "Easy"
+  },
+  {
+   "team": "Ghana",
+   "confederation": "CAF",
+   "sosRank": 39,
+   "gamesPlayed": 10,
+   "teamElo": 1505,
+   "avgOppElo": 1243,
+   "sosScore": 0.724,
+   "difficulty": "Easy"
+  },
+  {
+   "team": "Morocco",
+   "confederation": "CAF",
+   "sosRank": 40,
+   "gamesPlayed": 8,
+   "teamElo": 1821,
+   "avgOppElo": 1321,
+   "sosScore": 0.729,
+   "difficulty": "Easy"
+  },
+  {
+   "team": "Curaçao",
+   "confederation": "CONCACAF",
+   "sosRank": 41,
+   "gamesPlayed": 10,
+   "teamElo": 1436,
+   "avgOppElo": 1250,
+   "sosScore": 0.732,
+   "difficulty": "Easy"
+  },
+  {
+   "team": "Ivory Coast",
+   "confederation": "CAF",
+   "sosRank": 42,
+   "gamesPlayed": 10,
+   "teamElo": 1676,
+   "avgOppElo": 1264,
+   "sosScore": 0.739,
+   "difficulty": "Easy"
+  },
+  {
+   "team": "Egypt",
+   "confederation": "CAF",
+   "sosRank": 43,
+   "gamesPlayed": 10,
+   "teamElo": 1689,
+   "avgOppElo": 1270,
+   "sosScore": 0.742,
+   "difficulty": "Easy"
+  },
+  {
+   "team": "Tunisia",
+   "confederation": "CAF",
+   "sosRank": 44,
+   "gamesPlayed": 10,
+   "teamElo": 1636,
+   "avgOppElo": 1186,
+   "sosScore": 0.796,
+   "difficulty": "Easy"
+  },
+  {
+   "team": "New Zealand",
+   "confederation": "OFC",
+   "sosRank": 45,
+   "gamesPlayed": 5,
+   "teamElo": 1585,
+   "avgOppElo": 1082,
+   "sosScore": 0.887,
+   "difficulty": "Very easy"
+  },
+  {
+   "team": "Canada",
+   "confederation": "CONCACAF",
+   "sosRank": null,
+   "gamesPlayed": 0,
+   "teamElo": 1784,
+   "avgOppElo": null,
+   "sosScore": null,
+   "difficulty": "Host — did not qualify"
+  },
+  {
+   "team": "Mexico",
+   "confederation": "CONCACAF",
+   "sosRank": null,
+   "gamesPlayed": 0,
+   "teamElo": 1858,
+   "avgOppElo": null,
+   "sosScore": null,
+   "difficulty": "Host — did not qualify"
+  },
+  {
+   "team": "United States",
+   "confederation": "CONCACAF",
+   "sosRank": null,
+   "gamesPlayed": 0,
+   "teamElo": 1721,
+   "avgOppElo": null,
+   "sosScore": null,
+   "difficulty": "Host — did not qualify"
+  }
+ ]
+}
