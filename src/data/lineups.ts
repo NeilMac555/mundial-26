@@ -1154,6 +1154,70 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Switzerland: {
+    nation: 'Switzerland',
+    formation: '4-2-3-1',
+    kit: { primary: '#da291c', accent: '#ffffff', outline: '#8a1813', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Embolo', pos: 'ST' },
+      ],
+      [
+        { name: 'Ndoye', pos: 'LW' },
+        { name: 'Rieder', pos: 'CAM' },
+        { name: 'Vargas', pos: 'RW' },
+      ],
+      [
+        { name: 'Xhaka', pos: 'CM' },
+        { name: 'Freuler', pos: 'CM' },
+      ],
+      [
+        { name: 'Rodríguez', pos: 'LB' },
+        { name: 'Akanji', pos: 'CB' },
+        { name: 'Schär', pos: 'CB' },
+        { name: 'Widmer', pos: 'RB' },
+      ],
+      [
+        { name: 'Kobel', pos: 'GK' },
+      ],
+    ],
+    bench: ['Sommer', 'Cömert', 'Aebischer', 'Sow', 'Zakaria', 'Itten', 'Seferović'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  'South Africa': {
+    nation: 'South Africa',
+    formation: '4-2-3-1',
+    kit: { primary: '#ffd200', accent: '#006a44', outline: '#8a7308', number: '#006a44' },
+    rows: [
+      [
+        { name: 'Foster', pos: 'ST' },
+      ],
+      [
+        { name: 'Appollis', pos: 'LW' },
+        { name: 'Mofokeng', pos: 'CAM' },
+        { name: 'Hlongwane', pos: 'RW' },
+      ],
+      [
+        { name: 'Mokoena', pos: 'CM' },
+        { name: 'Sithole', pos: 'CM' },
+      ],
+      [
+        { name: 'Modiba', pos: 'LB' },
+        { name: 'Mbokazi', pos: 'CB' },
+        { name: 'Okon', pos: 'CB' },
+        { name: 'Mudau', pos: 'RB' },
+      ],
+      [
+        { name: 'Williams', pos: 'GK' },
+      ],
+    ],
+    bench: ['Mosimane', 'Du Preez', 'Ndlovu', 'Tau', 'Maboe', 'Magubane', 'Davids'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
