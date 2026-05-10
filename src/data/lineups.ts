@@ -377,6 +377,43 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Austria: {
+    nation: 'Austria',
+    formation: '4-2-3-1',
+    kit: { primary: '#ed2939', accent: '#ffffff', outline: '#8b1820', number: '#ffffff' },
+    rows: [
+      // Lone striker
+      [
+        { name: 'Arnautović', pos: 'ST' },
+      ],
+      // Front three behind the striker
+      [
+        { name: 'Baumgartner', pos: 'LW' },
+        { name: 'Sabitzer', pos: 'CAM' },
+        { name: 'Schmid', pos: 'RW' },
+      ],
+      // Double pivot — Xaver Schlager (Leipzig CM)
+      [
+        { name: 'Seiwald', pos: 'CM' },
+        { name: 'X. Schlager', pos: 'CM' },
+      ],
+      // Back four
+      [
+        { name: 'Mwene', pos: 'LB' },
+        { name: 'Danso', pos: 'CB' },
+        { name: 'Friedl', pos: 'CB' },
+        { name: 'Laimer', pos: 'RB' },
+      ],
+      // Goalkeeper — Alexander Schlager (no relation to Xaver)
+      [
+        { name: 'A. Schlager', pos: 'GK' },
+      ],
+    ],
+    bench: ['Pentz', 'Lindner', 'Trauner', 'Posch', 'Grillitsch', 'Gregoritsch', 'Adamu'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
