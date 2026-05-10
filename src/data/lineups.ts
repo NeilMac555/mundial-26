@@ -892,6 +892,70 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  'DR Congo': {
+    nation: 'DR Congo',
+    formation: '4-2-2-2',
+    kit: { primary: '#4292d4', accent: '#fdef42', outline: '#1a5285', number: '#fff200' },
+    rows: [
+      [
+        { name: 'Bakambu', pos: 'ST' },
+        { name: 'Wissa', pos: 'ST' },
+      ],
+      [
+        { name: 'Elia', pos: 'LAM' },
+        { name: 'Mbuku', pos: 'RAM' },
+      ],
+      [
+        { name: 'Moutoussamy', pos: 'CM' },
+        { name: 'Sadiki', pos: 'CM' },
+      ],
+      [
+        { name: 'Masuaku', pos: 'LB' },
+        { name: 'Tuanzebe', pos: 'CB' },
+        { name: 'Mbemba', pos: 'CB' },
+        { name: 'Wan-Bissaka', pos: 'RB' },
+      ],
+      [
+        { name: 'Mpasi', pos: 'GK' },
+      ],
+    ],
+    bench: ['Akolo', 'Bushiri', 'Bongonda', 'Bayo', 'Mukoko', 'Lukeba', 'Brym'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Uzbekistan: {
+    nation: 'Uzbekistan',
+    formation: '3-4-2-1',
+    kit: { primary: '#ffffff', accent: '#0099b5', outline: '#1a1a1a', number: '#0099b5' },
+    rows: [
+      [
+        { name: 'Shomurodov', pos: 'ST' },
+      ],
+      [
+        { name: 'Urunov', pos: 'LAM' },
+        { name: 'Fayzullaev', pos: 'RAM' },
+      ],
+      [
+        { name: 'Nasrullayev', pos: 'LWB' },
+        { name: 'Shukurov', pos: 'CM' },
+        { name: 'Khamrobekov', pos: 'CM' },
+        { name: 'Alijonov', pos: 'RWB' },
+      ],
+      [
+        { name: 'Abdullaev', pos: 'LCB' },
+        { name: 'Ashurmatov', pos: 'CB' },
+        { name: 'Khusanov', pos: 'RCB' },
+      ],
+      [
+        { name: 'Yusupov', pos: 'GK' },
+      ],
+    ],
+    bench: ['Nematov', 'Erkinov', 'Sergeev', 'Davronov', 'Yakhshiboev', 'Abdikholikov', 'Komilov'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
