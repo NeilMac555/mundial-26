@@ -1444,6 +1444,38 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Belgium: {
+    nation: 'Belgium',
+    formation: '4-2-3-1',
+    kit: { primary: '#ed2939', accent: '#fae042', outline: '#8a1820', number: '#000000' },
+    rows: [
+      [
+        { name: 'De Ketelaere', backup: 'Lukaku', pos: 'ST' },
+      ],
+      [
+        { name: 'Doku', pos: 'LW' },
+        { name: 'De Bruyne', pos: 'CAM' },
+        { name: 'Trossard', pos: 'RW' },
+      ],
+      [
+        { name: 'Tielemans', pos: 'CM' },
+        { name: 'Onana', pos: 'CM' },
+      ],
+      [
+        { name: 'De Cuyper', pos: 'LB' },
+        { name: 'Theate', pos: 'CB' },
+        { name: 'Mechele', pos: 'CB' },
+        { name: 'Meunier', pos: 'RB' },
+      ],
+      [
+        { name: 'Courtois', pos: 'GK' },
+      ],
+    ],
+    bench: ['Sels', 'Faes', 'Castagne', 'Vanaken', 'Saelemaekers', 'Openda', 'Bakayoko'],
+    source: 'futbolfantasy.com (May 2026 best-guess) — Lukaku as backup CF per Neil',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
