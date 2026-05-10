@@ -72,6 +72,43 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Brazil: {
+    nation: 'Brazil',
+    formation: '4-2-3-1',
+    kit: { primary: '#f6d10b', accent: '#009b3a', outline: '#5a4d00', number: '#009b3a' },
+    rows: [
+      // Lone striker — Neil swap: João Pedro starter, Endrick backup
+      [
+        { name: 'João Pedro', backup: 'Endrick', pos: 'ST' },
+      ],
+      // Attacking midfield band (LW, CAM, RW)
+      [
+        { name: 'Vinicius', pos: 'LW' },
+        { name: 'Matheus Cunha', pos: 'CAM' },
+        { name: 'Raphinha', pos: 'RW' },
+      ],
+      // Double pivot
+      [
+        { name: 'Bruno Guimarães', pos: 'CM' },
+        { name: 'Casemiro', pos: 'CM' },
+      ],
+      // Back four
+      [
+        { name: 'Alex Sandro', pos: 'LB' },
+        { name: 'Gabriel M.', pos: 'CB' },
+        { name: 'Marquinhos', pos: 'CB' },
+        { name: 'Wesley', backup: 'Danilo', pos: 'RB' },
+      ],
+      // Goalkeeper
+      [
+        { name: 'Alisson', pos: 'GK' },
+      ],
+    ],
+    bench: ['Ederson', 'Militão', 'Bremer', 'Andreas Pereira', 'Lucas Paquetá', 'Rodrygo', 'Antony'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
