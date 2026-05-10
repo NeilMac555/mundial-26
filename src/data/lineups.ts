@@ -189,6 +189,46 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Germany: {
+    nation: 'Germany',
+    formation: '4-2-3-1',
+    kit: { primary: '#ffffff', accent: '#000000', outline: '#1a1a1a', number: '#000000' },
+    rows: [
+      // Lone striker — Woltemade picked over Havertz
+      [
+        { name: 'Woltemade', backup: 'Havertz', pos: 'ST' },
+      ],
+      // Wide forwards
+      [
+        { name: 'Musiala', pos: 'LW' },
+        { name: 'Sané', pos: 'RW' },
+      ],
+      // #10 between lines
+      [
+        { name: 'Wirtz', pos: 'CAM' },
+      ],
+      // Double pivot — Goretzka holds off Groß and Stiller
+      [
+        { name: 'Goretzka', backup: 'Groß / Stiller', pos: 'CM' },
+        { name: 'Pavlovic', pos: 'CM' },
+      ],
+      // Back four
+      [
+        { name: 'Raum', pos: 'LB' },
+        { name: 'Schlotterbeck', pos: 'CB' },
+        { name: 'Tah', backup: 'Rüdiger', pos: 'CB' },
+        { name: 'Kimmich', pos: 'RB' },
+      ],
+      // Goalkeeper
+      [
+        { name: 'Baumann', pos: 'GK' },
+      ],
+    ],
+    bench: ['ter Stegen', 'Kehrer', 'Anton', 'Andrich', 'Gnabry', 'Füllkrug', 'Beier'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
