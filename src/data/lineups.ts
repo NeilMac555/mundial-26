@@ -698,6 +698,70 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'ESPN lineup tool (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Japan: {
+    nation: 'Japan',
+    formation: '3-4-2-1',
+    kit: { primary: '#0a1d3a', accent: '#bc002d', outline: '#050d1c', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Ueda', pos: 'ST' },
+      ],
+      [
+        { name: 'Kamada', pos: 'LAM' },
+        { name: 'Kubo', pos: 'RAM' },
+      ],
+      [
+        { name: 'Mitoma', pos: 'LWB' },
+        { name: 'Sano', pos: 'CM' },
+        { name: 'Endo', pos: 'CM' },
+        { name: 'Doan', pos: 'RWB' },
+      ],
+      [
+        { name: 'Ito', pos: 'LCB' },
+        { name: 'Tomiyasu', pos: 'CB' },
+        { name: 'Taniguchi', pos: 'RCB' },
+      ],
+      [
+        { name: 'Suzuki', pos: 'GK' },
+      ],
+    ],
+    bench: ['D. Suzuki', 'Itakura', 'Sakai', 'Tanaka', 'Morita', 'Minamino', 'Asano'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Sweden: {
+    nation: 'Sweden',
+    formation: '3-4-2-1',
+    kit: { primary: '#fecc00', accent: '#005293', outline: '#8a7300', number: '#005293' },
+    rows: [
+      [
+        { name: 'Gyökeres', pos: 'ST' },
+      ],
+      [
+        { name: 'Isak', pos: 'LAM' },
+        { name: 'Elanga', pos: 'RAM' },
+      ],
+      [
+        { name: 'Gudmundsson', pos: 'LWB' },
+        { name: 'Ayari', pos: 'CM' },
+        { name: 'Karlström', pos: 'CM' },
+        { name: 'Svensson', pos: 'RWB' },
+      ],
+      [
+        { name: 'Lindelöf', pos: 'LCB' },
+        { name: 'Starfelt', pos: 'CB' },
+        { name: 'Hien', pos: 'RCB' },
+      ],
+      [
+        { name: 'Nordfeldt', pos: 'GK' },
+      ],
+    ],
+    bench: ['Olsen', 'Augustinsson', 'Bengtsson', 'Ekdal', 'Bergvall', 'Kulusevski', 'Forsberg'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
