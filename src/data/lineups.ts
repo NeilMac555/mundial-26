@@ -1218,6 +1218,70 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  'South Korea': {
+    nation: 'South Korea',
+    formation: '3-4-2-1',
+    kit: { primary: '#cd2e3a', accent: '#003478', outline: '#8a1c25', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Hwang Hee-chan', pos: 'ST' },
+      ],
+      [
+        { name: 'Son Heung-min', pos: 'LAM' },
+        { name: 'Lee Kang-in', pos: 'RAM' },
+      ],
+      [
+        { name: 'Lee Tae-seok', pos: 'LWB' },
+        { name: 'Hwang In-beom', pos: 'CM' },
+        { name: 'Kim Jin-gyu', pos: 'CM' },
+        { name: 'Seol Young-woo', pos: 'RWB' },
+      ],
+      [
+        { name: 'Kim Joo-sung', pos: 'LCB' },
+        { name: 'Kim Min-jae', pos: 'CB' },
+        { name: 'Cho Yu-min', pos: 'RCB' },
+      ],
+      [
+        { name: 'Kim Seung-gyu', pos: 'GK' },
+      ],
+    ],
+    bench: ['Jo Hyeon-woo', 'Kim Young-gwon', 'Kim Moon-hwan', 'Park Yong-woo', 'Cho Gue-sung', 'Lee Jae-sung', 'Hong Hyun-seok'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Czechia: {
+    nation: 'Czechia',
+    formation: '3-4-2-1',
+    kit: { primary: '#d7141a', accent: '#ffffff', outline: '#8a0c10', number: '#11457e' },
+    rows: [
+      [
+        { name: 'Schick', pos: 'ST' },
+      ],
+      [
+        { name: 'Šulc', pos: 'LAM' },
+        { name: 'Provod', pos: 'RAM' },
+      ],
+      [
+        { name: 'Jurásek', pos: 'LWB' },
+        { name: 'Darida', pos: 'CM' },
+        { name: 'Souček', pos: 'CM' },
+        { name: 'Coufal', pos: 'RWB' },
+      ],
+      [
+        { name: 'Krejčí', pos: 'LCB' },
+        { name: 'Hranáč', pos: 'CB' },
+        { name: 'Chaloupek', pos: 'RCB' },
+      ],
+      [
+        { name: 'Kovář', pos: 'GK' },
+      ],
+    ],
+    bench: ['Mandous', 'Holeš', 'Sadílek', 'Hložek', 'Chytil', 'Černý', 'Karabec'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
