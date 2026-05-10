@@ -1346,6 +1346,104 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Uruguay: {
+    nation: 'Uruguay',
+    formation: '4-2-2-2',
+    kit: { primary: '#5cbcec', accent: '#ffffff', outline: '#1a3a6a', number: '#1a3a6a' },
+    rows: [
+      [
+        { name: 'Núñez', pos: 'ST' },
+        { name: 'De Arrascaeta', pos: 'ST' },
+      ],
+      [
+        { name: 'F. Araújo', pos: 'LAM' },
+        { name: 'Canobbio', pos: 'RAM' },
+      ],
+      [
+        { name: 'Ugarte', pos: 'CM' },
+        { name: 'Valverde', pos: 'CM' },
+      ],
+      [
+        { name: 'Olivera', pos: 'LB' },
+        { name: 'Giménez', pos: 'CB' },
+        { name: 'R. Araújo', pos: 'CB' },
+        { name: 'Valera', pos: 'RB' },
+      ],
+      [
+        { name: 'Muslera', pos: 'GK' },
+      ],
+    ],
+    bench: ['Rochet', 'Coates', 'Pellistri', 'Bentancur', 'De La Cruz', 'Vecino', 'Pereira'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  'Saudi Arabia': {
+    nation: 'Saudi Arabia',
+    formation: '4-3-2-1',
+    kit: { primary: '#006c35', accent: '#ffffff', outline: '#00451f', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Al Buraikan', pos: 'ST' },
+      ],
+      [
+        { name: 'S. Al-Dawsari', pos: 'LAM' },
+        { name: 'N. Al-Dawsari', pos: 'RAM' },
+      ],
+      [
+        { name: 'Al Juwayr', pos: 'CM' },
+        { name: 'Al-Khaibari', pos: 'CM' },
+      ],
+      [
+        { name: 'Kanno', pos: 'CDM' },
+      ],
+      [
+        { name: 'Boushal', pos: 'LB' },
+        { name: 'Ali Lajami', pos: 'CB' },
+        { name: 'Tambakti', pos: 'CB' },
+        { name: 'Abdulhamid', pos: 'RB' },
+      ],
+      [
+        { name: 'Al Aqidi', pos: 'GK' },
+      ],
+    ],
+    bench: ['Al-Owais', 'Al-Bulaihi', 'Al-Faraj', 'Al-Sahafi', 'Al-Shehri', 'Al-Brikan', 'Al-Hamdan'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  'Cabo Verde': {
+    nation: 'Cabo Verde',
+    formation: '4-2-3-1',
+    kit: { primary: '#00277a', accent: '#ffffff', outline: '#001245', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Livramento', pos: 'ST' },
+      ],
+      [
+        { name: 'Semedo', pos: 'LW' },
+        { name: 'Monteiro', pos: 'CAM' },
+        { name: 'Mendes', pos: 'RW' },
+      ],
+      [
+        { name: 'S. Semedo', pos: 'CM' },
+        { name: 'Lenini', pos: 'CM' },
+      ],
+      [
+        { name: 'Paulo', pos: 'LB' },
+        { name: 'Lopes', pos: 'CB' },
+        { name: 'Costa', pos: 'CB' },
+        { name: 'Moreira', pos: 'RB' },
+      ],
+      [
+        { name: 'Vozinha', pos: 'GK' },
+      ],
+    ],
+    bench: ['Marcio', 'Stopira', 'Cabral', 'Bebé', 'Bruninho', 'Garry', 'Bruno Varela'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
