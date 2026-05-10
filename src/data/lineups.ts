@@ -1056,6 +1056,104 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Canada: {
+    nation: 'Canada',
+    formation: '4-2-2-2',
+    kit: { primary: '#d52b1e', accent: '#ffffff', outline: '#8a1813', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'David', pos: 'ST' },
+        { name: 'Larin', pos: 'ST' },
+      ],
+      [
+        { name: 'Ahmed', pos: 'LAM' },
+        { name: 'Buchanan', pos: 'RAM' },
+      ],
+      [
+        { name: 'Eustáquio', pos: 'CM' },
+        { name: 'Koné', pos: 'CM' },
+      ],
+      [
+        { name: 'Davies', pos: 'LB' },
+        { name: 'Cornelius', pos: 'CB' },
+        { name: 'Bombito', pos: 'CB' },
+        { name: 'Johnston', pos: 'RB' },
+      ],
+      [
+        { name: 'St. Clair', pos: 'GK' },
+      ],
+    ],
+    bench: ['Crépeau', 'Vitória', 'Adekugbe', 'Choinière', 'Millar', 'Cavallini', 'Shaffelburg'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  'Bosnia and Herzegovina': {
+    nation: 'Bosnia and Herzegovina',
+    formation: '4-2-2-2',
+    kit: { primary: '#002395', accent: '#fdc52e', outline: '#001245', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Demirović', pos: 'ST' },
+        { name: 'Džeko', pos: 'ST' },
+      ],
+      [
+        { name: 'Memić', pos: 'LAM' },
+        { name: 'Bajraktarević', pos: 'RAM' },
+      ],
+      [
+        { name: 'Sunjić', pos: 'CM' },
+        { name: 'Tahirović', pos: 'CM' },
+      ],
+      [
+        { name: 'Kolašinac', pos: 'LB' },
+        { name: 'Muharemović', pos: 'CB' },
+        { name: 'Katić', pos: 'CB' },
+        { name: 'Dedić', pos: 'RB' },
+      ],
+      [
+        { name: 'Vasilj', pos: 'GK' },
+      ],
+    ],
+    bench: ['Šehić', 'Ahmedhodžić', 'Bičakčić', 'Pjanić', 'Hadžiahmetović', 'Hajradinović', 'Šabanadžović'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Qatar: {
+    nation: 'Qatar',
+    formation: '4-3-2-1',
+    kit: { primary: '#8a1538', accent: '#ffffff', outline: '#4d0c20', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Almoez Ali', pos: 'ST' },
+      ],
+      [
+        { name: 'Al Mannai', pos: 'LAM' },
+        { name: 'Afif', pos: 'RAM' },
+      ],
+      [
+        { name: 'Madibo', pos: 'CM' },
+        { name: 'Edmilson', pos: 'CM' },
+      ],
+      [
+        { name: 'Boudiaf', pos: 'CDM' },
+      ],
+      [
+        { name: 'Miquel', pos: 'LB' },
+        { name: 'Mendes', pos: 'CB' },
+        { name: 'Khoukhi', pos: 'CB' },
+        { name: 'Al Ouwi', pos: 'RB' },
+      ],
+      [
+        { name: 'Barsham', pos: 'GK' },
+      ],
+    ],
+    bench: ['Salah Zakaria', 'Pedro Miguel', 'Salman', 'Hatem', 'Asad', 'Al-Haydos', 'Muntari'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
