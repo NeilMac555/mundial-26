@@ -109,6 +109,46 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Mexico: {
+    nation: 'Mexico',
+    formation: '4-3-2-1',
+    kit: { primary: '#006341', accent: '#ffffff', outline: '#003a23', number: '#ffffff' },
+    rows: [
+      // Lone striker
+      [
+        { name: 'Jiménez', pos: 'ST' },
+      ],
+      // Behind the striker
+      [
+        { name: 'Vega', pos: 'LAM' },
+        { name: 'Alvarado', pos: 'RAM' },
+      ],
+      // Box-to-box midfield
+      [
+        { name: 'Vargas', pos: 'CM' },
+        { name: 'Fidalgo', pos: 'CM' },
+      ],
+      // Single pivot
+      [
+        { name: 'Lira', pos: 'CDM' },
+      ],
+      // Back four
+      [
+        { name: 'Gallardo', pos: 'LB' },
+        { name: 'Vásquez', pos: 'CB' },
+        { name: 'Montes', pos: 'CB' },
+        { name: 'Sánchez', pos: 'RB' },
+      ],
+      // Goalkeeper
+      [
+        { name: 'Rangel', pos: 'GK' },
+      ],
+    ],
+    bench: ['Ochoa', 'Edson Álvarez', 'Luis Chávez', 'Lozano', 'Santi Giménez', 'Lainez', 'Antuna'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
