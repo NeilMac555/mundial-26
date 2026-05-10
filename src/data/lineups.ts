@@ -762,6 +762,40 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Tunisia: {
+    nation: 'Tunisia',
+    formation: '4-3-2-1',
+    kit: { primary: '#e70013', accent: '#ffffff', outline: '#8a000c', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Mastouri', pos: 'ST' },
+      ],
+      [
+        { name: 'Saad', pos: 'LAM' },
+        { name: 'Ben Slimane', pos: 'RAM' },
+      ],
+      [
+        { name: 'Hannibal', pos: 'CM' },
+        { name: 'Skhiri', pos: 'CM' },
+      ],
+      [
+        { name: 'Khedira', pos: 'CDM' },
+      ],
+      [
+        { name: 'El Abdi', pos: 'LB' },
+        { name: 'Bronn', pos: 'CB' },
+        { name: 'Talbi', pos: 'CB' },
+        { name: 'Zaalouni', pos: 'RB' },
+      ],
+      [
+        { name: 'Dahmen', pos: 'GK' },
+      ],
+    ],
+    bench: ['Ben Mustapha', 'Drager', 'Maaloul', 'Laidouni', 'Sliti', 'Khazri', 'Msakni'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
