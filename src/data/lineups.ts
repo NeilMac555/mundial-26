@@ -510,6 +510,70 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Ghana: {
+    nation: 'Ghana',
+    formation: '3-4-2-1',
+    kit: { primary: '#ffffff', accent: '#ce1126', outline: '#1a1a1a', number: '#006b3f' },
+    rows: [
+      [
+        { name: 'Williams', pos: 'ST' },
+      ],
+      [
+        { name: 'Ayew', pos: 'LAM' },
+        { name: 'Semenyo', pos: 'RAM' },
+      ],
+      [
+        { name: 'Mensah', pos: 'LM' },
+        { name: 'Sibo', pos: 'CM' },
+        { name: 'Partey', pos: 'CM' },
+        { name: 'Yirenkyi', pos: 'RM' },
+      ],
+      [
+        { name: 'Opoku', pos: 'LCB' },
+        { name: 'Djiku', pos: 'CB' },
+        { name: 'Adjetey', pos: 'RCB' },
+      ],
+      [
+        { name: 'Asare', pos: 'GK' },
+      ],
+    ],
+    bench: ['Wollacott', 'J. Mensah', 'Salisu', 'Baba Rahman', 'Kudus', 'Sulemana', 'Bukari'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
+
+  Panama: {
+    nation: 'Panama',
+    formation: '4-2-3-1',
+    kit: { primary: '#db3030', accent: '#1d39b3', outline: '#8a1d1d', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Waterman', pos: 'ST' },
+      ],
+      [
+        { name: 'Díaz', pos: 'LW' },
+        { name: 'Carrasquilla', pos: 'CAM' },
+        { name: 'Rodríguez', pos: 'RW' },
+      ],
+      [
+        { name: 'Harvey', pos: 'CM' },
+        { name: 'Godoy', pos: 'CM' },
+      ],
+      [
+        { name: 'Davis', pos: 'LB' },
+        { name: 'Córdoba', pos: 'CB' },
+        { name: 'Andrade', pos: 'CB' },
+        { name: 'Murillo', pos: 'RB' },
+      ],
+      [
+        { name: 'Mosquera', pos: 'GK' },
+      ],
+    ],
+    bench: ['Mejía', 'Galindo', 'Bárcenas', 'Welch', 'Tanner', 'Fajardo', 'Watson'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
