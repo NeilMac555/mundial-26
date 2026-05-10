@@ -478,6 +478,38 @@ export const LINEUPS: Record<string, Lineup> = {
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
+
+  Croatia: {
+    nation: 'Croatia',
+    formation: '4-2-3-1',
+    kit: { primary: '#ed1f23', accent: '#ffffff', outline: '#8a1216', number: '#ffffff' },
+    rows: [
+      [
+        { name: 'Budimir', pos: 'ST' },
+      ],
+      [
+        { name: 'Perišić', pos: 'LW' },
+        { name: 'Kramarić', pos: 'CAM' },
+        { name: 'Pašalić', pos: 'RW' },
+      ],
+      [
+        { name: 'Modrić', pos: 'CM' },
+        { name: 'Kovačić', pos: 'CM' },
+      ],
+      [
+        { name: 'Gvardiol', pos: 'LB' },
+        { name: 'Ćaleta-Car', pos: 'CB' },
+        { name: 'Vušković', pos: 'CB' },
+        { name: 'Stanišić', pos: 'RB' },
+      ],
+      [
+        { name: 'Livaković', pos: 'GK' },
+      ],
+    ],
+    bench: ['Ivušić', 'Erlić', 'Sosa', 'Sučić', 'Brozović', 'Petković', 'Baturina'],
+    source: 'futbolfantasy.com (May 2026 best-guess)',
+    asOf: '2026-05-10',
+  },
 };
 
 export function lineupForNation(nation: string): Lineup | null {
