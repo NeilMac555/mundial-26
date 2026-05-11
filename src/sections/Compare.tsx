@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ELO_TEAMS, type EloTeam } from '../data/elo';
 import {
   MANAGERS,
@@ -26,10 +26,22 @@ import { fifaCodeForNation } from '../data/bracketTeams';
 import { getBracketOdds, type BracketOdds } from '../data/bracketOdds';
 import { lineupForNation, type Lineup } from '../data/lineups';
 import { Pitch } from '../components/Pitch';
+import { usePaywall } from '../paywall/PaywallContext';
 
 export function Compare() {
-  const [aNation, setANation] = useState('Argentina');
+  const { hasPro, openUnlock } = usePaywall();
+
+  // Free users are locked to the England vs Brazil sneak peek.
+  const [aNation, setANation] = useState(hasPro ? 'Argentina' : 'England');
   const [bNation, setBNation] = useState('Brazil');
+
+  // If a Pro user signs out, snap back to the sneak-peek matchup.
+  useEffect(() => {
+    if (!hasPro && (aNation !== 'England' || bNation !== 'Brazil')) {
+      setANation('England');
+      setBNation('Brazil');
+    }
+  }, [hasPro, aNation, bNation]);
 
   const a = useMemo(() => buildTeam(aNation), [aNation]);
   const b = useMemo(() => buildTeam(bNation), [bNation]);
@@ -37,7 +49,7 @@ export function Compare() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 24, marginTop: 18 }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', gap: 12, alignItems: 'center' }}>
-        <NationPicker value={aNation} onChange={setANation} />
+        <NationPicker value={aNation} onChange={setANation} locked={!hasPro} onLockedClick={openUnlock} />
         <span
           style={{
             fontFamily: 'var(--font-mono)',
@@ -50,15 +62,17 @@ export function Compare() {
         >
           vs
         </span>
-        <NationPicker value={bNation} onChange={setBNation} />
+        <NationPicker value={bNation} onChange={setBNation} locked={!hasPro} onLockedClick={openUnlock} />
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: 16 }}>
-        <TeamCard t={a} />
-        <TeamCard t={b} />
+        <TeamCard t={a} hasPro={hasPro} onUnlock={openUnlock} />
+        <TeamCard t={b} hasPro={hasPro} onUnlock={openUnlock} />
       </div>
 
       <Verdict a={a} b={b} />
+
+      {!hasPro && <ComparePeekFooter onUnlock={openUnlock} />}
 
       <div style={{ fontSize: 11, color: 'var(--color-text-3)', lineHeight: 1.55 }}>
         Manager + squad value sourced from{' '}
@@ -68,6 +82,59 @@ export function Compare() {
         , last updated {SQUAD_VALUE_SOURCE.asOf}. Tier badges use per-confederation thresholds; managers with fewer
         than 20 matches in charge are flagged as small sample and excluded from tier and PPM verdicts.
       </div>
+    </div>
+  );
+}
+
+function ComparePeekFooter({ onUnlock }: { onUnlock: () => void }) {
+  return (
+    <div
+      style={{
+        padding: '16px 20px',
+        background: 'linear-gradient(180deg, rgba(232,185,74,0.04), rgba(232,185,74,0.10))',
+        border: '1px solid rgba(232,185,74,0.30)',
+        borderRadius: 6,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: 14,
+        flexWrap: 'wrap',
+      }}
+    >
+      <div>
+        <div
+          style={{
+            fontSize: 14,
+            color: 'var(--color-text)',
+            fontWeight: 500,
+            letterSpacing: '-0.005em',
+            marginBottom: 4,
+          }}
+        >
+          This is the England vs Brazil sneak peek
+        </div>
+        <div style={{ fontSize: 12, color: 'var(--color-text-3)', lineHeight: 1.5 }}>
+          Unlock to compare any 2 of 48 teams — every Elo, manager PPM, squad value, qualifying xG,
+          and likely XI side-by-side.
+        </div>
+      </div>
+      <button
+        onClick={onUnlock}
+        style={{
+          padding: '10px 20px',
+          background: 'var(--color-gold)',
+          color: 'var(--color-bg)',
+          border: 'none',
+          borderRadius: 4,
+          fontSize: 13,
+          fontWeight: 600,
+          cursor: 'pointer',
+          letterSpacing: '-0.005em',
+          flexShrink: 0,
+        }}
+      >
+        Unlock all 48 · £14.99
+      </button>
     </div>
   );
 }
@@ -100,7 +167,54 @@ function buildTeam(nation: string): TeamView {
   return { nation, manager, elo, squad, sos, perf, xg, xgAgg, odds, lineup };
 }
 
-function NationPicker({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+function NationPicker({
+  value,
+  onChange,
+  locked,
+  onLockedClick,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+  locked?: boolean;
+  onLockedClick?: () => void;
+}) {
+  if (locked) {
+    return (
+      <button
+        onClick={onLockedClick}
+        style={{
+          width: '100%',
+          background: 'var(--color-surface)',
+          border: '1px solid rgba(232,185,74,0.30)',
+          color: 'var(--color-text)',
+          padding: '8px 12px',
+          borderRadius: 4,
+          fontSize: 13,
+          fontFamily: 'var(--font-mono)',
+          textAlign: 'left',
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 8,
+        }}
+        title="Unlock to pick any team"
+      >
+        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          {flagEmoji(value) ? flagEmoji(value) + '  ' : ''}{value}
+        </span>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
+          <svg width={10} height={10} viewBox="0 0 12 12" fill="none" aria-hidden>
+            <rect x="2.5" y="5.5" width="7" height="5" rx="0.8" stroke="var(--color-gold)" strokeWidth="1.1" />
+            <path d="M4 5.5V4a2 2 0 1 1 4 0v1.5" stroke="var(--color-gold)" strokeWidth="1.1" />
+          </svg>
+          <span style={{ fontSize: 10, color: 'var(--color-gold)', letterSpacing: '0.08em' }}>
+            UNLOCK
+          </span>
+        </span>
+      </button>
+    );
+  }
   return (
     <select
       value={value}
@@ -128,8 +242,18 @@ function NationPicker({ value, onChange }: { value: string; onChange: (v: string
   );
 }
 
-function TeamCard({ t }: { t: TeamView }) {
+function TeamCard({
+  t,
+  hasPro = true,
+  onUnlock,
+}: {
+  t: TeamView;
+  hasPro?: boolean;
+  onUnlock?: () => void;
+}) {
   const { nation, manager, elo, squad, sos, perf, xg, xgAgg, odds, lineup } = t;
+  // Free Likely XI peek: Spain + Brazil only. Other teams show a tiny lock card.
+  const lineupVisible = hasPro || nation === 'Spain' || nation === 'Brazil';
   return (
     <div
       style={{
@@ -252,10 +376,14 @@ function TeamCard({ t }: { t: TeamView }) {
       </Section>
 
       <Section label="Likely XI">
-        {lineup ? (
-          <Pitch lineup={lineup} />
+        {lineupVisible ? (
+          lineup ? (
+            <Pitch lineup={lineup} />
+          ) : (
+            <Empty>Lineup not yet plotted — coming soon</Empty>
+          )
         ) : (
-          <Empty>Lineup not yet plotted — coming soon</Empty>
+          <LineupLockCard onUnlock={onUnlock} />
         )}
       </Section>
 
@@ -400,6 +528,55 @@ function Section({ label, info, children }: { label: string; info?: React.ReactN
 
 function Empty({ children }: { children: React.ReactNode }) {
   return <div style={{ fontSize: 13, color: 'var(--color-text-4)' }}>{children}</div>;
+}
+
+function LineupLockCard({ onUnlock }: { onUnlock?: () => void }) {
+  return (
+    <div
+      style={{
+        padding: '14px 16px',
+        background: 'rgba(232,185,74,0.05)',
+        border: '1px dashed rgba(232,185,74,0.40)',
+        borderRadius: 6,
+        display: 'flex',
+        alignItems: 'center',
+        gap: 14,
+        flexWrap: 'wrap',
+      }}
+    >
+      <svg width={16} height={16} viewBox="0 0 12 12" fill="none" aria-hidden style={{ flexShrink: 0 }}>
+        <rect x="2.5" y="5.5" width="7" height="5" rx="0.8" stroke="var(--color-gold)" strokeWidth="1.2" />
+        <path d="M4 5.5V4a2 2 0 1 1 4 0v1.5" stroke="var(--color-gold)" strokeWidth="1.2" />
+      </svg>
+      <div style={{ flex: 1, minWidth: 200 }}>
+        <div style={{ fontSize: 12, color: 'var(--color-text)', fontWeight: 500, letterSpacing: '-0.005em' }}>
+          Pitch view locked for this team
+        </div>
+        <div style={{ fontSize: 11, color: 'var(--color-text-3)', marginTop: 2, lineHeight: 1.45 }}>
+          See Spain &amp; Brazil for a preview. Unlock to see all 48.
+        </div>
+      </div>
+      {onUnlock && (
+        <button
+          onClick={onUnlock}
+          style={{
+            padding: '7px 14px',
+            background: 'var(--color-gold)',
+            color: 'var(--color-bg)',
+            border: 'none',
+            borderRadius: 4,
+            fontSize: 11,
+            fontWeight: 600,
+            cursor: 'pointer',
+            letterSpacing: '-0.005em',
+            flexShrink: 0,
+          }}
+        >
+          Unlock · £14.99
+        </button>
+      )}
+    </div>
+  );
 }
 
 function ChChip({ ch1y }: { ch1y: number }) {

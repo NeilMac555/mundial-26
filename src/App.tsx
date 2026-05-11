@@ -17,6 +17,9 @@ import { Fixtures } from './sections/Fixtures';
 import { Americas } from './sections/Americas';
 import { Bracket } from './sections/Bracket';
 import { TEyebrow, TMono } from './components/terminal/atoms';
+import { PaywallProvider, usePaywall } from './paywall/PaywallContext';
+import { PaywallModal } from './paywall/PaywallModal';
+import { PaywallGate } from './paywall/PaywallGate';
 
 const SECTION_COMPONENTS: Record<string, () => React.ReactElement> = {
   overview: Overview,
@@ -42,6 +45,15 @@ function readHashId(): string {
 }
 
 export default function App() {
+  return (
+    <PaywallProvider>
+      <AppShell />
+      <PaywallModal />
+    </PaywallProvider>
+  );
+}
+
+function AppShell() {
   const [activeId, setActiveId] = useState<string>(readHashId);
 
   useEffect(() => {
@@ -85,7 +97,15 @@ export default function App() {
           }}
         >
           <Section title={active.title} blurb={active.blurb} lede={active.lede} status={active.status}>
-            {Body ? <Body /> : null}
+            {Body ? (
+              active.pro === 'full' ? (
+                <PaywallGate feature={active.title} blurb={active.blurb}>
+                  <Body />
+                </PaywallGate>
+              ) : (
+                <Body />
+              )
+            ) : null}
           </Section>
         </main>
       </div>
@@ -94,6 +114,7 @@ export default function App() {
 }
 
 function Topbar({ active }: { active: typeof SECTIONS[number] }) {
+  const { hasPro, openUnlock } = usePaywall();
   return (
     <header
       style={{
@@ -148,17 +169,44 @@ function Topbar({ active }: { active: typeof SECTIONS[number] }) {
           }} />
           <TMono size={10} color="var(--color-text-2)">FEED · LIVE</TMono>
         </div>
-        <div style={{
-          width: 28, height: 28,
-          borderRadius: '50%',
-          background: 'var(--color-surface-2)',
-          border: '1px solid var(--color-border-2)',
-          display: 'grid',
-          placeItems: 'center',
-          fontSize: 11,
-          fontWeight: 600,
-          color: 'var(--color-text-2)',
-        }}>F</div>
+        {hasPro ? (
+          <div
+            onClick={openUnlock}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 6,
+              padding: '5px 10px',
+              background: 'rgba(232,185,74,0.10)',
+              border: '1px solid rgba(232,185,74,0.40)',
+              borderRadius: 4,
+              cursor: 'pointer',
+            }}
+            title="Manage your Pro access"
+          >
+            <span style={{ fontSize: 10, color: 'var(--color-gold)' }}>✓</span>
+            <TMono size={10} color="var(--color-gold)">PRO</TMono>
+          </div>
+        ) : (
+          <button
+            onClick={openUnlock}
+            style={{
+              padding: '6px 12px',
+              background: 'var(--color-gold)',
+              color: 'var(--color-bg)',
+              border: 'none',
+              borderRadius: 4,
+              fontSize: 11,
+              fontWeight: 600,
+              cursor: 'pointer',
+              letterSpacing: '0.04em',
+              textTransform: 'uppercase',
+              fontFamily: 'var(--font-mono)',
+            }}
+          >
+            Unlock · £14.99
+          </button>
+        )}
       </div>
     </header>
   );

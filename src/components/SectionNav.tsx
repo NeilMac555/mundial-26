@@ -1,8 +1,10 @@
 import { sectionsByGroup, SECTION_GROUPS } from '../data/sections';
 import { TLabel, TMono } from './terminal/atoms';
+import { usePaywall } from '../paywall/PaywallContext';
 
 export function SectionNav({ activeId }: { activeId: string }) {
   const grouped = sectionsByGroup();
+  const { hasPro } = usePaywall();
   return (
     <aside
       style={{
@@ -61,7 +63,10 @@ export function SectionNav({ activeId }: { activeId: string }) {
                     }
                   }}
                 >
-                  {s.navLabel ?? s.title}
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                    {s.navLabel ?? s.title}
+                    {!hasPro && s.pro && <NavLock peek={s.pro === 'peek'} />}
+                  </span>
                   {s.status === 'stub' && (
                     <span
                       style={{
@@ -84,6 +89,30 @@ export function SectionNav({ activeId }: { activeId: string }) {
       </nav>
       <FooterBlock />
     </aside>
+  );
+}
+
+function NavLock({ peek }: { peek: boolean }) {
+  return (
+    <svg
+      width={10}
+      height={10}
+      viewBox="0 0 12 12"
+      fill="none"
+      aria-label={peek ? 'Sneak peek — full version locked' : 'Pro only'}
+      style={{ flexShrink: 0, opacity: peek ? 0.55 : 0.85 }}
+    >
+      <rect
+        x="2.5"
+        y="5.5"
+        width="7"
+        height="5"
+        rx="0.8"
+        stroke="var(--color-gold)"
+        strokeWidth="1.1"
+      />
+      <path d="M4 5.5V4a2 2 0 1 1 4 0v1.5" stroke="var(--color-gold)" strokeWidth="1.1" />
+    </svg>
   );
 }
 

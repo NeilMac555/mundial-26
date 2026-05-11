@@ -2,10 +2,14 @@ import { useMemo, useState } from 'react';
 import { PERFORMANCE, PERFORMANCE_NOTE, PERFORMANCE_AS_OF, type PerformanceRecord } from '../data/performance';
 import { Flag } from '../components/Flag';
 import { TCaption, TCaptionItem, TPill, TSortHead, TMono, type PillTone } from '../components/terminal/atoms';
+import { usePaywall } from '../paywall/PaywallContext';
+
+const FREE_ROW_LIMIT = 5;
 
 type SortKey = 'team' | 'teamElo' | 'gp' | 'actualPctTop100' | 'deltaSchedule' | 'deltaElo';
 
 export function History() {
+  const { hasPro, openUnlock } = usePaywall();
   const [sort, setSort] = useState<{ key: SortKey; dir: 'asc' | 'desc' }>({ key: 'deltaElo', dir: 'desc' });
 
   const rows = useMemo(() => {
@@ -56,10 +60,70 @@ export function History() {
             </tr>
           </thead>
           <tbody>
-            {rows.map((r, i) => <Row key={r.team} r={r} i={i} last={i === rows.length - 1} />)}
+            {(hasPro ? rows : rows.slice(0, FREE_ROW_LIMIT)).map((r, i, arr) => (
+              <Row key={r.team} r={r} i={i} last={i === arr.length - 1} />
+            ))}
+            {!hasPro && (
+              <tr>
+                <td colSpan={9} style={{ padding: 0 }}>
+                  <PerfLockRow remaining={rows.length - FREE_ROW_LIMIT} onUnlock={openUnlock} />
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
+    </div>
+  );
+}
+
+function PerfLockRow({ remaining, onUnlock }: { remaining: number; onUnlock: () => void }) {
+  return (
+    <div
+      style={{
+        padding: '18px 20px',
+        background: 'linear-gradient(180deg, rgba(232,185,74,0.04), rgba(232,185,74,0.10))',
+        borderTop: '1px solid rgba(232,185,74,0.30)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: 14,
+        flexWrap: 'wrap',
+      }}
+    >
+      <div>
+        <div
+          style={{
+            fontSize: 14,
+            color: 'var(--color-text)',
+            fontWeight: 500,
+            letterSpacing: '-0.005em',
+            marginBottom: 4,
+          }}
+        >
+          + {remaining} more teams + schedule / Elo verdicts
+        </div>
+        <div style={{ fontSize: 12, color: 'var(--color-text-3)', lineHeight: 1.5 }}>
+          See who over-performed their schedule and who got carried by easy minnows.
+        </div>
+      </div>
+      <button
+        onClick={onUnlock}
+        style={{
+          padding: '9px 18px',
+          background: 'var(--color-gold)',
+          color: 'var(--color-bg)',
+          border: 'none',
+          borderRadius: 4,
+          fontSize: 12,
+          fontWeight: 600,
+          cursor: 'pointer',
+          letterSpacing: '-0.005em',
+          flexShrink: 0,
+        }}
+      >
+        Unlock · £14.99
+      </button>
     </div>
   );
 }
