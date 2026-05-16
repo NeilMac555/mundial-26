@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node scripts/start.mjs",
-    "fetch-odds": "node scripts/fetch-odds.mjs"
+    "fetch-odds": "node scripts/fetch-odds.mjs",
+    "generate-llm-pack": "tsx scripts/generate-llm-pack.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
@@ -33,6 +34,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
+    "tsx": "^4.22.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.10"
