@@ -10,9 +10,6 @@ export interface SectionMeta {
   lede?: string;
   group: SectionGroup;
   status: 'live' | 'stub';
-  /** Pro-only section: gated behind the £14.99 paywall.
-   *  `peek` = sneak-peek (partial free preview, locked footer), `full` = full lock card. */
-  pro?: 'peek' | 'full';
 }
 
 // Order matches the Mundial Terminal sidebar layout: Performance → Conditions → Markets → Reference.
@@ -31,7 +28,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Performance vs Elo expectation in qualifying.',
     lede: 'Sides whose qualifying points-per-match diverged most from pre-cycle Elo expectation. Positive Δ = banked more points than the bookmaker would have implied. Filter by confederation, sort any column.',
     status: 'live',
-    pro: 'peek',
   },
   {
     id: 'elo', group: 'Performance',
@@ -46,7 +42,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Qualifying schedule difficulty per team, ranked.',
     lede: 'How hard each qualifying campaign was. SOS score answers: if you replaced this team with an average WC side, how often would they win against the same opponents? Lower score = brutal schedule.',
     status: 'live',
-    pro: 'peek',
   },
   {
     id: 'qual-xg', group: 'Performance',
@@ -54,7 +49,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Per-team Wyscout xG / xGA with match-by-match dominance.',
     lede: 'Per-team Wyscout xG / xGA breakdown across the qualifying cycle. Tier classifications for finishing (clinical / met / wasteful) and defending (solid / met / leaky) — the two strongest predictors of WC over- or under-performance.',
     status: 'live',
-    pro: 'full',
   },
   {
     id: 'squad-value', group: 'Performance',
@@ -62,7 +56,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Transfermarkt totals per qualifier.',
     lede: 'Aggregate Transfermarkt squad valuations. The cleanest single proxy for raw talent — but blind to chemistry, manager fit, and recent form. Cross-reference with manager tier and qualifying xG.',
     status: 'live',
-    pro: 'full',
   },
 
   // ── CONDITIONS ───────────────────────────────────────────
@@ -72,7 +65,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'El Niño 2026, hydration breaks, in-match patterns.',
     lede: 'Heat-load profile across host venues + per-team vulnerability. El Niño 2026 amplification, hydration-break recalibration, and the in-match patterns that move totals lines.',
     status: 'live',
-    pro: 'full',
   },
   {
     id: 'altitude', group: 'Conditions',
@@ -80,7 +72,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Mexican venue effects, acclimatised teams, key Azteca matches.',
     lede: 'Three Mexican venues sit above sea level — Azteca at 2,240m is a fortress. Acclimatised teams (Mexico, Colombia, Ecuador) get a measurable edge; sea-level European sides face material aerobic cost.',
     status: 'live',
-    pro: 'full',
   },
   {
     id: 'americas', group: 'Conditions',
@@ -88,7 +79,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Confederation skew when the WC is hosted in the Americas.',
     lede: '5 Americas-host World Cups since 1970. CONMEBOL has won 4 of 5 and reached the final in every one. UEFA dominates Europe / Asia / Africa hosts and loses its grip when the tournament comes home.',
     status: 'live',
-    pro: 'full',
   },
 
   // ── MARKETS ──────────────────────────────────────────────
@@ -98,7 +88,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Historical pattern (1982–2022) + 2026 candidates.',
     lede: 'Every Golden Boot winner since 1982 reached at least the QF. Six goals is the most common winning tally. Modern winners lean increasingly on penalties. We map the live odds list to the historical pattern.',
     status: 'live',
-    pro: 'full',
   },
   {
     id: 'compare', group: 'Markets',
@@ -106,7 +95,6 @@ export const SECTIONS: SectionMeta[] = [
     blurb: 'Two-team side-by-side: Elo, value, manager, xG, notes.',
     lede: 'Pick any two qualifiers. The compare card surfaces every cross-section signal — global Elo rank, squad value, qualifying form, manager tier, qualifying xG — and auto-flags structural edges.',
     status: 'live',
-    pro: 'peek',
   },
   {
     id: 'bracket-sim', group: 'Markets',

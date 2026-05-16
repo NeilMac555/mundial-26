@@ -2,14 +2,10 @@ import { useMemo, useState } from 'react';
 import { SOS, SOS_AS_OF, type SosRecord } from '../data/sos';
 import { Flag } from '../components/Flag';
 import { TCaption, TCaptionItem, TPill, TSortHead, TMono, TLabel, type PillTone } from '../components/terminal/atoms';
-import { usePaywall } from '../paywall/PaywallContext';
-
-const FREE_ROW_LIMIT = 5;
 
 type SortKey = 'sosRank' | 'team' | 'gamesPlayed' | 'teamElo' | 'avgOppElo' | 'sosScore';
 
 export function Sos() {
-  const { hasPro, openUnlock } = usePaywall();
   const [sort, setSort] = useState<{ key: SortKey; dir: 'asc' | 'desc' }>({ key: 'sosRank', dir: 'asc' });
 
   const rows = useMemo(() => {
@@ -61,70 +57,10 @@ export function Sos() {
             </tr>
           </thead>
           <tbody>
-            {(hasPro ? rows : rows.slice(0, FREE_ROW_LIMIT)).map((r, i, arr) => (
-              <Row key={r.team} r={r} i={i} last={i === arr.length - 1} />
-            ))}
-            {!hasPro && (
-              <tr>
-                <td colSpan={8} style={{ padding: 0 }}>
-                  <SosLockRow remaining={rows.length - FREE_ROW_LIMIT} onUnlock={openUnlock} />
-                </td>
-              </tr>
-            )}
+            {rows.map((r, i) => <Row key={r.team} r={r} i={i} last={i === rows.length - 1} />)}
           </tbody>
         </table>
       </div>
-    </div>
-  );
-}
-
-function SosLockRow({ remaining, onUnlock }: { remaining: number; onUnlock: () => void }) {
-  return (
-    <div
-      style={{
-        padding: '18px 20px',
-        background: 'linear-gradient(180deg, rgba(232,185,74,0.04), rgba(232,185,74,0.10))',
-        borderTop: '1px solid rgba(232,185,74,0.30)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        gap: 14,
-        flexWrap: 'wrap',
-      }}
-    >
-      <div>
-        <div
-          style={{
-            fontSize: 14,
-            color: 'var(--color-text)',
-            fontWeight: 500,
-            letterSpacing: '-0.005em',
-            marginBottom: 4,
-          }}
-        >
-          + {remaining} more teams ranked
-        </div>
-        <div style={{ fontSize: 12, color: 'var(--color-text-3)', lineHeight: 1.5 }}>
-          Unlock the full SOS table — sortable across all 48 qualifiers.
-        </div>
-      </div>
-      <button
-        onClick={onUnlock}
-        style={{
-          padding: '9px 18px',
-          background: 'var(--color-gold)',
-          color: 'var(--color-bg)',
-          border: 'none',
-          borderRadius: 4,
-          fontSize: 12,
-          fontWeight: 600,
-          cursor: 'pointer',
-          letterSpacing: '-0.005em',
-          flexShrink: 0,
-        }}
-      >
-        Unlock · £14.99
-      </button>
     </div>
   );
 }

@@ -11,20 +11,16 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server/index.mjs",
+    "start": "node scripts/start.mjs",
     "fetch-odds": "node scripts/fetch-odds.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1",
-    "resend": "^6.12.3",
     "serve": "^14.2.6",
-    "stripe": "^22.1.1",
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
