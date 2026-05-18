@@ -1,6 +1,6 @@
 # Mundial '26 — Complete Data Pack
 
-> **Generated:** 2026-05-16
+> **Generated:** 2026-05-18
 > **Project:** Mundial '26 — the bettor's terminal for the 2026 FIFA World Cup
 > **Live site:** https://mundial-26-production.up.railway.app
 > **Purpose:** Hand this file to another LLM to compose group-stage previews. Every piece of structured research in the project is included below, organised by group.
@@ -316,7 +316,7 @@
 ### Czechia
 
 - **Confederation / Group:** UEFA / Group A
-- **Manager:** Miroslav Koubek · 6m in post · 2 matches · 3.00 PPM · tier ELITE (small sample — flagged)
+- **Manager:** Miroslav Koubek · 7m in post · 2 matches · 3.00 PPM · tier ELITE (small sample — flagged)
   - **Manager note:** Sample meaningless (one match was 6-0 vs Gibraltar). Use Hašek predecessor record + Plzeň club pedigree.
 - **Elo:** 1726 (rank #40, -29 / yr, 882 matches all-time)
 - **Squad market value:** €176.8m (world #40)
@@ -787,7 +787,7 @@
 ### Sweden
 
 - **Confederation / Group:** UEFA / Group F
-- **Manager:** Graham Potter · 3m in post · 4 matches · 1.75 PPM · tier SOLID (small sample — flagged)
+- **Manager:** Graham Potter · 4m in post · 4 matches · 1.75 PPM · tier SOLID (small sample — flagged)
   - **Manager note:** Sample meaningless. Use club coaching pedigree (Brighton xG overperformance) as proxy.
 - **Elo:** 1719 (rank #43, -17 / yr, 1118 matches all-time)
 - **Squad market value:** €364.0m (world #18)
@@ -812,7 +812,7 @@
 ### Tunisia
 
 - **Confederation / Group:** CAF / Group F
-- **Manager:** Sabri Lamouchi · 4m in post · 2 matches · 2.00 PPM · tier SOLID (small sample — flagged)
+- **Manager:** Sabri Lamouchi · 5m in post · 2 matches · 2.00 PPM · tier SOLID (small sample — flagged)
   - **Manager note:** Tiny sample. Club pedigree mid-Championship at best. Predecessor Trabelsi qualified without conceding.
 - **Elo:** 1636 (rank #58, +25 / yr, 775 matches all-time)
 - **Squad market value:** €52.3m (world #66)
@@ -1358,7 +1358,7 @@
 ### Uzbekistan
 
 - **Confederation / Group:** AFC / Group K
-- **Manager:** Fabio Cannavaro · 6m in post · 6 matches · 2.50 PPM · tier ELITE (small sample — flagged)
+- **Manager:** Fabio Cannavaro · 7m in post · 6 matches · 2.50 PPM · tier ELITE (small sample — flagged)
   - **Manager note:** Appointed post-qualification. Six matches noise. Coaching CV weak (Benevento relegation Udinese sacking).
 - **Elo:** 1727 (rank #38, +30 / yr, 365 matches all-time)
 - **Squad market value:** €63.8m (world #60)

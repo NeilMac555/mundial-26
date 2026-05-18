@@ -60,13 +60,6 @@ export const SECTIONS: SectionMeta[] = [
 
   // ── CONDITIONS ───────────────────────────────────────────
   {
-    id: 'heat-travel', group: 'Conditions',
-    title: 'Heat Vulnerability',
-    blurb: 'El Niño 2026, hydration breaks, in-match patterns.',
-    lede: 'Heat-load profile across host venues + per-team vulnerability. El Niño 2026 amplification, hydration-break recalibration, and the in-match patterns that move totals lines.',
-    status: 'live',
-  },
-  {
     id: 'altitude', group: 'Conditions',
     title: 'Altitude Exposure',
     blurb: 'Mexican venue effects, acclimatised teams, key Azteca matches.',

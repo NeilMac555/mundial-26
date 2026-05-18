@@ -9,7 +9,6 @@ import { Rules } from './sections/Rules';
 import { Compare } from './sections/Compare';
 import { Sos } from './sections/Sos';
 import { History } from './sections/History';
-import { Heat } from './sections/Heat';
 import { QualifyingXg } from './sections/QualifyingXg';
 import { SquadValue } from './sections/SquadValue';
 import { GoldenBoot } from './sections/GoldenBoot';
@@ -26,7 +25,6 @@ const SECTION_COMPONENTS: Record<string, () => React.ReactElement> = {
   rules: Rules,
   sos: Sos,
   history: History,
-  'heat-travel': Heat,
   'qual-xg': QualifyingXg,
   'squad-value': SquadValue,
   'golden-boot': GoldenBoot,
