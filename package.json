@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "start": "node scripts/start.mjs",
     "fetch-odds": "node scripts/fetch-odds.mjs",
-    "generate-llm-pack": "tsx scripts/generate-llm-pack.ts"
+    "generate-llm-pack": "tsx scripts/generate-llm-pack.ts",
+    "verify-bracket": "tsx scripts/verify-bracket.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.4",

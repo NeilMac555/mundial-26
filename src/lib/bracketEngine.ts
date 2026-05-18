@@ -2,7 +2,7 @@
 // Ported from the standalone wc2026 simulator. Pure logic; no React, no DOM.
 
 import type { BracketTeam } from '../data/bracketTeams';
-import { thirdPlaceCombinations } from '../data/bracketMappings';
+import { computeThirdPlaceMapping } from '../data/bracketMappings';
 
 export interface GroupResult {
   group: string;
@@ -33,28 +33,36 @@ interface R32Seed {
   date: string;
 }
 
-// R32 seeding (matches FIFA M73-M88, but using internal IDs r32_1 … r32_16 ordered top-to-bottom)
+// R32 seeding — FIFA M73-M88, using internal IDs r32_1 … r32_16 ordered
+// top-to-bottom in the bracket image (M74 sits at the top of the published
+// printable bracket even though M73 is the chronologically first match).
+//
+// For each 1st-place-vs-3rd-place match the team2Source uses slot label
+// `3_1X` where X is the SAME group letter as team1Source. The slot label
+// "1X" therefore reads as "the 3rd-placer paired with Group X's winner";
+// this convention matches FIFA's allowed-source-group constraint table
+// (see bracketMappings.ts SLOT_ALLOWED_SOURCES).
 const R32_SEEDS: R32Seed[] = [
   // Top half — Quarter 1 (feeds QF1)
-  { id: 'r32_1',  team1Source: '1E', team2Source: '3_1A', venue: 'Foxborough',     date: 'June 29' },
-  { id: 'r32_2',  team1Source: '1I', team2Source: '3_1B', venue: 'East Rutherford', date: 'June 30' },
-  { id: 'r32_3',  team1Source: '2A', team2Source: '2B',   venue: 'Inglewood',       date: 'June 28' },
-  { id: 'r32_4',  team1Source: '1F', team2Source: '2C',   venue: 'Guadalajara',     date: 'June 29' },
+  { id: 'r32_1',  team1Source: '1E', team2Source: '3_1E', venue: 'Foxborough',     date: 'June 29' },  // M74
+  { id: 'r32_2',  team1Source: '1I', team2Source: '3_1I', venue: 'East Rutherford', date: 'June 30' }, // M77
+  { id: 'r32_3',  team1Source: '2A', team2Source: '2B',   venue: 'Inglewood',       date: 'June 28' }, // M73
+  { id: 'r32_4',  team1Source: '1F', team2Source: '2C',   venue: 'Guadalajara',     date: 'June 29' }, // M75
   // Top half — Quarter 2 (feeds QF2)
-  { id: 'r32_5',  team1Source: '2K', team2Source: '2L',   venue: 'Toronto',         date: 'July 2' },
-  { id: 'r32_6',  team1Source: '1H', team2Source: '2J',   venue: 'Inglewood',       date: 'July 2' },
-  { id: 'r32_7',  team1Source: '1D', team2Source: '3_1D', venue: 'Santa Clara',     date: 'July 1' },
-  { id: 'r32_8',  team1Source: '1G', team2Source: '3_1G', venue: 'Seattle',         date: 'July 1' },
+  { id: 'r32_5',  team1Source: '2K', team2Source: '2L',   venue: 'Toronto',         date: 'July 2' },  // M83
+  { id: 'r32_6',  team1Source: '1H', team2Source: '2J',   venue: 'Inglewood',       date: 'July 2' },  // M84
+  { id: 'r32_7',  team1Source: '1D', team2Source: '3_1D', venue: 'Santa Clara',     date: 'July 1' },  // M81
+  { id: 'r32_8',  team1Source: '1G', team2Source: '3_1G', venue: 'Seattle',         date: 'July 1' },  // M82
   // Bottom half — Quarter 3 (feeds QF3)
-  { id: 'r32_9',  team1Source: '1C', team2Source: '2F',   venue: 'Houston',         date: 'June 29' },
-  { id: 'r32_10', team1Source: '2E', team2Source: '2I',   venue: 'Arlington',       date: 'June 30' },
-  { id: 'r32_11', team1Source: '1A', team2Source: '3_1I', venue: 'Mexico City',     date: 'June 30' },
-  { id: 'r32_12', team1Source: '1L', team2Source: '3_1E', venue: 'Atlanta',         date: 'July 1' },
+  { id: 'r32_9',  team1Source: '1C', team2Source: '2F',   venue: 'Houston',         date: 'June 29' }, // M76
+  { id: 'r32_10', team1Source: '2E', team2Source: '2I',   venue: 'Arlington',       date: 'June 30' }, // M78
+  { id: 'r32_11', team1Source: '1A', team2Source: '3_1A', venue: 'Mexico City',     date: 'June 30' }, // M79
+  { id: 'r32_12', team1Source: '1L', team2Source: '3_1L', venue: 'Atlanta',         date: 'July 1' },  // M80
   // Bottom half — Quarter 4 (feeds QF4)
-  { id: 'r32_13', team1Source: '1J', team2Source: '2H',   venue: 'Miami Gardens',   date: 'July 3' },
-  { id: 'r32_14', team1Source: '2D', team2Source: '2G',   venue: 'Arlington',       date: 'July 3' },
-  { id: 'r32_15', team1Source: '1B', team2Source: '3_1K', venue: 'Vancouver',       date: 'July 2' },
-  { id: 'r32_16', team1Source: '1K', team2Source: '3_1L', venue: 'Kansas City',     date: 'July 3' },
+  { id: 'r32_13', team1Source: '1J', team2Source: '2H',   venue: 'Miami Gardens',   date: 'July 3' },  // M86
+  { id: 'r32_14', team1Source: '2D', team2Source: '2G',   venue: 'Arlington',       date: 'July 3' },  // M88
+  { id: 'r32_15', team1Source: '1B', team2Source: '3_1B', venue: 'Vancouver',       date: 'July 2' },  // M85
+  { id: 'r32_16', team1Source: '1K', team2Source: '3_1K', venue: 'Kansas City',     date: 'July 3' },  // M87
 ];
 
 const R16_PAIRINGS = [
@@ -106,26 +114,19 @@ export function buildBracket(
   groupResults: GroupResult[],
   qualifyingThirdGroups: string[],
 ): BracketData {
-  const sortedGroups = [...qualifyingThirdGroups].sort().join('');
-  let thirdPlaceMapping: Record<string, string> | undefined =
-    thirdPlaceCombinations[sortedGroups] as unknown as Record<string, string>;
-
-  if (!thirdPlaceMapping) {
-    const sorted = [...qualifyingThirdGroups].sort();
-    const slots = ['1A', '1B', '1D', '1E', '1G', '1I', '1K', '1L'];
-    thirdPlaceMapping = {};
-    slots.forEach((slot, i) => {
-      thirdPlaceMapping![slot] = `3${sorted[i]}`;
-    });
-  }
+  // Resolve the 8 qualifying 3rd-placers into the 8 R32 slots using FIFA's
+  // per-slot allowed-source-group constraints. This covers all C(12,8) = 495
+  // possible combinations (the old hard-coded table only had 18) and prevents
+  // same-group rematches by construction.
+  const thirdPlaceMapping = computeThirdPlaceMapping(qualifyingThirdGroups);
 
   const groupMap = new Map<string, GroupResult>();
   groupResults.forEach((gr) => groupMap.set(gr.group, gr));
 
   function resolveTeam(source: string): BracketTeamSlot {
     if (source.startsWith('3_')) {
-      const slot = source.replace('3_', '');
-      const thirdSource = thirdPlaceMapping![slot];
+      const slot = source.replace('3_', '') as keyof typeof thirdPlaceMapping;
+      const thirdSource = thirdPlaceMapping[slot];
       const group = thirdSource.replace('3', '');
       const gr = groupMap.get(group)!;
       return { team: gr.third, source: `3${group}` };
