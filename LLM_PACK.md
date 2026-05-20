@@ -1,6 +1,6 @@
 # Mundial '26 — Complete Data Pack
 
-> **Generated:** 2026-05-18
+> **Generated:** 2026-05-20
 > **Project:** Mundial '26 — the bettor's terminal for the 2026 FIFA World Cup
 > **Live site:** https://mundial-26-production.up.railway.app
 > **Purpose:** Hand this file to another LLM to compose group-stage previews. Every piece of structured research in the project is included below, organised by group.
@@ -266,7 +266,7 @@
 ### South Africa
 
 - **Confederation / Group:** CAF / Group A
-- **Manager:** Hugo Broos · 5.0y in post · 55 matches · 1.84 PPM · tier SOLID
+- **Manager:** Hugo Broos · 5.1y in post · 55 matches · 1.84 PPM · tier SOLID
   - **Manager note:** Final tournament before retirement. Squad lacks star power but defensively organised.
 - **Elo:** 1524 (rank #79, -74 / yr, 524 matches all-time)
 - **Squad market value:** €41.1m (world #71)
@@ -356,7 +356,7 @@
 ### Canada
 
 - **Confederation / Group:** CONCACAF / Group B
-- **Manager:** Jesse Marsch · 2.0y in post · 29 matches · 1.69 PPM · tier BELOW_PAR
+- **Manager:** Jesse Marsch · 2.1y in post · 29 matches · 1.69 PPM · tier BELOW_PAR
   - **Manager note:** Reputation effect: highlight reel (Copa SF) better than aggregate. Davies hamstring risk.
 - **Elo:** 1784 (rank #25, +6 / yr, 485 matches all-time)
 - **Squad market value:** €129.4m (world #46)
@@ -387,7 +387,7 @@
 ### Qatar
 
 - **Confederation / Group:** AFC / Group B
-- **Manager:** Julen Lopetegui · 1.0y in post · 10 matches · 0.90 PPM · tier BELOW_PAR (small sample — flagged)
+- **Manager:** Julen Lopetegui · 1.1y in post · 10 matches · 0.90 PPM · tier BELOW_PAR (small sample — flagged)
   - **Manager note:** Worst raw PPM in dataset. 4-game losing streak. 24 goals conceded in qualifying.
 - **Elo:** 1425 (rank #95, -73 / yr, 697 matches all-time)
 - **Squad market value:** €18.3m (world #95)
@@ -455,7 +455,7 @@
 ### Brazil
 
 - **Confederation / Group:** CONMEBOL / Group C
-- **Manager:** Carlo Ancelotti · 1.0y in post · 10 matches · 1.70 PPM · tier SOLID (small sample — flagged)
+- **Manager:** Carlo Ancelotti · 1.1y in post · 10 matches · 1.70 PPM · tier SOLID (small sample — flagged)
   - **Manager note:** Untested over meaningful sample. Squad transition ongoing.
 - **Elo:** 1984 (rank #5, -9 / yr, 1065 matches all-time)
 - **Squad market value:** €778.5m (world #6)
@@ -469,12 +469,12 @@
 - **Outright odds:** 9/1 (10.00 dec, 10.0% implied) · best 10.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 1/3
 - **Likely XI (4-2-3-1):**
-  - ST: João Pedro (backup: Endrick)
-  - LW: Vinicius · CAM: Matheus Cunha · RW: Raphinha
+  - ST: Cunha (backup: Endrick)
+  - LW: Vinicius · CAM: Rodrygo · RW: Raphinha
   - CM: Bruno Guimarães · CM: Casemiro
   - LB: Alex Sandro · CB: Gabriel M. · CB: Marquinhos · RB: Wesley (backup: Danilo)
   - GK: Alisson
-  - **Bench:** Ederson, Militão, Bremer, Andreas Pereira, Lucas Paquetá, Rodrygo, Antony
+  - **Bench:** Ederson, Militão, Bremer, Andreas Pereira, Lucas Paquetá, João Pedro, Antony
   - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
 
 ### Morocco
@@ -528,7 +528,7 @@
 ### Scotland
 
 - **Confederation / Group:** UEFA / Group C
-- **Manager:** Steve Clarke · 7.0y in post · 76 matches · 1.57 PPM · tier BELOW_PAR
+- **Manager:** Steve Clarke · 7.1y in post · 76 matches · 1.57 PPM · tier BELOW_PAR
   - **Manager note:** BELOW_PAR reflects squad ceiling not coaching. Three consecutive major tournaments qualified.
 - **Elo:** 1767 (rank #29, +25 / yr, 866 matches all-time)
 - **Squad market value:** €198.2m (world #35)
@@ -1031,7 +1031,7 @@
 ### Uruguay
 
 - **Confederation / Group:** CONMEBOL / Group H
-- **Manager:** Marcelo Bielsa · 3.0y in post · 33 matches · 1.76 PPM · tier SOLID
+- **Manager:** Marcelo Bielsa · 3.1y in post · 33 matches · 1.76 PPM · tier SOLID
   - **Manager note:** Squad disputes / public conflicts have weighted recent form down.
 - **Elo:** 1892 (rank #15, -29 / yr, 1019 matches all-time)
 - **Squad market value:** €362.4m (world #19)
@@ -1123,7 +1123,7 @@
 ### Iraq
 
 - **Confederation / Group:** AFC / Group I
-- **Manager:** Graham Arnold · 1.0y in post · 13 matches · 2.00 PPM · tier STRONG (small sample — flagged)
+- **Manager:** Graham Arnold · 1.1y in post · 13 matches · 2.00 PPM · tier STRONG (small sample — flagged)
   - **Manager note:** Career WC PPM 1.50 from 4 matches at 2022. Took Iraq from no-hope to qualified via playoffs.
 - **Elo:** 1607 (rank #63, +68 / yr, 759 matches all-time)
 - **Squad market value:** €19.2m (world #90)

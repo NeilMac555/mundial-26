@@ -78,14 +78,14 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-2-3-1',
     kit: { primary: '#f6d10b', accent: '#009b3a', outline: '#5a4d00', number: '#009b3a' },
     rows: [
-      // Lone striker — Neil swap: João Pedro starter, Endrick backup
+      // Lone striker — Neil swap: Matheus Cunha promoted from CAM to ST, Endrick backup
       [
-        { name: 'João Pedro', backup: 'Endrick', pos: 'ST' },
+        { name: 'Cunha', backup: 'Endrick', pos: 'ST' },
       ],
-      // Attacking midfield band (LW, CAM, RW)
+      // Attacking midfield band (LW, CAM, RW) — Rodrygo into the #10 vacated by Cunha
       [
         { name: 'Vinicius', pos: 'LW' },
-        { name: 'Matheus Cunha', pos: 'CAM' },
+        { name: 'Rodrygo', pos: 'CAM' },
         { name: 'Raphinha', pos: 'RW' },
       ],
       // Double pivot
@@ -105,7 +105,7 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Alisson', pos: 'GK' },
       ],
     ],
-    bench: ['Ederson', 'Militão', 'Bremer', 'Andreas Pereira', 'Lucas Paquetá', 'Rodrygo', 'Antony'],
+    bench: ['Ederson', 'Militão', 'Bremer', 'Andreas Pereira', 'Lucas Paquetá', 'João Pedro', 'Antony'],
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },
