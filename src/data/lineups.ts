@@ -78,9 +78,9 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-2-3-1',
     kit: { primary: '#f6d10b', accent: '#009b3a', outline: '#5a4d00', number: '#009b3a' },
     rows: [
-      // Lone striker — Endrick primary, João Pedro backup
+      // Lone striker — Endrick primary, Igor Thiago backup (Brentford CF)
       [
-        { name: 'Endrick', backup: 'João Pedro', pos: 'ST' },
+        { name: 'Endrick', backup: 'Igor Thiago', pos: 'ST' },
       ],
       // Attacking midfield band (LW, CAM, RW) — Matheus Cunha at the #10
       [
@@ -96,18 +96,18 @@ export const LINEUPS: Record<string, Lineup> = {
       // Back four
       [
         { name: 'Alex Sandro', pos: 'LB' },
-        { name: 'Gabriel M.', pos: 'CB' },
+        { name: 'Gabriel Magalhães', pos: 'CB' },
         { name: 'Marquinhos', pos: 'CB' },
-        { name: 'Wesley', backup: 'Danilo', pos: 'RB' },
+        { name: 'Wesley', backup: 'Danilo Luiz', pos: 'RB' },
       ],
       // Goalkeeper
       [
         { name: 'Alisson', pos: 'GK' },
       ],
     ],
-    bench: ['Ederson', 'Militão', 'Bremer', 'Andreas Pereira', 'Lucas Paquetá', 'Savinho', 'Antony'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Ederson', 'Bremer', 'Roger Ibañez', 'Lucas Paquetá', 'Neymar', 'Martinelli', 'Luiz Henrique'],
+    source: 'CBF official final World Cup squad',
+    asOf: '2026-05-19',
   },
 
   Mexico: {
