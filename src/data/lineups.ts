@@ -105,7 +105,7 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Alisson', pos: 'GK' },
       ],
     ],
-    bench: ['Ederson', 'Militão', 'Bremer', 'Andreas Pereira', 'Lucas Paquetá', 'Rodrygo', 'Antony'],
+    bench: ['Ederson', 'Militão', 'Bremer', 'Andreas Pereira', 'Lucas Paquetá', 'Savinho', 'Antony'],
     source: 'futbolfantasy.com (May 2026 best-guess)',
     asOf: '2026-05-10',
   },

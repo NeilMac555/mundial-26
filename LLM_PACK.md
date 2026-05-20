@@ -474,7 +474,7 @@
   - CM: Bruno Guimarães · CM: Casemiro
   - LB: Alex Sandro · CB: Gabriel M. · CB: Marquinhos · RB: Wesley (backup: Danilo)
   - GK: Alisson
-  - **Bench:** Ederson, Militão, Bremer, Andreas Pereira, Lucas Paquetá, Rodrygo, Antony
+  - **Bench:** Ederson, Militão, Bremer, Andreas Pereira, Lucas Paquetá, Savinho, Antony
   - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
 
 ### Morocco
