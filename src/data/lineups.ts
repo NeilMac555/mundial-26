@@ -78,9 +78,9 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-2-3-1',
     kit: { primary: '#f6d10b', accent: '#009b3a', outline: '#5a4d00', number: '#009b3a' },
     rows: [
-      // Lone striker — Neil swap: Matheus Cunha promoted from CAM to ST, Endrick backup
+      // Lone striker — Endrick starts; Matheus Cunha + Neymar both flagged as reserves
       [
-        { name: 'Cunha', backup: 'Endrick', pos: 'ST' },
+        { name: 'Endrick', backup: 'Cunha / Neymar', pos: 'ST' },
       ],
       // Attacking midfield band (LW, CAM, RW) — Rodrygo into the #10 vacated by Cunha
       [

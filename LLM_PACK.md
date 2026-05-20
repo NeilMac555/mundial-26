@@ -469,7 +469,7 @@
 - **Outright odds:** 9/1 (10.00 dec, 10.0% implied) · best 10.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 1/3
 - **Likely XI (4-2-3-1):**
-  - ST: Cunha (backup: Endrick)
+  - ST: Endrick (backup: Cunha / Neymar)
   - LW: Vinicius · CAM: Rodrygo · RW: Raphinha
   - CM: Bruno Guimarães · CM: Casemiro
   - LB: Alex Sandro · CB: Gabriel M. · CB: Marquinhos · RB: Wesley (backup: Danilo)
