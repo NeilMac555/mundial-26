@@ -469,12 +469,12 @@
 - **Outright odds:** 9/1 (10.00 dec, 10.0% implied) · best 10.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 1/3
 - **Likely XI (4-2-3-1):**
-  - ST: Endrick (backup: Cunha / Neymar)
-  - LW: Vinicius · CAM: Rodrygo · RW: Raphinha
+  - ST: Endrick (backup: João Pedro)
+  - LW: Vinicius · CAM: Matheus Cunha · RW: Raphinha
   - CM: Bruno Guimarães · CM: Casemiro
   - LB: Alex Sandro · CB: Gabriel M. · CB: Marquinhos · RB: Wesley (backup: Danilo)
   - GK: Alisson
-  - **Bench:** Ederson, Militão, Bremer, Andreas Pereira, Lucas Paquetá, João Pedro, Antony
+  - **Bench:** Ederson, Militão, Bremer, Andreas Pereira, Lucas Paquetá, Rodrygo, Antony
   - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
 
 ### Morocco
