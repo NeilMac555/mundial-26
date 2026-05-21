@@ -1,25 +1,33 @@
-# Qualifying xG — portable export
+# Mundial '26 — portable data exports
 
-A self-contained version of the Mundial '26 Qualifying xG section, ready to drop into another React/TypeScript project (e.g. SteamWatch).
+Self-contained data + UI exports from the Mundial '26 project, ready to drop into another React/TypeScript project (e.g. SteamWatch).
 
 ## Files
 
-| File | Purpose |
-|---|---|
-| `qualifying-xg.tsx` | The component. Inlined helpers (Flag, atoms, types). Imports the data file alongside. |
-| `qualifying-xg.data.ts` | All Wyscout-sourced per-team match data. ~900 lines, no UI dependencies. |
+| File | Purpose | Lines |
+|---|---|---:|
+| `qualifying-xg.tsx` | React component with conf tabs, team picker, summary cards, match table. Inlined helpers (Flag, atoms, types). | 666 |
+| `qualifying-xg.data.ts` | All Wyscout-sourced per-team xG match data + types + aggregate(). | 908 |
+| `groups.data.ts` | All 48 qualifiers across 12 groups (A–L). FIFA codes, ISO flag codes, helpers (`bracketTeamsByGroup`, `bracketTeamByCode`, `fifaCodeForNation`, `flagUrl`). | 126 |
+| `venues.data.ts` | All 16 host venues — country, lat/lng, altitude, June climate, roof type. | 35 |
+| `fixtures.data.ts` | All 104 World Cup 2026 matches (group + knockouts), fixture timing, venue, derived stage/group. Inlined JSON, no external deps. | 290 |
 | `README.md` | This file. |
 
-**Total dependency footprint:** React (already in your project). No other packages.
+**Total dependency footprint:** React only (already in your project) for the .tsx component. The four `.data.ts` files are pure data + helpers with zero imports.
 
 ## Drop-in steps (SteamWatch / SharpCheck)
 
-1. Copy both `.ts` / `.tsx` files into your SharpCheck project, e.g.:
+1. Copy the files you want into your SharpCheck project, e.g.:
    ```
-   src/app/tools/qualifying-xg/
-     ├── qualifying-xg.tsx
-     └── qualifying-xg.data.ts
+   src/app/tools/wc-2026/
+     ├── qualifying-xg.tsx        # only needed if you want the xG UI
+     ├── qualifying-xg.data.ts    # xG data + aggregate()
+     ├── groups.data.ts           # 48 teams across 12 groups
+     ├── venues.data.ts           # 16 host venues
+     └── fixtures.data.ts         # 104 matches with derived stage/group
    ```
+
+   Each `.data.ts` file is independent — you can take just one, just two, or all five.
 
 2. In your route / page file:
    ```tsx
@@ -109,6 +117,71 @@ Source: https://www.wyscout.com/
 - "xG dominance bar" — bidirectional sparkline visualising xG - xGA per match
 - Optional `note` field per team (renders as a red caveat banner)
 
+## groups.data.ts API
+
+```ts
+import {
+  BRACKET_TEAMS,        // all 48 teams: { name, code, flag, group }
+  BRACKET_GROUPS,       // ['A','B','C','D','E','F','G','H','I','J','K','L']
+  bracketTeamsByGroup,  // (group: string) => BracketTeam[]
+  bracketTeamByCode,    // (code: string) => BracketTeam | undefined  (FIFA 3-letter code)
+  fifaCodeForNation,    // (name: string) => string | null  (handles aliases like 'Türkiye' → TUR)
+  flagUrl,              // (flag: string, width?: 20|40|80|160) => string | null  (flagcdn.com URL)
+} from './groups.data';
+
+// Example: list all of Group C
+bracketTeamsByGroup('C');
+// → [{ name:'Brazil', code:'BRA', flag:'br', group:'C' }, ...]
+
+// Example: build a flag image src for England
+flagUrl('gb-eng', 40);  // → 'https://flagcdn.com/w40/gb-eng.png'
+```
+
+## venues.data.ts API
+
+```ts
+import { VENUES, type Venue } from './venues.data';
+
+VENUES.length;                                    // 16
+VENUES.filter(v => v.country === 'Mexico');       // 3 Mexican venues
+VENUES.filter(v => v.altitudeM >= 1000);          // altitude venues
+VENUES.filter(v => v.juneAvgHighC >= 32);         // hottest venues
+```
+
+Each `Venue` has: `city`, `stadium`, `country` ('USA' | 'Mexico' | 'Canada'), `lat`, `lng`, `altitudeM`, `juneAvgHighC`, `juneAvgHumidity`, `roof` ('open' | 'closed' | 'retractable'), optional `notes`.
+
+## fixtures.data.ts API
+
+```ts
+import {
+  MATCHES,              // FixtureMatch[] — all 104 matches in fixture order
+  GROUPS,               // Record<'A'..'L', string[]>  (4 teams per group)
+  GROUP_KEYS,           // ['A','B','C','D','E','F','G','H','I','J','K','L']
+  matchesForGroup,      // (group: 'A'..'L') => FixtureMatch[]
+  canonicalNation,      // (wikiName: string) => string  (e.g. 'Czech Republic' → 'Czechia')
+  STAGE_LABEL,          // { GROUP: 'Group stage', R32: 'Round of 32', ... }
+  STAGE_SHORT,          // { GROUP: 'GS', R32: 'R32', ... }
+  FIXTURES_SOURCE,      // { url, asOf }
+} from './fixtures.data';
+
+// Each FixtureMatch has:
+//   no:        1..104
+//   date:      "June 11, 2026"
+//   iso:       "2026-06-11"
+//   kickoff:   "1:00 p.m."
+//   utc:       "-6"
+//   home, away: canonical nation names OR placeholders ("Winner Group A")
+//   homeIsTeam, awayIsTeam: true once group stage resolves
+//   stadium, city, venueRaw
+//   stage:     'GROUP'|'R32'|'R16'|'QF'|'SF'|'3RD'|'FINAL'
+//   group:     'A'..'L' | null  (null for knockout matches)
+
+// Examples
+matchesForGroup('C').length;                        // 6 (4-team round-robin = C(4,2))
+MATCHES.filter(m => m.stage === 'R32').length;      // 16
+MATCHES.filter(m => m.stage === 'FINAL')[0];        // the final at MetLife
+```
+
 ## License / attribution
 
-Source data is Neil's Wyscout subscription extract; the component is project-internal code transplanted from Mundial '26. Internal use only — credit Wyscout when displaying the data publicly.
+Source data is Neil's Wyscout subscription extract (xG only); group/fixture/venue data is from Wikipedia (CC-BY-SA). The component is project-internal code transplanted from Mundial '26. Credit Wyscout + Wikipedia when displaying the data publicly.
