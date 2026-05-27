@@ -1,4 +1,4 @@
-import { BASE_CAMPS, baseCampByNation, haversineKm } from '../src/data/baseCamps';
+import { BASE_CAMPS, haversineKm } from '../src/data/baseCamps';
 import { GROUPS, GROUP_KEYS, MATCHES } from '../src/data/fixtures';
 import { VENUES } from '../src/data/venues';
 
@@ -18,20 +18,18 @@ const fixtureStadiums = new Set(MATCHES.map((m) => m.stadium));
 const stadiumMisses = [...fixtureStadiums].filter((s) => !venueStadiums.has(s));
 console.log('Fixture stadiums missing in VENUES:', stadiumMisses);
 
-// Compute top-5 most-traveled and bottom-5 lowest-traveled (group stage only)
+// Compute top-5 most-traveled and bottom-5 lowest-traveled (group stage only).
+// Match-to-match travel only — pre-tournament arrival flight (base → MD1) excluded.
 function travel(nation: string): { km: number; legs: number } {
-  const base = baseCampByNation(nation);
-  if (!base) return { km: 0, legs: 0 };
   const fixtures = MATCHES.filter((m) => m.stage === 'GROUP' && (m.home === nation || m.away === nation))
     .sort((a, b) => a.iso.localeCompare(b.iso));
-  let prev = { lat: base.lat, lng: base.lng };
   let km = 0;
   let legs = 0;
-  for (const m of fixtures) {
-    const v = VENUES.find((x) => x.stadium === m.stadium);
-    if (!v) continue;
-    km += haversineKm(prev, { lat: v.lat, lng: v.lng });
-    prev = { lat: v.lat, lng: v.lng };
+  for (let i = 1; i < fixtures.length; i++) {
+    const a = VENUES.find((x) => x.stadium === fixtures[i - 1].stadium);
+    const b = VENUES.find((x) => x.stadium === fixtures[i].stadium);
+    if (!a || !b) continue;
+    km += haversineKm({ lat: a.lat, lng: a.lng }, { lat: b.lat, lng: b.lng });
     legs++;
   }
   return { km, legs };

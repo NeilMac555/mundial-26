@@ -72,17 +72,21 @@ function buildTeamTravel(nation: string): TeamTravel | null {
   const base = baseCampByNation(nation);
   const matches = teamGroupFixtures(nation);
 
+  // Inter-match legs only — teams settle at base camp well before MD1, so we
+  // don't count the pre-tournament arrival flight in the travel total.
   const legs: Leg[] = [];
-  let prevPoint = base ? { lat: base.lat, lng: base.lng } : null;
-  let prevLabel = base ? `Base · ${base.city}` : 'Base camp · TBC';
-
-  for (const m of matches) {
-    const v = venueForMatch(m);
-    if (!v || !prevPoint) continue;
-    const km = haversineKm(prevPoint, { lat: v.lat, lng: v.lng });
-    legs.push({ fromLabel: prevLabel, toLabel: v.stadium, km, matchIso: m.iso, match: m });
-    prevPoint = { lat: v.lat, lng: v.lng };
-    prevLabel = v.stadium;
+  for (let i = 1; i < matches.length; i++) {
+    const prevV = venueForMatch(matches[i - 1]);
+    const v = venueForMatch(matches[i]);
+    if (!prevV || !v) continue;
+    const km = haversineKm({ lat: prevV.lat, lng: prevV.lng }, { lat: v.lat, lng: v.lng });
+    legs.push({
+      fromLabel: prevV.stadium,
+      toLabel: v.stadium,
+      km,
+      matchIso: matches[i].iso,
+      match: matches[i],
+    });
   }
 
   const restDays: number[] = [];
@@ -91,13 +95,16 @@ function buildTeamTravel(nation: string): TeamTravel | null {
   }
 
   const totalKm = legs.reduce((s, l) => s + l.km, 0);
-  const worstLegKm = legs.reduce((m, l) => Math.max(m, l.km), 0);
+  const worstLegKm = legs.length ? legs.reduce((m, l) => Math.max(m, l.km), 0) : 0;
   const minRest = restDays.length ? Math.min(...restDays) : null;
   const avgRest = restDays.length ? restDays.reduce((s, r) => s + r, 0) / restDays.length : null;
 
-  // Distinct cities the team plays in (the base-camp city counts only if it's a host).
+  // Distinct stadiums visited across the group stage.
   const cities = new Set<string>();
-  for (const l of legs) cities.add(l.toLabel);
+  for (const m of matches) {
+    const v = venueForMatch(m);
+    if (v) cities.add(v.stadium);
+  }
 
   return {
     nation, group, base, matches, legs, restDays,
@@ -169,7 +176,7 @@ export function TravelRest() {
     <div>
       <TCaption>
         <TCaptionItem label="Source" value="FIFA-confirmed base camps · 2026-05-27 (Iran → Tijuana)" />
-        <TCaptionItem label="Distance" value="Great-circle (haversine) km, base → match 1 → 2 → 3" />
+        <TCaptionItem label="Distance" value="Great-circle (haversine) km · match-to-match only (base→MD1 excluded)" />
         <TCaptionItem label="Rest" value="Calendar days between consecutive group fixtures" />
         <TCaptionItem
           label="Tournament avg travel"
@@ -320,9 +327,10 @@ function BackgroundCallout() {
         physiological deficit by matchday 3 than the bracket itself implies.
       </p>
       <p style={{ margin: 0, fontSize: 14, lineHeight: 1.55, color: 'var(--color-text-2)' }}>
-        Each team's distance is calculated from their Wikipedia-listed base camp to match 1, then between
-        each subsequent group venue. Big regional differences emerge: Mexico-grouped sides and Pacific
-        Northwest sides travel a fraction of what cross-continental groups (D, H, K) face.
+        Teams arrive at their base camp days before the tournament starts, so the pre-tournament
+        flight doesn't count — only the <strong style={{ color: 'var(--color-text)' }}>match-to-match hops</strong>{' '}
+        do. A team in a tight-cluster group (all California, or all Mexico) might travel zero. A team
+        asked to swing coast-to-coast between MD2 and MD3 is on a different physiological clock.
       </p>
     </div>
   );
@@ -381,9 +389,9 @@ function GroupFilterRow({
    ============================================================ */
 
 function totalTone(km: number): PillTone {
-  if (km >= 6000) return 'red';
-  if (km >= 3500) return 'gold';
-  if (km >= 1500) return 'mute';
+  if (km >= 5000) return 'red';
+  if (km >= 2500) return 'gold';
+  if (km >= 800) return 'mute';
   return 'green';
 }
 function legTone(km: number): PillTone {
@@ -524,7 +532,8 @@ function TravelDetail({ t }: { t: TeamTravel }) {
           {t.matches.map((m, idx) => {
             const opp = m.home === t.nation ? m.away : m.home;
             const isHome = m.home === t.nation;
-            const leg = t.legs[idx];
+            // legs[i] is the travel INTO match i+1; MD1 has none (team is already settled at base).
+            const leg = idx === 0 ? null : t.legs[idx - 1];
             const rest = idx === 0 ? null : t.restDays[idx - 1];
             return (
               <tr key={m.no} style={{ borderTop: '1px solid var(--color-border)' }}>
@@ -547,7 +556,11 @@ function TravelDetail({ t }: { t: TeamTravel }) {
                     <TPill tone={legTone(leg.km)} size="sm">
                       <TMono size={11} color="inherit" weight={500}>{Math.round(leg.km).toLocaleString()}</TMono> km
                     </TPill>
-                  ) : '—'}
+                  ) : (
+                    <span style={{ color: 'var(--color-text-4)', fontSize: 11, fontStyle: 'italic' }}>
+                      settled at base
+                    </span>
+                  )}
                 </td>
                 <td style={{ padding: '8px 8px', textAlign: 'right' }}>
                   {rest !== null ? (
@@ -599,9 +612,10 @@ function Methodology() {
       >
         <p style={{ margin: '0 0 10px' }}>
           <strong style={{ color: 'var(--color-gold)' }}>Distance:</strong> great-circle (haversine) km
-          between centroid coordinates of the base-camp city and each subsequent host stadium. Real
-          flight paths are slightly longer; ground transfers add a few more km. This is a lower-bound
-          proxy for relative travel load — not an exact mileage figure.
+          between consecutive host stadium centroids. We <em>exclude</em> the base camp → MD1 hop because
+          teams arrive days in advance and that travel doesn't compromise in-tournament recovery. Totals
+          are inter-match only. Real flight paths are slightly longer; ground transfers add a few more
+          km. This is a lower-bound proxy for relative travel load.
         </p>
         <p style={{ margin: '0 0 10px' }}>
           <strong style={{ color: 'var(--color-gold)' }}>Rest days:</strong> calendar-day delta between
