@@ -168,7 +168,7 @@ export function TravelRest() {
   return (
     <div>
       <TCaption>
-        <TCaptionItem label="Source" value="Wikipedia · Team base camps · captured 2026-05-27" />
+        <TCaptionItem label="Source" value="FIFA-confirmed base camps · 2026-05-27 (Iran → Tijuana)" />
         <TCaptionItem label="Distance" value="Great-circle (haversine) km, base → match 1 → 2 → 3" />
         <TCaptionItem label="Rest" value="Calendar days between consecutive group fixtures" />
         <TCaptionItem

@@ -1,7 +1,8 @@
 // Team base camps — where each of the 48 qualifiers is housed + trains
-// during the tournament group stage. Source: Wikipedia "2026 FIFA World Cup"
-// (https://en.wikipedia.org/wiki/2026_FIFA_World_Cup), section "Team base camps".
-// Captured 2026-05-27.
+// during the tournament group stage. All 48 camps FIFA-confirmed as of 2026-05-27
+// (Iran moved to Tijuana, Mexico — three group games in USA unchanged).
+// Source: Wikipedia "2026 FIFA World Cup" (https://en.wikipedia.org/wiki/2026_FIFA_World_Cup),
+// cross-checked against the FIFA-finalised list.
 //
 // Each entry is the team's residential city / region. Lat/lng is the city centre
 // (or specific hotel where it's notable) used as the start-point for travel-distance
@@ -49,7 +50,7 @@ export const BASE_CAMPS: BaseCamp[] = [
   { nation: 'Germany',                city: 'Winston-Salem',             region: 'North Carolina',        hotel: 'Graylyn',                                                             training: 'Wake Forest University',                                lat: 36.0999, lng:  -80.2442 },
   { nation: 'Ghana',                  city: 'Providence',                region: 'Rhode Island',          hotel: 'Providence Biltmore',                                                 training: 'Bryant University, Smithfield',                         lat: 41.8240, lng:  -71.4128 },
   { nation: 'Haiti',                  city: 'Atlantic City',             region: 'New Jersey',            hotel: 'Sheraton Atlantic City Convention Center',                            training: 'Stockton University, Galloway Township',                lat: 39.3643, lng:  -74.4229 },
-  { nation: 'Iran',                   city: 'Tijuana',                   region: 'Baja California',       hotel: 'Tijuana Marriott Hotel',                                              training: 'Club Tijuana Training Center',                          lat: 32.5149, lng: -117.0382 },
+  { nation: 'Iran',                   city: 'Tijuana',                   region: 'Baja California',       hotel: 'Tijuana Marriott Hotel',                                              training: 'Centro Xoloitzcuintle (Club Tijuana)',                  lat: 32.5149, lng: -117.0382 },
   { nation: 'Iraq',                   city: 'White Sulphur Springs',     region: 'West Virginia',         hotel: 'Greenbrier Resort',                                                   training: 'The Greenbrier Sports Performance Centre',              lat: 37.7956, lng:  -80.2954 },
   { nation: 'Japan',                  city: 'Nashville',                 region: 'Tennessee',             hotel: 'TBA, Nashville',                                                      training: 'Nashville SC Training Center',                          lat: 36.1627, lng:  -86.7816 },
   { nation: 'Jordan',                 city: 'Portland',                  region: 'Oregon',                hotel: 'The Nines Hotel',                                                     training: 'University of Portland',                                lat: 45.5152, lng: -122.6784 },
