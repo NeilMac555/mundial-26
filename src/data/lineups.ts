@@ -41,36 +41,31 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-1-2-3',
     kit: { primary: '#c60b1e', accent: '#ffd700', outline: '#7a0712', number: '#ffd700' },
     rows: [
-      // Attack
       [
-        { name: 'N. Williams', backup: 'Fermín', pos: 'LW' },
+        { name: 'N. Williams', backup: 'Olmo', pos: 'LW' },
         { name: 'Oyarzabal', pos: 'ST' },
-        { name: 'Yamal', pos: 'RW' },
+        { name: 'Ferran', backup: 'Yamal (injured)', pos: 'RW' },
       ],
-      // Attacking midfield
       [
         { name: 'Fabián', pos: 'CM' },
         { name: 'Pedri', pos: 'CM' },
       ],
-      // Defensive midfield
       [
         { name: 'Rodri', backup: 'Zubimendi', pos: 'CDM' },
       ],
-      // Defence
       [
         { name: 'Cucurella', pos: 'LB' },
         { name: 'Laporte', backup: 'Eric García', pos: 'CB' },
         { name: 'Cubarsí', pos: 'CB' },
-        { name: 'M. Llorente', pos: 'RB' },
+        { name: 'M. Llorente', backup: 'Porro / Víctor Muñoz', pos: 'RB' },
       ],
-      // Goalkeeper
       [
         { name: 'Unai Simón', backup: 'Joan García', pos: 'GK' },
       ],
     ],
-    bench: ['Raya', 'Le Normand', 'Grimaldo', 'Mikel Merino', 'Olmo', 'Morata', 'Ferran Torres'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Raya', 'Le Normand', 'Grimaldo', 'Mikel Merino', 'Morata', 'Gavi', 'Baena'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Brazil: {
@@ -115,39 +110,33 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-3-2-1',
     kit: { primary: '#006341', accent: '#ffffff', outline: '#003a23', number: '#ffffff' },
     rows: [
-      // Lone striker
       [
-        { name: 'Jiménez', pos: 'ST' },
+        { name: 'Raúl Jiménez', pos: 'ST' },
       ],
-      // Behind the striker
       [
-        { name: 'Vega', pos: 'LAM' },
+        { name: 'Quiñones', backup: 'Brian Gutiérrez', pos: 'LAM' },
         { name: 'Alvarado', pos: 'RAM' },
       ],
-      // Box-to-box midfield
       [
-        { name: 'Vargas', pos: 'CM' },
         { name: 'Fidalgo', pos: 'CM' },
+        { name: 'Lira', pos: 'CM' },
       ],
-      // Single pivot
       [
-        { name: 'Lira', pos: 'CDM' },
+        { name: 'É. Álvarez', backup: 'Vargas', pos: 'CDM' },
       ],
-      // Back four
       [
         { name: 'Gallardo', pos: 'LB' },
         { name: 'Vásquez', pos: 'CB' },
         { name: 'Montes', pos: 'CB' },
-        { name: 'Sánchez', pos: 'RB' },
+        { name: 'Israel Reyes', backup: 'Jorge Sánchez', pos: 'RB' },
       ],
-      // Goalkeeper
       [
         { name: 'Rangel', pos: 'GK' },
       ],
     ],
-    bench: ['Ochoa', 'Edson Álvarez', 'Luis Chávez', 'Lozano', 'Santi Giménez', 'Lainez', 'Antuna'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Ochoa', 'Luis Chávez', 'Lozano', 'Santi Giménez', 'Lainez', 'Pizarro', 'Antuna'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   France: {
@@ -161,33 +150,29 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       // Wingers
       [
-        { name: 'Cherki', backup: 'Barcola', pos: 'LW' },
+        { name: 'Cherki', backup: 'D. Doué', pos: 'LW' },
         { name: 'Dembélé', pos: 'RW' },
       ],
-      // #10 dropping between lines
       [
         { name: 'Olise', pos: 'CAM' },
       ],
-      // Double pivot
       [
         { name: 'Rabiot', pos: 'CM' },
         { name: 'Tchouaméni', pos: 'CM' },
       ],
-      // Back four
       [
         { name: 'Theo', pos: 'LB' },
         { name: 'Upamecano', backup: 'Konaté', pos: 'CB' },
         { name: 'Saliba', pos: 'CB' },
         { name: 'Koundé', pos: 'RB' },
       ],
-      // Goalkeeper
       [
         { name: 'Maignan', pos: 'GK' },
       ],
     ],
-    bench: ['Samba', 'Pavard', 'Lucas Hernández', 'Camavinga', 'Zaire-Emery', 'Thuram', 'Kolo Muani'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Samba', 'B. Barcola', 'Lucas Hernández', 'Camavinga', 'Zaire-Emery', 'Thuram', 'Kolo Muani'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Germany: {
@@ -195,39 +180,33 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-2-3-1',
     kit: { primary: '#ffffff', accent: '#000000', outline: '#1a1a1a', number: '#000000' },
     rows: [
-      // Lone striker — Woltemade picked over Havertz
       [
-        { name: 'Woltemade', backup: 'Havertz', pos: 'ST' },
+        { name: 'Havertz', backup: 'Woltemade', pos: 'ST' },
       ],
-      // Wide forwards
       [
         { name: 'Musiala', pos: 'LW' },
         { name: 'Sané', pos: 'RW' },
       ],
-      // #10 between lines
       [
         { name: 'Wirtz', pos: 'CAM' },
       ],
-      // Double pivot — Goretzka holds off Groß and Stiller
       [
         { name: 'Goretzka', backup: 'Groß / Stiller', pos: 'CM' },
         { name: 'Pavlovic', pos: 'CM' },
       ],
-      // Back four
       [
         { name: 'Raum', pos: 'LB' },
         { name: 'Schlotterbeck', pos: 'CB' },
         { name: 'Tah', backup: 'Rüdiger', pos: 'CB' },
         { name: 'Kimmich', pos: 'RB' },
       ],
-      // Goalkeeper
       [
-        { name: 'Baumann', pos: 'GK' },
+        { name: 'Neuer', backup: 'Baumann', pos: 'GK' },
       ],
     ],
-    bench: ['ter Stegen', 'Kehrer', 'Anton', 'Andrich', 'Gnabry', 'Füllkrug', 'Beier'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Rüdiger', 'Leweling', 'Karl', 'Thiaw', 'Beier', 'Anton', 'Stiller'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Argentina: {
@@ -235,73 +214,61 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-2-3-1',
     kit: { primary: '#6cace4', accent: '#ffffff', outline: '#1a3a6a', number: '#1a3a6a' },
     rows: [
-      // Lone striker — Lautaro
       [
-        { name: 'L. Martínez', pos: 'ST' },
+        { name: 'L. Martínez', backup: 'Almada', pos: 'ST' },
       ],
-      // Front three behind the striker — flat line in the source image
       [
-        { name: 'Álvarez', pos: 'LW' },
+        { name: 'Messi', pos: 'LW' },
         { name: 'Mac Allister', pos: 'CAM' },
-        { name: 'Messi', pos: 'RW' },
+        { name: 'Álvarez', pos: 'RW' },
       ],
-      // Double pivot
       [
-        { name: 'De Paul', pos: 'CM' },
-        { name: 'Fernández', pos: 'CM' },
+        { name: 'De Paul', backup: 'Paredes', pos: 'CM' },
+        { name: 'Enzo Fernández', pos: 'CM' },
       ],
-      // Back four
       [
         { name: 'Tagliafico', pos: 'LB' },
-        { name: 'Otamendi', pos: 'CB' },
         { name: 'Romero', pos: 'CB' },
+        { name: 'Lisandro Martínez', backup: 'Otamendi', pos: 'CB' },
         { name: 'Molina', pos: 'RB' },
       ],
-      // Goalkeeper — Dibu
       [
         { name: 'E. Martínez', pos: 'GK' },
       ],
     ],
-    bench: ['Rulli', 'Lisandro Martínez', 'Paredes', 'Lo Celso', 'Almada', 'Garnacho', 'N. González'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Rulli', 'Lo Celso', 'Garnacho', 'N. González', 'Mastantuono', 'Acuña', 'Quintero'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Algeria: {
     nation: 'Algeria',
-    formation: '4-2-2-2',
+    formation: '4-3-3',
     kit: { primary: '#006233', accent: '#d21034', outline: '#003a1d', number: '#ffffff' },
     rows: [
-      // Strike pair
       [
-        { name: 'Gouiri', pos: 'ST' },
-        { name: 'Amoura', pos: 'ST' },
+        { name: 'Maza', pos: 'LW' },
+        { name: 'Gouiri', backup: 'Amoura', pos: 'ST' },
+        { name: 'Mahrez', backup: 'Chaïbi', pos: 'RW' },
       ],
-      // Narrow #10s
-      [
-        { name: 'Aouar', pos: 'LAM' },
-        { name: 'Mahrez', pos: 'RAM' },
-      ],
-      // Double pivot
       [
         { name: 'Bennacer', pos: 'CM' },
         { name: 'Boudaoui', pos: 'CM' },
+        { name: 'Chergui', pos: 'CM' },
       ],
-      // Back four
       [
-        { name: 'Aït Nouri', pos: 'LB' },
-        { name: 'Bensebaini', pos: 'CB' },
+        { name: 'Aït-Nouri', pos: 'LB' },
+        { name: 'Bensebaïni', backup: 'Belaïd', pos: 'CB' },
         { name: 'Mandi', pos: 'CB' },
         { name: 'Belghali', pos: 'RB' },
       ],
-      // Goalkeeper — Luca Zidane
       [
-        { name: 'Zidane', pos: 'GK' },
+        { name: 'Luca Zidane', pos: 'GK' },
       ],
     ],
-    bench: ['M’Bolhi', 'Atal', 'Tougai', 'Zorgane', 'Brahimi', 'Belaili', 'Slimani'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['M’Bolhi', 'Atal', 'Tougai', 'Zorgane', 'Brahimi', 'Belaili', 'Aouar'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Morocco: {
@@ -309,36 +276,31 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-1-2-3',
     kit: { primary: '#c1272d', accent: '#006233', outline: '#8a1c20', number: '#ffffff' },
     rows: [
-      // Front three
       [
-        { name: 'Ezzalzouli', pos: 'LW' },
-        { name: 'El Kaabi', pos: 'ST' },
-        { name: 'Brahim Díaz', pos: 'RW' },
+        { name: 'Abde', pos: 'LW' },
+        { name: 'El Kaabi', backup: 'En-Nesyri', pos: 'ST' },
+        { name: 'Brahim', pos: 'RW' },
       ],
-      // Two CMs
       [
         { name: 'Ounahi', pos: 'CM' },
-        { name: 'Saïbari', pos: 'CM' },
+        { name: 'El Khannouss', pos: 'CM' },
       ],
-      // Single pivot
       [
-        { name: 'El Aynaoui', pos: 'CDM' },
+        { name: 'S. Amrabat', backup: 'El Aynaoui', pos: 'CDM' },
       ],
-      // Back four
       [
         { name: 'Mazraoui', pos: 'LB' },
-        { name: 'Saïss', pos: 'CB' },
         { name: 'Aguerd', pos: 'CB' },
-        { name: 'Hakimi', pos: 'RB' },
+        { name: 'Chadi Riad', backup: 'Diop', pos: 'CB' },
+        { name: 'Achraf', pos: 'RB' },
       ],
-      // Goalkeeper — Bono
       [
-        { name: 'Bounou', pos: 'GK' },
+        { name: 'Bono', pos: 'GK' },
       ],
     ],
-    bench: ['Munir', 'Benoun', 'Adli', 'Bilal El Khannouss', 'Ben Seghir', 'Aboukhlal', 'En-Nesyri'],
-    source: 'ESPN lineup tool (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Munir', 'Benoun', 'Saïss', 'Adli', 'Ben Seghir', 'Aboukhlal', 'Saïbari'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Portugal: {
@@ -346,36 +308,31 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-2-3-1',
     kit: { primary: '#a32638', accent: '#006a44', outline: '#6b1825', number: '#ffffff' },
     rows: [
-      // Lone striker — Ronaldo at 41, still picking himself
       [
-        { name: 'Ronaldo', pos: 'ST' },
+        { name: 'Ronaldo', backup: 'G. Ramos', pos: 'ST' },
       ],
-      // Front three — flat line behind the striker
       [
         { name: 'Leão', pos: 'LW' },
         { name: 'Fernandes', pos: 'CAM' },
-        { name: 'Silva', pos: 'RW' },
+        { name: 'B. Silva', pos: 'RW' },
       ],
-      // Double pivot — J. Neves (PSG) over Rúben Neves
       [
         { name: 'J. Neves', pos: 'CM' },
         { name: 'Vitinha', pos: 'CM' },
       ],
-      // Back four
       [
-        { name: 'Mendes', pos: 'LB' },
+        { name: 'N. Mendes', pos: 'LB' },
+        { name: 'R. Dias', pos: 'CB' },
         { name: 'Inácio', pos: 'CB' },
-        { name: 'Dias', pos: 'CB' },
-        { name: 'Cancelo', pos: 'RB' },
+        { name: 'Cancelo', backup: 'Dalot', pos: 'RB' },
       ],
-      // Goalkeeper — Diogo Costa
       [
-        { name: 'Costa', pos: 'GK' },
+        { name: 'D. Costa', pos: 'GK' },
       ],
     ],
-    bench: ['José Sá', 'A. Silva', 'Dalot', 'R. Neves', 'P. Neto', 'J. Félix', 'G. Ramos'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['José Sá', 'A. Silva', 'R. Neves', 'P. Neto', 'J. Félix', 'Veiga', 'Conceição'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Austria: {
@@ -383,36 +340,31 @@ export const LINEUPS: Record<string, Lineup> = {
     formation: '4-2-3-1',
     kit: { primary: '#ed2939', accent: '#ffffff', outline: '#8b1820', number: '#ffffff' },
     rows: [
-      // Lone striker
       [
         { name: 'Arnautović', pos: 'ST' },
       ],
-      // Front three behind the striker
       [
-        { name: 'Baumgartner', pos: 'LW' },
+        { name: 'Wimmer', pos: 'LW' },
         { name: 'Sabitzer', pos: 'CAM' },
-        { name: 'Schmid', pos: 'RW' },
+        { name: 'Schmid', backup: 'Baumgartner', pos: 'RW' },
       ],
-      // Double pivot — Xaver Schlager (Leipzig CM)
       [
         { name: 'Seiwald', pos: 'CM' },
         { name: 'X. Schlager', pos: 'CM' },
       ],
-      // Back four
       [
         { name: 'Mwene', pos: 'LB' },
+        { name: 'Alaba', pos: 'CB' },
         { name: 'Danso', pos: 'CB' },
-        { name: 'Friedl', pos: 'CB' },
         { name: 'Laimer', pos: 'RB' },
       ],
-      // Goalkeeper — Alexander Schlager (no relation to Xaver)
       [
-        { name: 'A. Schlager', pos: 'GK' },
+        { name: 'Pentz', backup: 'A. Schlager', pos: 'GK' },
       ],
     ],
-    bench: ['Pentz', 'Lindner', 'Trauner', 'Posch', 'Grillitsch', 'Gregoritsch', 'Adamu'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Lindner', 'Trauner', 'Posch', 'Grillitsch', 'Gregoritsch', 'Adamu', 'Friedl'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Jordan: {
@@ -421,30 +373,30 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#ce1126', accent: '#ffffff', outline: '#7a0a17', number: '#ffffff' },
     rows: [
       [
-        { name: 'Al Naimat', pos: 'ST' },
+        { name: 'Ali Olwan', backup: 'Al-Mardi', pos: 'ST' },
       ],
       [
-        { name: 'Al Tamari', pos: 'LAM' },
-        { name: 'Al Olwan', pos: 'RAM' },
+        { name: 'Al-Taamari', pos: 'LAM' },
+        { name: 'Al-Rawabdeh', pos: 'RAM' },
       ],
       [
-        { name: 'Al Quraishi', pos: 'LM' },
-        { name: 'Jamous', pos: 'CM' },
-        { name: 'Al Rashdan', pos: 'CM' },
-        { name: 'Taha', pos: 'RM' },
+        { name: 'Abu Hashish', pos: 'LWB' },
+        { name: 'Assaf', pos: 'CM' },
+        { name: 'Al-Rashdan', pos: 'CM' },
+        { name: 'Abu Taha', pos: 'RWB' },
       ],
       [
-        { name: 'Al Dahab', pos: 'LCB' },
-        { name: 'Nasib', pos: 'CB' },
-        { name: 'Al Arab', pos: 'RCB' },
+        { name: 'Naseeb', pos: 'LCB' },
+        { name: 'Al Arab', pos: 'CB' },
+        { name: 'Al Nadi', pos: 'RCB' },
       ],
       [
-        { name: 'Abulaila', pos: 'GK' },
+        { name: 'Layla', pos: 'GK' },
       ],
     ],
-    bench: ['Al Fakhouri', 'Al Ajalin', 'Haddad', 'Al Mardi', 'Al Rawabdeh', 'Marei', 'Al Saify'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Al Fakhouri', 'Al Ajalin', 'Haddad', 'Sabra', 'Marei', 'Al Saify', 'Jamous'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Colombia: {
@@ -453,21 +405,21 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#FCD116', accent: '#003893', outline: '#8a7308', number: '#003893' },
     rows: [
       [
-        { name: 'Suárez', pos: 'ST' },
+        { name: 'Luis Suárez', backup: 'Córdoba', pos: 'ST' },
       ],
       [
-        { name: 'Díaz', pos: 'LW' },
-        { name: 'Rodríguez', pos: 'CAM' },
-        { name: 'Arias', pos: 'RW' },
+        { name: 'Luis Díaz', pos: 'LW' },
+        { name: 'James', pos: 'CAM' },
+        { name: 'Jhon Arias', pos: 'RW' },
       ],
       [
         { name: 'Lerma', pos: 'CM' },
-        { name: 'Ríos', pos: 'CM' },
+        { name: 'Richard Ríos', pos: 'CM' },
       ],
       [
         { name: 'Mojica', pos: 'LB' },
         { name: 'Lucumí', pos: 'CB' },
-        { name: 'Sánchez', pos: 'CB' },
+        { name: 'Davinson', backup: 'Montero', pos: 'CB' },
         { name: 'Muñoz', pos: 'RB' },
       ],
       [
@@ -475,8 +427,8 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
     ],
     bench: ['Mier', 'Mina', 'Cuesta', 'Barrios', 'Uribe', 'Borja', 'Cuadrado'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Croatia: {
@@ -494,21 +446,21 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       [
         { name: 'Modrić', pos: 'CM' },
-        { name: 'Kovačić', pos: 'CM' },
+        { name: 'Kovačić', backup: 'L. Sučić', pos: 'CM' },
       ],
       [
-        { name: 'Gvardiol', pos: 'LB' },
-        { name: 'Ćaleta-Car', pos: 'CB' },
-        { name: 'Vušković', pos: 'CB' },
+        { name: 'Sosa', pos: 'LB' },
+        { name: 'Gvardiol', pos: 'CB' },
+        { name: 'Šutalo', backup: 'Ćaleta-Car / Vušković', pos: 'CB' },
         { name: 'Stanišić', pos: 'RB' },
       ],
       [
         { name: 'Livaković', pos: 'GK' },
       ],
     ],
-    bench: ['Ivušić', 'Erlić', 'Sosa', 'Sučić', 'Brozović', 'Petković', 'Baturina'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Ivušić', 'Erlić', 'Brozović', 'Petković', 'Baturina', 'Sučić', 'Pjaca'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Ghana: {
@@ -520,14 +472,14 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Williams', pos: 'ST' },
       ],
       [
-        { name: 'Ayew', pos: 'LAM' },
-        { name: 'Semenyo', pos: 'RAM' },
+        { name: 'J. Ayew', pos: 'LAM' },
+        { name: 'Semenyo', backup: 'Fatawu', pos: 'RAM' },
       ],
       [
-        { name: 'Mensah', pos: 'LM' },
-        { name: 'Sibo', pos: 'CM' },
-        { name: 'Partey', pos: 'CM' },
-        { name: 'Yirenkyi', pos: 'RM' },
+        { name: 'Seidu', pos: 'LWB' },
+        { name: 'Thomas', pos: 'CM' },
+        { name: 'Sibo', backup: 'Köhn', pos: 'CM' },
+        { name: 'Yirenkyi', pos: 'RWB' },
       ],
       [
         { name: 'Opoku', pos: 'LCB' },
@@ -535,12 +487,12 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Adjetey', pos: 'RCB' },
       ],
       [
-        { name: 'Asare', pos: 'GK' },
+        { name: 'Asare', backup: 'Ati-Zigi', pos: 'GK' },
       ],
     ],
-    bench: ['Wollacott', 'J. Mensah', 'Salisu', 'Baba Rahman', 'Kudus', 'Sulemana', 'Bukari'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Wollacott', 'J. Mensah', 'Salisu', 'Baba Rahman', 'Owusu', 'Sulemana', 'Bukari'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Panama: {
@@ -549,30 +501,30 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#db3030', accent: '#1d39b3', outline: '#8a1d1d', number: '#ffffff' },
     rows: [
       [
-        { name: 'Waterman', pos: 'ST' },
+        { name: 'Waterman', backup: 'Fajardo', pos: 'ST' },
       ],
       [
-        { name: 'Díaz', pos: 'LW' },
-        { name: 'Carrasquilla', pos: 'CAM' },
+        { name: 'Ismael Díaz', pos: 'LW' },
+        { name: 'Carrasquilla', backup: 'Bárcenas', pos: 'CAM' },
         { name: 'Rodríguez', pos: 'RW' },
       ],
       [
-        { name: 'Harvey', pos: 'CM' },
+        { name: 'Blackman', backup: 'Harvey', pos: 'CM' },
         { name: 'Godoy', pos: 'CM' },
       ],
       [
         { name: 'Davis', pos: 'LB' },
         { name: 'Córdoba', pos: 'CB' },
-        { name: 'Andrade', pos: 'CB' },
+        { name: 'Andrade', backup: 'Escobar', pos: 'CB' },
         { name: 'Murillo', pos: 'RB' },
       ],
       [
         { name: 'Mosquera', pos: 'GK' },
       ],
     ],
-    bench: ['Mejía', 'Galindo', 'Bárcenas', 'Welch', 'Tanner', 'Fajardo', 'Watson'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Mejía', 'Galindo', 'Welch', 'Tanner', 'Watson', 'Galván', 'Cox'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   England: {
@@ -584,27 +536,27 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Kane', pos: 'ST' },
       ],
       [
-        { name: 'Gordon', pos: 'LW' },
-        { name: 'Bellingham', pos: 'CAM' },
+        { name: 'Rashford', backup: 'Gordon', pos: 'LW' },
+        { name: 'Bellingham', backup: 'Eze / Rogers', pos: 'CAM' },
         { name: 'Saka', pos: 'RW' },
       ],
       [
         { name: 'Rice', pos: 'CM' },
-        { name: 'Anderson', pos: 'CM' },
+        { name: 'Anderson', backup: 'Mainoo', pos: 'CM' },
       ],
       [
         { name: 'O’Reilly', pos: 'LB' },
         { name: 'Guéhi', pos: 'CB' },
-        { name: 'Konsa', pos: 'CB' },
+        { name: 'Konsa', backup: 'Stones', pos: 'CB' },
         { name: 'James', pos: 'RB' },
       ],
       [
         { name: 'Pickford', pos: 'GK' },
       ],
     ],
-    bench: ['D. Henderson', 'Stones', 'Trippier', 'Mainoo', 'Foden', 'Watkins', 'Eze'],
-    source: 'futbolfantasy.com (May 2026 best-guess) — Palmer → Gordon swap per Neil',
-    asOf: '2026-05-10',
+    bench: ['D. Henderson', 'Trippier', 'Foden', 'Watkins', 'Livramento', 'Burn', 'Madueke'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Netherlands: {
@@ -614,27 +566,27 @@ export const LINEUPS: Record<string, Lineup> = {
     rows: [
       [
         { name: 'Gakpo', pos: 'LW' },
-        { name: 'Depay', pos: 'ST' },
+        { name: 'Memphis', backup: 'Zirkzee', pos: 'ST' },
         { name: 'Malen', pos: 'RW' },
       ],
       [
         { name: 'Reijnders', pos: 'CM' },
-        { name: 'De Jong', pos: 'CM' },
+        { name: 'F. de Jong', pos: 'CM' },
         { name: 'Gravenberch', pos: 'CM' },
       ],
       [
-        { name: 'Van de Ven', pos: 'LB' },
+        { name: 'Aké', backup: 'Van de Ven', pos: 'LB' },
         { name: 'Van Dijk', pos: 'CB' },
-        { name: 'Timber', pos: 'CB' },
+        { name: 'Timber', backup: 'Van Hecke', pos: 'CB' },
         { name: 'Dumfries', pos: 'RB' },
       ],
       [
         { name: 'Verbruggen', pos: 'GK' },
       ],
     ],
-    bench: ['Flekken', 'Aké', 'Hato', 'Schouten', 'Xavi Simons', 'Brobbey', 'Weghorst'],
-    source: 'ESPN lineup tool (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Flekken', 'Hato', 'Schouten', 'Xavi Simons', 'Brobbey', 'Weghorst', 'Frimpong'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Senegal: {
@@ -645,58 +597,58 @@ export const LINEUPS: Record<string, Lineup> = {
       [
         { name: 'Mané', pos: 'LW' },
         { name: 'Jackson', pos: 'ST' },
-        { name: 'I. Ndiaye', pos: 'RW' },
+        { name: 'I. Sarr', backup: 'Ndiaye', pos: 'RW' },
       ],
       [
-        { name: 'P. Gueye', pos: 'CM' },
-        { name: 'I. Gueye', pos: 'CM' },
-        { name: 'Diarra', pos: 'CM' },
+        { name: 'Pape Gueye', pos: 'CM' },
+        { name: 'Gana Gueye', pos: 'CM' },
+        { name: 'Diarra', backup: 'Camara', pos: 'CM' },
       ],
       [
-        { name: 'Diouf', pos: 'LB' },
-        { name: 'Niakhaté', pos: 'CB' },
+        { name: 'Malick Diouf', pos: 'LB' },
+        { name: 'Niakhaté', backup: 'M. Sarr', pos: 'CB' },
         { name: 'Koulibaly', pos: 'CB' },
         { name: 'Diatta', pos: 'RB' },
       ],
       [
-        { name: 'Mendy', pos: 'GK' },
+        { name: 'É. Mendy', pos: 'GK' },
       ],
     ],
-    bench: ['Dieng', 'Seck', 'Sabaly', 'Pape Matar Sarr', 'Camara', 'I. Sarr', 'Dia'],
-    source: 'ESPN lineup tool (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Dieng', 'Seck', 'Sabaly', 'Pape Matar Sarr', 'Dia', 'Boulaye Dia', 'Lopy'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'United States': {
     nation: 'United States',
-    formation: '3-4-2-1',
+    formation: '4-2-3-1',
     kit: { primary: '#1a3766', accent: '#c8102e', outline: '#0c1f3d', number: '#ffffff' },
     rows: [
       [
-        { name: 'Balogun', pos: 'ST' },
+        { name: 'Balogun', backup: 'Pepi', pos: 'ST' },
       ],
       [
-        { name: 'McKennie', pos: 'LAM' },
-        { name: 'Pulisic', pos: 'RAM' },
+        { name: 'Pulisic', pos: 'LW' },
+        { name: 'Tillman', pos: 'CAM' },
+        { name: 'Weah', pos: 'RW' },
       ],
       [
-        { name: 'Robinson', pos: 'LWB' },
-        { name: 'Tessmann', pos: 'CM' },
+        { name: 'McKennie', pos: 'CM' },
         { name: 'Adams', pos: 'CM' },
-        { name: 'Dest', pos: 'RWB' },
       ],
       [
-        { name: 'Ream', pos: 'LCB' },
-        { name: 'Richards', pos: 'CB' },
-        { name: 'McKenzie', pos: 'RCB' },
+        { name: 'Robinson', pos: 'LB' },
+        { name: 'Ream', pos: 'CB' },
+        { name: 'Richards', backup: 'McKenzie / Trusty', pos: 'CB' },
+        { name: 'Dest', pos: 'RB' },
       ],
       [
         { name: 'Freese', pos: 'GK' },
       ],
     ],
-    bench: ['Turner', 'Scally', 'Cardoso', 'Musah', 'Reyna', 'Aaronson', 'Pepi'],
-    source: 'ESPN lineup tool (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Turner', 'Scally', 'Musah', 'Reyna', 'Aaronson', 'Tessmann', 'Cardoso'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Japan: {
@@ -705,30 +657,30 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#0a1d3a', accent: '#bc002d', outline: '#050d1c', number: '#ffffff' },
     rows: [
       [
-        { name: 'Ueda', pos: 'ST' },
+        { name: 'Ueda', backup: 'Maeda', pos: 'ST' },
       ],
       [
         { name: 'Kamada', pos: 'LAM' },
         { name: 'Kubo', pos: 'RAM' },
       ],
       [
-        { name: 'Mitoma', pos: 'LWB' },
-        { name: 'Sano', pos: 'CM' },
+        { name: 'Sugawara', pos: 'LWB' },
         { name: 'Endo', pos: 'CM' },
+        { name: 'Ao Tanaka', backup: 'K. Nakamura', pos: 'CM' },
         { name: 'Doan', pos: 'RWB' },
       ],
       [
-        { name: 'Ito', pos: 'LCB' },
+        { name: 'H. Ito', pos: 'LCB' },
         { name: 'Tomiyasu', pos: 'CB' },
-        { name: 'Taniguchi', pos: 'RCB' },
+        { name: 'Watanabe', backup: 'Itakura', pos: 'RCB' },
       ],
       [
         { name: 'Suzuki', pos: 'GK' },
       ],
     ],
-    bench: ['D. Suzuki', 'Itakura', 'Sakai', 'Tanaka', 'Morita', 'Minamino', 'Asano'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['D. Suzuki', 'Sakai', 'Morita', 'Minamino', 'Asano', 'Mitoma', 'Y. Suzuki'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Sweden: {
@@ -744,75 +696,73 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Elanga', pos: 'RAM' },
       ],
       [
-        { name: 'Gudmundsson', pos: 'LWB' },
-        { name: 'Ayari', pos: 'CM' },
+        { name: 'D. Svensson', pos: 'LWB' },
+        { name: 'Ayari', backup: 'Gudmundsson', pos: 'CM' },
         { name: 'Karlström', pos: 'CM' },
-        { name: 'Svensson', pos: 'RWB' },
+        { name: 'H. Johansson', pos: 'RWB' },
       ],
       [
         { name: 'Lindelöf', pos: 'LCB' },
         { name: 'Starfelt', pos: 'CB' },
-        { name: 'Hien', pos: 'RCB' },
+        { name: 'Hien', backup: 'Lagerbielke', pos: 'RCB' },
       ],
       [
         { name: 'Nordfeldt', pos: 'GK' },
       ],
     ],
-    bench: ['Olsen', 'Augustinsson', 'Bengtsson', 'Ekdal', 'Bergvall', 'Kulusevski', 'Forsberg'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Olsen', 'Augustinsson', 'Ekdal', 'Bergvall', 'Kulusevski', 'Forsberg', 'Bengtsson'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Tunisia: {
     nation: 'Tunisia',
-    formation: '4-3-2-1',
+    formation: '4-2-3-1',
     kit: { primary: '#e70013', accent: '#ffffff', outline: '#8a000c', number: '#ffffff' },
     rows: [
       [
-        { name: 'Mastouri', pos: 'ST' },
+        { name: 'Mastouri', backup: 'Chaouat', pos: 'ST' },
       ],
       [
-        { name: 'Saad', pos: 'LAM' },
-        { name: 'Ben Slimane', pos: 'RAM' },
+        { name: 'Tounekti', pos: 'LW' },
+        { name: 'Ben Slimane', backup: 'Mejbri', pos: 'CAM' },
+        { name: 'Gharbi', pos: 'RW' },
       ],
       [
-        { name: 'Hannibal', pos: 'CM' },
-        { name: 'Skhiri', pos: 'CM' },
+        { name: 'Skhiri', backup: 'Laïdouni', pos: 'CM' },
+        { name: 'Khedira', pos: 'CM' },
       ],
       [
-        { name: 'Khedira', pos: 'CDM' },
-      ],
-      [
-        { name: 'El Abdi', pos: 'LB' },
-        { name: 'Bronn', pos: 'CB' },
+        { name: 'Abdi', pos: 'LB' },
         { name: 'Talbi', pos: 'CB' },
-        { name: 'Zaalouni', pos: 'RB' },
+        { name: 'Bronn', backup: 'Rekik', pos: 'CB' },
+        { name: 'Valery', pos: 'RB' },
       ],
       [
         { name: 'Dahmen', pos: 'GK' },
       ],
     ],
-    bench: ['Ben Mustapha', 'Drager', 'Maaloul', 'Laidouni', 'Sliti', 'Khazri', 'Msakni'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Ben Mustapha', 'Drager', 'Maaloul', 'Elias Saad', 'Achouri', 'Khazri', 'Msakni'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Paraguay: {
     nation: 'Paraguay',
-    formation: '4-2-2-2',
+    formation: '4-2-3-1',
     kit: { primary: '#d52b1e', accent: '#ffffff', outline: '#8a1813', number: '#003a8c' },
     rows: [
       [
-        { name: 'Enciso', pos: 'ST' },
-        { name: 'Sanabria', pos: 'ST' },
+        { name: 'Sanabria', backup: 'Bobadilla', pos: 'ST' },
       ],
       [
-        { name: 'Almirón', pos: 'LAM' },
-        { name: 'Sosa', pos: 'RAM' },
+        { name: 'Enciso', backup: 'Sosa', pos: 'LW' },
+        { name: 'Almirón', pos: 'CAM' },
+        { name: 'Diego Gómez', pos: 'RW' },
       ],
       [
         { name: 'Cubas', pos: 'CM' },
-        { name: 'D. Gómez', pos: 'CM' },
+        { name: 'Ojeda', pos: 'CM' },
       ],
       [
         { name: 'Alonso', pos: 'LB' },
@@ -821,12 +771,12 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Cáceres', pos: 'RB' },
       ],
       [
-        { name: 'Gill', pos: 'GK' },
+        { name: 'Fernández', backup: 'Gill', pos: 'GK' },
       ],
     ],
-    bench: ['Olivier', 'R. Rojas', 'Caballero', 'Bobadilla', 'Galarza', 'Avalos', 'Bareiro'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Olivier', 'R. Rojas', 'Caballero', 'Galarza', 'Avalos', 'Bareiro', 'Sanabria (V)'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Australia: {
@@ -839,26 +789,26 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       [
         { name: 'Irankunda', pos: 'LAM' },
-        { name: 'Boyle', pos: 'RAM' },
+        { name: 'Hrustic', pos: 'RAM' },
       ],
       [
-        { name: 'Bos', pos: 'LWB' },
+        { name: 'Bos', backup: 'Trewin', pos: 'LWB' },
         { name: 'Irvine', pos: 'CM' },
-        { name: 'McGree', pos: 'CM' },
+        { name: 'O’Neill', backup: 'Metcalfe', pos: 'CM' },
         { name: 'Italiano', pos: 'RWB' },
       ],
       [
         { name: 'Burgess', pos: 'LCB' },
         { name: 'Souttar', pos: 'CB' },
-        { name: 'Circati', pos: 'RCB' },
+        { name: 'Circati', backup: 'Rowles', pos: 'RCB' },
       ],
       [
         { name: 'Ryan', pos: 'GK' },
       ],
     ],
-    bench: ['Vukovic', 'Rowles', 'Behich', 'Hrustic', 'Mooy', 'Duke', 'Borello'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Vukovic', 'Behich', 'Mooy', 'Duke', 'Borello', 'Boyle', 'Velupillay'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'Türkiye': {
@@ -867,11 +817,11 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#e30a17', accent: '#ffffff', outline: '#8a060e', number: '#ffffff' },
     rows: [
       [
-        { name: 'Aktürkoğlu', pos: 'ST' },
+        { name: 'Aktürkoğlu', backup: 'Yılmaz', pos: 'ST' },
       ],
       [
         { name: 'Yıldız', pos: 'LW' },
-        { name: 'Güler', pos: 'CAM' },
+        { name: 'Arda Güler', backup: 'Orkun', pos: 'CAM' },
         { name: 'Yılmaz', pos: 'RW' },
       ],
       [
@@ -882,15 +832,15 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Kadıoğlu', pos: 'LB' },
         { name: 'Bardakcı', pos: 'CB' },
         { name: 'Demiral', pos: 'CB' },
-        { name: 'Çelik', pos: 'RB' },
+        { name: 'Çelik', backup: 'Müldür', pos: 'RB' },
       ],
       [
         { name: 'Çakır', pos: 'GK' },
       ],
     ],
-    bench: ['Bayındır', 'Müldür', 'Söyüncü', 'Kökçü', 'Yokuşlu', 'Akgün', 'Tosun'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Bayındır', 'Söyüncü', 'Kökçü', 'Yokuşlu', 'Akgün', 'Tosun', 'Kahveci'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'DR Congo': {
@@ -904,7 +854,7 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       [
         { name: 'Elia', pos: 'LAM' },
-        { name: 'Mbuku', pos: 'RAM' },
+        { name: 'Mbuku', backup: 'Cipenga', pos: 'RAM' },
       ],
       [
         { name: 'Moutoussamy', pos: 'CM' },
@@ -920,9 +870,9 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Mpasi', pos: 'GK' },
       ],
     ],
-    bench: ['Akolo', 'Bushiri', 'Bongonda', 'Bayo', 'Mukoko', 'Lukeba', 'Brym'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Akolo', 'Tshibola', 'Bongonda', 'Bayo', 'Mukoko', 'Lukeba', 'Brym'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Uzbekistan: {
@@ -935,26 +885,26 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       [
         { name: 'Urunov', pos: 'LAM' },
-        { name: 'Fayzullaev', pos: 'RAM' },
+        { name: 'Ganiev', pos: 'RAM' },
       ],
       [
-        { name: 'Nasrullayev', pos: 'LWB' },
+        { name: 'Urozov', pos: 'LWB' },
         { name: 'Shukurov', pos: 'CM' },
         { name: 'Khamrobekov', pos: 'CM' },
         { name: 'Alijonov', pos: 'RWB' },
       ],
       [
-        { name: 'Abdullaev', pos: 'LCB' },
-        { name: 'Ashurmatov', pos: 'CB' },
+        { name: 'Karimov', pos: 'LCB' },
+        { name: 'Ashurmatov', backup: 'Nasrullayev', pos: 'CB' },
         { name: 'Khusanov', pos: 'RCB' },
       ],
       [
-        { name: 'Yusupov', pos: 'GK' },
+        { name: 'Nematov', backup: 'Yusupov', pos: 'GK' },
       ],
     ],
-    bench: ['Nematov', 'Erkinov', 'Sergeev', 'Davronov', 'Yakhshiboev', 'Abdikholikov', 'Komilov'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Erkinov', 'Sergeev', 'Davronov', 'Yakhshiboev', 'Abdikholikov', 'Komilov', 'Fayzullaev'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'Curaçao': {
@@ -963,10 +913,10 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#002b7f', accent: '#fdef42', outline: '#001645', number: '#ffffff' },
     rows: [
       [
-        { name: 'Kastaneer', pos: 'ST' },
+        { name: 'Kastaneer', backup: 'Locadia', pos: 'ST' },
       ],
       [
-        { name: 'Gorré', pos: 'LAM' },
+        { name: 'Gorré', backup: 'Chong', pos: 'LAM' },
         { name: 'Antonisse', pos: 'RAM' },
       ],
       [
@@ -978,17 +928,17 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       [
         { name: 'Floranus', pos: 'LB' },
-        { name: 'Obispo', pos: 'CB' },
+        { name: 'Obispo', backup: 'van Eijma', pos: 'CB' },
         { name: 'Gaari', pos: 'CB' },
-        { name: 'Sambo', pos: 'RB' },
+        { name: 'Sambo', backup: 'Brenet', pos: 'RB' },
       ],
       [
         { name: 'Room', pos: 'GK' },
       ],
     ],
-    bench: ['Jong', 'Bitton', 'Brenet', 'Chong', 'Janga', 'Diemers', 'Gunsa'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Jong', 'Bitton', 'Janga', 'Diemers', 'Gunsa', 'Maher', 'Pelupessy'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   "Côte d'Ivoire": {
@@ -997,15 +947,15 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#f77f1b', accent: '#009e60', outline: '#8a4500', number: '#ffffff' },
     rows: [
       [
-        { name: 'Guessand', pos: 'ST' },
+        { name: 'Guessand', backup: 'Yan Diomande', pos: 'ST' },
       ],
       [
-        { name: 'Diomandé', pos: 'LAM' },
-        { name: 'Diallo', pos: 'RAM' },
+        { name: 'Adingra', pos: 'LAM' },
+        { name: 'Amad', pos: 'RAM' },
       ],
       [
-        { name: 'Oulai', pos: 'CM' },
         { name: 'Kessié', pos: 'CM' },
+        { name: 'Seko Fofana', pos: 'CM' },
       ],
       [
         { name: 'Sangaré', pos: 'CDM' },
@@ -1013,80 +963,78 @@ export const LINEUPS: Record<string, Lineup> = {
       [
         { name: 'Konan', pos: 'LB' },
         { name: "N'Dicka", pos: 'CB' },
-        { name: 'Kossounou', pos: 'CB' },
-        { name: 'Doué', pos: 'RB' },
+        { name: 'Kossounou', backup: 'Diomande', pos: 'CB' },
+        { name: 'Singo', backup: 'Guela Doue', pos: 'RB' },
       ],
       [
-        { name: 'Fofana', pos: 'GK' },
+        { name: 'Fofana', backup: 'Lafont', pos: 'GK' },
       ],
     ],
-    bench: ['Mandé', 'Singo', 'Boly', 'Aurier', 'Bayo', 'Pépé', 'Haller'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Mandé', 'Boly', 'Aurier', 'Bayo', 'Pépé', 'Haller', 'Krasso'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Ecuador: {
     nation: 'Ecuador',
-    formation: '4-2-2-2',
+    formation: '4-3-3',
     kit: { primary: '#fcd116', accent: '#003893', outline: '#8a7308', number: '#003893' },
     rows: [
       [
-        { name: 'Valencia', pos: 'ST' },
-        { name: 'Plata', pos: 'ST' },
+        { name: 'Angulo', pos: 'LW' },
+        { name: 'Enner Valencia', backup: 'Yeboah', pos: 'ST' },
+        { name: 'Plata', pos: 'RW' },
       ],
       [
-        { name: 'Angulo', pos: 'LAM' },
-        { name: 'Franco', pos: 'RAM' },
-      ],
-      [
-        { name: 'Vite', pos: 'CM' },
         { name: 'Caicedo', pos: 'CM' },
+        { name: 'A. Franco', pos: 'CM' },
+        { name: 'Vite', pos: 'CM' },
       ],
       [
         { name: 'Estupiñán', pos: 'LB' },
         { name: 'Hincapié', pos: 'CB' },
         { name: 'Pacho', pos: 'CB' },
-        { name: 'Ordoñez', pos: 'RB' },
+        { name: 'Ordóñez', pos: 'RB' },
       ],
       [
         { name: 'Galíndez', pos: 'GK' },
       ],
     ],
     bench: ['Domínguez', 'Preciado', 'Cifuentes', 'Sarmiento', 'Sornoza', 'Mena', 'Rodríguez'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Canada: {
     nation: 'Canada',
-    formation: '4-2-2-2',
+    formation: '4-2-3-1',
     kit: { primary: '#d52b1e', accent: '#ffffff', outline: '#8a1813', number: '#ffffff' },
     rows: [
       [
-        { name: 'David', pos: 'ST' },
-        { name: 'Larin', pos: 'ST' },
+        { name: 'Jonathan David', backup: 'Larin / Oluwaseyi', pos: 'ST' },
       ],
       [
-        { name: 'Ahmed', pos: 'LAM' },
-        { name: 'Buchanan', pos: 'RAM' },
+        { name: 'Davies', pos: 'LW' },
+        { name: 'Ali Ahmed', backup: 'Millar', pos: 'CAM' },
+        { name: 'Buchanan', pos: 'RW' },
       ],
       [
         { name: 'Eustáquio', pos: 'CM' },
         { name: 'Koné', pos: 'CM' },
       ],
       [
-        { name: 'Davies', pos: 'LB' },
+        { name: 'Laryea', pos: 'LB' },
         { name: 'Cornelius', pos: 'CB' },
-        { name: 'Bombito', pos: 'CB' },
+        { name: 'Bombito', backup: 'Sigur', pos: 'CB' },
         { name: 'Johnston', pos: 'RB' },
       ],
       [
-        { name: 'St. Clair', pos: 'GK' },
+        { name: 'St. Clair', backup: 'Crépeau', pos: 'GK' },
       ],
     ],
-    bench: ['Crépeau', 'Vitória', 'Adekugbe', 'Choinière', 'Millar', 'Cavallini', 'Shaffelburg'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Vitória', 'Adekugbe', 'Choinière', 'Hoilett', 'Cavallini', 'Shaffelburg', 'Brym'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'Bosnia and Herzegovina': {
@@ -1099,11 +1047,11 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Džeko', pos: 'ST' },
       ],
       [
-        { name: 'Memić', pos: 'LAM' },
-        { name: 'Bajraktarević', pos: 'RAM' },
+        { name: 'Memić', backup: 'Bašić', pos: 'LAM' },
+        { name: 'Bajraktarević', backup: 'Alajbegović', pos: 'RAM' },
       ],
       [
-        { name: 'Sunjić', pos: 'CM' },
+        { name: 'Šunjić', pos: 'CM' },
         { name: 'Tahirović', pos: 'CM' },
       ],
       [
@@ -1117,8 +1065,8 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
     ],
     bench: ['Šehić', 'Ahmedhodžić', 'Bičakčić', 'Pjanić', 'Hadžiahmetović', 'Hajradinović', 'Šabanadžović'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Qatar: {
@@ -1130,29 +1078,29 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Almoez Ali', pos: 'ST' },
       ],
       [
-        { name: 'Al Mannai', pos: 'LAM' },
-        { name: 'Afif', pos: 'RAM' },
+        { name: 'Al-Haydos', pos: 'LAM' },
+        { name: 'Akram Afif', pos: 'RAM' },
       ],
       [
         { name: 'Madibo', pos: 'CM' },
         { name: 'Edmilson', pos: 'CM' },
       ],
       [
-        { name: 'Boudiaf', pos: 'CDM' },
+        { name: 'Boudiaf', backup: 'Hatem', pos: 'CDM' },
       ],
       [
-        { name: 'Miquel', pos: 'LB' },
-        { name: 'Mendes', pos: 'CB' },
+        { name: 'Lucas Mendes', pos: 'LB' },
         { name: 'Khoukhi', pos: 'CB' },
-        { name: 'Al Ouwi', pos: 'RB' },
+        { name: 'Pedro Miguel', pos: 'CB' },
+        { name: 'Al Amin', pos: 'RB' },
       ],
       [
         { name: 'Barsham', pos: 'GK' },
       ],
     ],
-    bench: ['Salah Zakaria', 'Pedro Miguel', 'Salman', 'Hatem', 'Asad', 'Al-Haydos', 'Muntari'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Salah Zakaria', 'Salman', 'Abdurisag', 'Asad', 'Muntari', 'Almahdi', 'Khoukhi (jr)'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Switzerland: {
@@ -1161,12 +1109,12 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#da291c', accent: '#ffffff', outline: '#8a1813', number: '#ffffff' },
     rows: [
       [
-        { name: 'Embolo', pos: 'ST' },
+        { name: 'Embolo', backup: 'Okafor', pos: 'ST' },
       ],
       [
-        { name: 'Ndoye', pos: 'LW' },
-        { name: 'Rieder', pos: 'CAM' },
-        { name: 'Vargas', pos: 'RW' },
+        { name: 'Vargas', pos: 'LW' },
+        { name: 'Rieder', backup: 'Zakaria / Sow', pos: 'CAM' },
+        { name: 'Ndoye', pos: 'RW' },
       ],
       [
         { name: 'Xhaka', pos: 'CM' },
@@ -1174,17 +1122,17 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       [
         { name: 'Rodríguez', pos: 'LB' },
+        { name: 'Elvedi', pos: 'CB' },
         { name: 'Akanji', pos: 'CB' },
-        { name: 'Schär', pos: 'CB' },
         { name: 'Widmer', pos: 'RB' },
       ],
       [
-        { name: 'Kobel', pos: 'GK' },
+        { name: 'Kobel', backup: 'Mvogo', pos: 'GK' },
       ],
     ],
-    bench: ['Sommer', 'Cömert', 'Aebischer', 'Sow', 'Zakaria', 'Itten', 'Seferović'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Sommer', 'Cömert', 'Aebischer', 'Amdouni', 'Itten', 'Seferović', 'Jashari'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'South Africa': {
@@ -1196,27 +1144,27 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Foster', pos: 'ST' },
       ],
       [
-        { name: 'Appollis', pos: 'LW' },
-        { name: 'Mofokeng', pos: 'CAM' },
-        { name: 'Hlongwane', pos: 'RW' },
+        { name: 'Moremi', backup: 'Zwane', pos: 'LW' },
+        { name: 'Mofokeng', backup: 'Zwane', pos: 'CAM' },
+        { name: 'Appollis', pos: 'RW' },
       ],
       [
+        { name: 'Adams', pos: 'CM' },
         { name: 'Mokoena', pos: 'CM' },
-        { name: 'Sithole', pos: 'CM' },
       ],
       [
         { name: 'Modiba', pos: 'LB' },
         { name: 'Mbokazi', pos: 'CB' },
-        { name: 'Okon', pos: 'CB' },
+        { name: 'Ngezana', backup: 'Okon', pos: 'CB' },
         { name: 'Mudau', pos: 'RB' },
       ],
       [
         { name: 'Williams', pos: 'GK' },
       ],
     ],
-    bench: ['Mosimane', 'Du Preez', 'Ndlovu', 'Tau', 'Maboe', 'Magubane', 'Davids'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Mosimane', 'Sithole', 'Du Preez', 'Hlongwane', 'Tau', 'Maboe', 'Davids'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'South Korea': {
@@ -1225,7 +1173,7 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#cd2e3a', accent: '#003478', outline: '#8a1c25', number: '#ffffff' },
     rows: [
       [
-        { name: 'Hwang Hee-chan', pos: 'ST' },
+        { name: 'Hwang Hee-chan', backup: 'Oh Hyeon-gyu', pos: 'ST' },
       ],
       [
         { name: 'Son Heung-min', pos: 'LAM' },
@@ -1234,21 +1182,21 @@ export const LINEUPS: Record<string, Lineup> = {
       [
         { name: 'Lee Tae-seok', pos: 'LWB' },
         { name: 'Hwang In-beom', pos: 'CM' },
-        { name: 'Kim Jin-gyu', pos: 'CM' },
+        { name: 'Paik Seung-ho', pos: 'CM' },
         { name: 'Seol Young-woo', pos: 'RWB' },
       ],
       [
-        { name: 'Kim Joo-sung', pos: 'LCB' },
+        { name: 'Cho Yu-min', backup: 'Kim Tae-hyeon', pos: 'LCB' },
         { name: 'Kim Min-jae', pos: 'CB' },
-        { name: 'Cho Yu-min', pos: 'RCB' },
+        { name: 'Lee Han-beom', backup: 'Lee Jae-sung', pos: 'RCB' },
       ],
       [
         { name: 'Kim Seung-gyu', pos: 'GK' },
       ],
     ],
-    bench: ['Jo Hyeon-woo', 'Kim Young-gwon', 'Kim Moon-hwan', 'Park Yong-woo', 'Cho Gue-sung', 'Lee Jae-sung', 'Hong Hyun-seok'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Jo Hyeon-woo', 'Kim Young-gwon', 'Kim Moon-hwan', 'Park Yong-woo', 'Cho Gue-sung', 'Kim Jin-gyu', 'Hong Hyun-seok'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Czechia: {
@@ -1260,11 +1208,11 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Schick', pos: 'ST' },
       ],
       [
-        { name: 'Šulc', pos: 'LAM' },
-        { name: 'Provod', pos: 'RAM' },
+        { name: 'Provod', backup: 'Chorý', pos: 'LAM' },
+        { name: 'Šulc', pos: 'RAM' },
       ],
       [
-        { name: 'Jurásek', pos: 'LWB' },
+        { name: 'Zelený', backup: 'Jurásek', pos: 'LWB' },
         { name: 'Darida', pos: 'CM' },
         { name: 'Souček', pos: 'CM' },
         { name: 'Coufal', pos: 'RWB' },
@@ -1272,15 +1220,15 @@ export const LINEUPS: Record<string, Lineup> = {
       [
         { name: 'Krejčí', pos: 'LCB' },
         { name: 'Hranáč', pos: 'CB' },
-        { name: 'Chaloupek', pos: 'RCB' },
+        { name: 'Chaloupek', backup: 'Holeš', pos: 'RCB' },
       ],
       [
         { name: 'Kovář', pos: 'GK' },
       ],
     ],
-    bench: ['Mandous', 'Holeš', 'Sadílek', 'Hložek', 'Chytil', 'Černý', 'Karabec'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Mandous', 'Sadílek', 'Hložek', 'Chytil', 'Černý', 'Karabec', 'Soucek'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Haiti: {
@@ -1289,62 +1237,65 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#00209f', accent: '#d21034', outline: '#001263', number: '#ffffff' },
     rows: [
       [
-        { name: 'Isidor', pos: 'ST' },
+        { name: 'Isidor', backup: 'Etienne Jr', pos: 'ST' },
       ],
       [
-        { name: 'Providence', pos: 'LW' },
-        { name: 'Casimir', pos: 'CAM' },
-        { name: 'Deedson', pos: 'RW' },
+        { name: 'Deedson L.', pos: 'LW' },
+        { name: 'Providence', pos: 'CAM' },
+        { name: 'Pierrot', backup: 'Nazon', pos: 'RW' },
       ],
       [
-        { name: 'Pierre', pos: 'CM' },
         { name: 'Bellegarde', pos: 'CM' },
+        { name: 'Jean Jacques', pos: 'CM' },
       ],
       [
-        { name: 'Lacroix', pos: 'LB' },
-        { name: 'Delcroix', pos: 'CB' },
-        { name: 'Ade', pos: 'CB' },
+        { name: 'Expérience', pos: 'CDM' },
+      ],
+      [
+        { name: 'Pierre', pos: 'LB' },
+        { name: 'Adé', pos: 'CB' },
+        { name: 'Duverne', backup: 'Delcroix', pos: 'CB' },
         { name: 'Arcus', pos: 'RB' },
       ],
       [
         { name: 'Placide', pos: 'GK' },
       ],
     ],
-    bench: ['Genevois', 'Pierre-Gabriel', 'Belfort', 'Sainté', 'Pierrot', 'Charles', 'Boniface'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Genevois', 'Pierre-Gabriel', 'Belfort', 'Sainté', 'Casimir', 'Charles', 'Boniface'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Scotland: {
     nation: 'Scotland',
-    formation: '4-2-3-1',
+    formation: '3-4-2-1',
     kit: { primary: '#0e1a3d', accent: '#ffffff', outline: '#050d1c', number: '#ffffff' },
     rows: [
       [
-        { name: 'Adams', pos: 'ST' },
+        { name: 'Adams', backup: 'Dykes', pos: 'ST' },
       ],
       [
-        { name: 'Gilmour', pos: 'LW' },
-        { name: 'McTominay', pos: 'CAM' },
-        { name: 'McGinn', pos: 'RW' },
+        { name: 'McGinn', pos: 'LAM' },
+        { name: 'Christie', pos: 'RAM' },
       ],
       [
-        { name: 'Ferguson', pos: 'CM' },
-        { name: 'Christie', pos: 'CM' },
+        { name: 'Hickey', backup: 'Robertson', pos: 'LWB' },
+        { name: 'Gilmour', pos: 'CM' },
+        { name: 'McTominay', pos: 'CM' },
+        { name: 'Ralston', backup: 'Patterson', pos: 'RWB' },
       ],
       [
-        { name: 'Robertson', pos: 'LB' },
-        { name: 'Hanley', pos: 'CB' },
-        { name: 'Souttar', pos: 'CB' },
-        { name: 'Ralston', pos: 'RB' },
+        { name: 'Tierney', pos: 'LCB' },
+        { name: 'Hendry', pos: 'CB' },
+        { name: 'Souttar', pos: 'RCB' },
       ],
       [
         { name: 'Gunn', pos: 'GK' },
       ],
     ],
-    bench: ['Kelly', 'Tierney', 'Cooper', 'Doak', 'Armstrong', 'Dykes', 'Forrest'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Kelly', 'Cooper', 'Hanley', 'Ferguson', 'Doak', 'Armstrong', 'Forrest'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Uruguay: {
@@ -1357,26 +1308,26 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'De Arrascaeta', pos: 'ST' },
       ],
       [
-        { name: 'F. Araújo', pos: 'LAM' },
-        { name: 'Canobbio', pos: 'RAM' },
+        { name: 'Pellistri', pos: 'LAM' },
+        { name: 'Canobbio', backup: 'M. Araújo', pos: 'RAM' },
       ],
       [
-        { name: 'Ugarte', pos: 'CM' },
         { name: 'Valverde', pos: 'CM' },
+        { name: 'Ugarte', backup: 'Bentancur', pos: 'CM' },
       ],
       [
-        { name: 'Olivera', pos: 'LB' },
-        { name: 'Giménez', pos: 'CB' },
+        { name: 'M. Olivera', pos: 'LB' },
         { name: 'R. Araújo', pos: 'CB' },
-        { name: 'Valera', pos: 'RB' },
+        { name: 'Giménez', pos: 'CB' },
+        { name: 'Nández', backup: 'Varela', pos: 'RB' },
       ],
       [
-        { name: 'Muslera', pos: 'GK' },
+        { name: 'Muslera', backup: 'Rochet', pos: 'GK' },
       ],
     ],
-    bench: ['Rochet', 'Coates', 'Pellistri', 'Bentancur', 'De La Cruz', 'Vecino', 'Pereira'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Coates', 'De La Cruz', 'Vecino', 'Pereira', 'Viñas', 'Cabral', 'Trezza'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'Saudi Arabia': {
@@ -1385,32 +1336,32 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#006c35', accent: '#ffffff', outline: '#00451f', number: '#ffffff' },
     rows: [
       [
-        { name: 'Al Buraikan', pos: 'ST' },
+        { name: 'Al-Buraikan', pos: 'ST' },
       ],
       [
         { name: 'S. Al-Dawsari', pos: 'LAM' },
         { name: 'N. Al-Dawsari', pos: 'RAM' },
       ],
       [
-        { name: 'Al Juwayr', pos: 'CM' },
+        { name: 'Al-Juwayr', pos: 'CM' },
         { name: 'Al-Khaibari', pos: 'CM' },
       ],
       [
         { name: 'Kanno', pos: 'CDM' },
       ],
       [
-        { name: 'Boushal', pos: 'LB' },
-        { name: 'Ali Lajami', pos: 'CB' },
+        { name: 'Al-Amri', pos: 'LB' },
+        { name: 'Thakri', pos: 'CB' },
         { name: 'Tambakti', pos: 'CB' },
-        { name: 'Abdulhamid', pos: 'RB' },
+        { name: 'Abdulhamid', backup: 'Al-Harbi', pos: 'RB' },
       ],
       [
-        { name: 'Al Aqidi', pos: 'GK' },
+        { name: 'Al-Aqidi', pos: 'GK' },
       ],
     ],
     bench: ['Al-Owais', 'Al-Bulaihi', 'Al-Faraj', 'Al-Sahafi', 'Al-Shehri', 'Al-Brikan', 'Al-Hamdan'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'Cabo Verde': {
@@ -1419,30 +1370,30 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#00277a', accent: '#ffffff', outline: '#001245', number: '#ffffff' },
     rows: [
       [
-        { name: 'Livramento', pos: 'ST' },
+        { name: 'Livramento', backup: 'Telmo', pos: 'ST' },
       ],
       [
-        { name: 'Semedo', pos: 'LW' },
-        { name: 'Monteiro', pos: 'CAM' },
-        { name: 'Mendes', pos: 'RW' },
+        { name: 'Y. Semedo', pos: 'LW' },
+        { name: 'Ryan Mendes', pos: 'CAM' },
+        { name: 'Garry Rodrigues', backup: 'Willy Semedo', pos: 'RW' },
       ],
       [
-        { name: 'S. Semedo', pos: 'CM' },
-        { name: 'Lenini', pos: 'CM' },
+        { name: 'Jamiro Monteiro', pos: 'CM' },
+        { name: 'Sidny Cabral', backup: 'Kevin Pina', pos: 'CM' },
       ],
       [
-        { name: 'Paulo', pos: 'LB' },
-        { name: 'Lopes', pos: 'CB' },
-        { name: 'Costa', pos: 'CB' },
+        { name: 'João Paulo', pos: 'LB' },
+        { name: 'Pico Lopes', pos: 'CB' },
+        { name: 'Logan Costa', pos: 'CB' },
         { name: 'Moreira', pos: 'RB' },
       ],
       [
         { name: 'Vozinha', pos: 'GK' },
       ],
     ],
-    bench: ['Marcio', 'Stopira', 'Cabral', 'Bebé', 'Bruninho', 'Garry', 'Bruno Varela'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Marcio', 'Stopira', 'Bebé', 'Bruninho', 'Bruno Varela', 'Andrade', 'Pereira'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Belgium: {
@@ -1451,30 +1402,30 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#ed2939', accent: '#fae042', outline: '#8a1820', number: '#000000' },
     rows: [
       [
-        { name: 'De Ketelaere', backup: 'Lukaku', pos: 'ST' },
+        { name: 'Lukaku', backup: 'De Ketelaere', pos: 'ST' },
       ],
       [
         { name: 'Doku', pos: 'LW' },
-        { name: 'De Bruyne', pos: 'CAM' },
-        { name: 'Trossard', pos: 'RW' },
+        { name: 'De Bruyne', backup: 'De Ketelaere', pos: 'CAM' },
+        { name: 'Trossard', backup: 'Lukebakio', pos: 'RW' },
       ],
       [
         { name: 'Tielemans', pos: 'CM' },
         { name: 'Onana', pos: 'CM' },
       ],
       [
-        { name: 'De Cuyper', pos: 'LB' },
-        { name: 'Theate', pos: 'CB' },
-        { name: 'Mechele', pos: 'CB' },
+        { name: 'Theate', backup: 'De Cuyper', pos: 'LB' },
+        { name: 'Debast', pos: 'CB' },
+        { name: 'Castagne', pos: 'CB' },
         { name: 'Meunier', pos: 'RB' },
       ],
       [
         { name: 'Courtois', pos: 'GK' },
       ],
     ],
-    bench: ['Sels', 'Faes', 'Castagne', 'Vanaken', 'Saelemaekers', 'Openda', 'Bakayoko'],
-    source: 'futbolfantasy.com (May 2026 best-guess) — Lukaku as backup CF per Neil',
-    asOf: '2026-05-10',
+    bench: ['Sels', 'Faes', 'Mechele', 'Vanaken', 'Saelemaekers', 'Openda', 'Bakayoko'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Norway: {
@@ -1497,9 +1448,9 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Berge', pos: 'CDM' },
       ],
       [
-        { name: 'Wolfe', pos: 'LB' },
-        { name: 'Østgaard', pos: 'CB' },
-        { name: 'Ajer', pos: 'CB' },
+        { name: 'Møller Wolfe', pos: 'LB' },
+        { name: 'Heggem', pos: 'CB' },
+        { name: 'Østigård', backup: 'Ajer', pos: 'CB' },
         { name: 'Ryerson', pos: 'RB' },
       ],
       [
@@ -1507,8 +1458,8 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
     ],
     bench: ['Dyngeland', 'Strandberg', 'Bjørkan', 'Bobb', 'Vetlesen', 'Strand Larsen', 'Solbakken'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Iraq: {
@@ -1517,30 +1468,30 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#007a3d', accent: '#ce1126', outline: '#00451f', number: '#ffffff' },
     rows: [
       [
-        { name: 'Al Hamadi', pos: 'ST' },
-        { name: 'Aymen Hussein', pos: 'ST' },
+        { name: 'Hussein', pos: 'ST' },
+        { name: 'Al-Hamadi', pos: 'ST' },
       ],
       [
-        { name: 'Ibrahim Bayesh', pos: 'LAM' },
-        { name: 'Youssef Amyn', pos: 'RAM' },
+        { name: 'Bayesh', pos: 'LAM' },
+        { name: 'Amyn', backup: 'Ali Jasim', pos: 'RAM' },
       ],
       [
-        { name: 'Al Ammari', pos: 'CM' },
-        { name: 'Iqbal', pos: 'CM' },
+        { name: 'Al-Ammari', pos: 'CM' },
+        { name: 'Aimar Sher', pos: 'CM' },
       ],
       [
-        { name: 'Merchas Doski', pos: 'LB' },
-        { name: 'Hashim Rahman', pos: 'CB' },
-        { name: 'Zaid Tahseen', pos: 'CB' },
-        { name: 'Hussein Ali', pos: 'RB' },
+        { name: 'Doski', pos: 'LB' },
+        { name: 'Hashem', pos: 'CB' },
+        { name: 'Tahseen', pos: 'CB' },
+        { name: 'Hussein Ali', backup: 'Ahmed Basil', pos: 'RB' },
       ],
       [
-        { name: 'Al Fadhli', pos: 'GK' },
+        { name: 'Hassan', pos: 'GK' },
       ],
     ],
-    bench: ['Jalal Hassan', 'Bayar Tahir', 'Maranan', 'Mohanad Ali', 'Salem Al-Ferdaws', 'Mostafa Saadoun', 'Akam Hashim'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Al Fadhli', 'Bayar Tahir', 'Iqbal', 'Mohanad Ali', 'Salem Al-Ferdaws', 'Mostafa Saadoun', 'Akam Hashim'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Iran: {
@@ -1549,14 +1500,14 @@ export const LINEUPS: Record<string, Lineup> = {
     kit: { primary: '#ffffff', accent: '#239f40', outline: '#1a1a1a', number: '#da0000' },
     rows: [
       [
-        { name: 'Taremi', pos: 'ST' },
+        { name: 'Taremi', backup: 'Mohebi', pos: 'ST' },
       ],
       [
         { name: 'Hosseinzadeh', pos: 'LAM' },
-        { name: 'Ghayedi', pos: 'RAM' },
+        { name: 'Ghayedi', backup: 'Gholizadeh', pos: 'RAM' },
       ],
       [
-        { name: 'Noorafkan', pos: 'CM' },
+        { name: 'Jahanbakhsh', pos: 'CM' },
         { name: 'Ghoddos', pos: 'CM' },
       ],
       [
@@ -1564,49 +1515,49 @@ export const LINEUPS: Record<string, Lineup> = {
       ],
       [
         { name: 'Mohammadi', pos: 'LB' },
-        { name: 'Khalilzadeh', pos: 'CB' },
-        { name: 'Nemati', pos: 'CB' },
-        { name: 'Esmaeilifar', pos: 'RB' },
+        { name: 'Kanaani', pos: 'CB' },
+        { name: 'Kanaanizadegan', backup: 'Khalilzadeh', pos: 'CB' },
+        { name: 'Hardani', backup: 'Rezaeian', pos: 'RB' },
       ],
       [
         { name: 'Beiranvand', pos: 'GK' },
       ],
     ],
-    bench: ['Hosseini', 'Pouraliganji', 'Hajsafi', 'Azmoun', 'Jahanbakhsh', 'Karimi', 'Mohebi'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Hosseini', 'Pouraliganji', 'Hajsafi', 'Azmoun', 'Karimi', 'Habibinejad', 'Cheshmi'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   'New Zealand': {
     nation: 'New Zealand',
-    formation: '4-2-3-1',
+    formation: '3-4-2-1',
     kit: { primary: '#ffffff', accent: '#000000', outline: '#1a1a1a', number: '#000000' },
     rows: [
       [
-        { name: 'Wood', pos: 'ST' },
+        { name: 'Wood', backup: 'Ben Old', pos: 'ST' },
       ],
       [
-        { name: 'Singh', pos: 'LW' },
-        { name: 'Garbett', pos: 'CAM' },
-        { name: 'Just', pos: 'RW' },
+        { name: 'Singh', pos: 'LAM' },
+        { name: 'Eli Just', pos: 'RAM' },
       ],
       [
+        { name: 'Cacace', pos: 'LWB' },
         { name: 'Bell', pos: 'CM' },
         { name: 'Stamenic', pos: 'CM' },
+        { name: 'McCowatt', pos: 'RWB' },
       ],
       [
-        { name: 'Old', pos: 'LB' },
-        { name: 'Bindon', pos: 'CB' },
+        { name: 'Bindon', pos: 'LCB' },
         { name: 'Boxall', pos: 'CB' },
-        { name: 'Cacace', pos: 'RB' },
+        { name: 'Payne', pos: 'RCB' },
       ],
       [
         { name: 'Crocombe', pos: 'GK' },
       ],
     ],
     bench: ['Sail', 'Tuiloma', 'Reid', 'Smith', 'Wynne', 'Surman', 'Waine'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 
   Egypt: {
@@ -1622,23 +1573,23 @@ export const LINEUPS: Record<string, Lineup> = {
         { name: 'Ashour', pos: 'CAM' },
       ],
       [
-        { name: 'El Fetouh', pos: 'LM' },
-        { name: 'Trezeguet', pos: 'CM' },
+        { name: 'Fattouh', pos: 'LM' },
+        { name: 'Fathi', pos: 'CM' },
         { name: 'Attia', pos: 'CM' },
-        { name: 'Hany', pos: 'RM' },
+        { name: 'Trezeguet', pos: 'RM' },
       ],
       [
-        { name: 'Rabia', pos: 'LCB' },
+        { name: 'Hany', pos: 'LCB' },
         { name: 'Abdelmonem', pos: 'CB' },
-        { name: 'El Hanafi', pos: 'RCB' },
+        { name: 'Rabia', backup: 'Abdelmaguid', pos: 'RCB' },
       ],
       [
         { name: 'El Shenawy', pos: 'GK' },
       ],
     ],
-    bench: ['Gabaski', 'Hegazi', 'Sobhi', 'Mostafa Mohamed', 'Saleh Gomaa', 'Tarek Hamed', 'Mahmoud Hassan'],
-    source: 'futbolfantasy.com (May 2026 best-guess)',
-    asOf: '2026-05-10',
+    bench: ['Gabaski', 'Hegazi', 'Sobhi', 'Mostafa Mohamed', 'Saleh Gomaa', 'Tarek Hamed', 'Soliman'],
+    source: 'futbolfantasy.com',
+    asOf: '2026-05-26',
   },
 };
 

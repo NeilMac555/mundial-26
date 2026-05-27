@@ -1,6 +1,6 @@
 # Mundial '26 — Complete Data Pack
 
-> **Generated:** 2026-05-20
+> **Generated:** 2026-05-26
 > **Project:** Mundial '26 — the bettor's terminal for the 2026 FIFA World Cup
 > **Live site:** https://mundial-26-production.up.railway.app
 > **Purpose:** Hand this file to another LLM to compose group-stage previews. Every piece of structured research in the project is included below, organised by group.
@@ -254,14 +254,14 @@
 - **Outright odds:** 80/1 (81.00 dec, 1.2% implied) · best 90.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** Evens
 - **Likely XI (4-3-2-1):**
-  - ST: Jiménez
-  - LAM: Vega · RAM: Alvarado
-  - CM: Vargas · CM: Fidalgo
-  - CDM: Lira
-  - LB: Gallardo · CB: Vásquez · CB: Montes · RB: Sánchez
+  - ST: Raúl Jiménez
+  - LAM: Quiñones (backup: Brian Gutiérrez) · RAM: Alvarado
+  - CM: Fidalgo · CM: Lira
+  - CDM: É. Álvarez (backup: Vargas)
+  - LB: Gallardo · CB: Vásquez · CB: Montes · RB: Israel Reyes (backup: Jorge Sánchez)
   - GK: Rangel
-  - **Bench:** Ochoa, Edson Álvarez, Luis Chávez, Lozano, Santi Giménez, Lainez, Antuna
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Ochoa, Luis Chávez, Lozano, Santi Giménez, Lainez, Pizarro, Antuna
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### South Africa
 
@@ -281,12 +281,12 @@
 - **Group winner odds (Pinnacle snapshot):** 12/1
 - **Likely XI (4-2-3-1):**
   - ST: Foster
-  - LW: Appollis · CAM: Mofokeng · RW: Hlongwane
-  - CM: Mokoena · CM: Sithole
-  - LB: Modiba · CB: Mbokazi · CB: Okon · RB: Mudau
+  - LW: Moremi (backup: Zwane) · CAM: Mofokeng (backup: Zwane) · RW: Appollis
+  - CM: Adams · CM: Mokoena
+  - LB: Modiba · CB: Mbokazi · CB: Ngezana (backup: Okon) · RB: Mudau
   - GK: Williams
-  - **Bench:** Mosimane, Du Preez, Ndlovu, Tau, Maboe, Magubane, Davids
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Mosimane, Sithole, Du Preez, Hlongwane, Tau, Maboe, Davids
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### South Korea
 
@@ -305,13 +305,13 @@
 - **Outright odds:** 100/1 (410.00 dec, 0.2% implied) · best 501.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 4/1
 - **Likely XI (3-4-2-1):**
-  - ST: Hwang Hee-chan
+  - ST: Hwang Hee-chan (backup: Oh Hyeon-gyu)
   - LAM: Son Heung-min · RAM: Lee Kang-in
-  - LWB: Lee Tae-seok · CM: Hwang In-beom · CM: Kim Jin-gyu · RWB: Seol Young-woo
-  - LCB: Kim Joo-sung · CB: Kim Min-jae · RCB: Cho Yu-min
+  - LWB: Lee Tae-seok · CM: Hwang In-beom · CM: Paik Seung-ho · RWB: Seol Young-woo
+  - LCB: Cho Yu-min (backup: Kim Tae-hyeon) · CB: Kim Min-jae · RCB: Lee Han-beom (backup: Lee Jae-sung)
   - GK: Kim Seung-gyu
-  - **Bench:** Jo Hyeon-woo, Kim Young-gwon, Kim Moon-hwan, Park Yong-woo, Cho Gue-sung, Lee Jae-sung, Hong Hyun-seok
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Jo Hyeon-woo, Kim Young-gwon, Kim Moon-hwan, Park Yong-woo, Cho Gue-sung, Kim Jin-gyu, Hong Hyun-seok
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Czechia
 
@@ -329,12 +329,12 @@
 - **Group winner odds (Pinnacle snapshot):** 5/2
 - **Likely XI (3-4-2-1):**
   - ST: Schick
-  - LAM: Šulc · RAM: Provod
-  - LWB: Jurásek · CM: Darida · CM: Souček · RWB: Coufal
-  - LCB: Krejčí · CB: Hranáč · RCB: Chaloupek
+  - LAM: Provod (backup: Chorý) · RAM: Šulc
+  - LWB: Zelený (backup: Jurásek) · CM: Darida · CM: Souček · RWB: Coufal
+  - LCB: Krejčí · CB: Hranáč · RCB: Chaloupek (backup: Holeš)
   - GK: Kovář
-  - **Bench:** Mandous, Holeš, Sadílek, Hložek, Chytil, Černý, Karabec
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Mandous, Sadílek, Hložek, Chytil, Černý, Karabec, Soucek
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -368,14 +368,14 @@
   - Clean sheets: 10
 - **Outright odds:** 100/1 (201.00 dec, 0.5% implied) · best 300.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 3/1
-- **Likely XI (4-2-2-2):**
-  - ST: David · ST: Larin
-  - LAM: Ahmed · RAM: Buchanan
+- **Likely XI (4-2-3-1):**
+  - ST: Jonathan David (backup: Larin / Oluwaseyi)
+  - LW: Davies · CAM: Ali Ahmed (backup: Millar) · RW: Buchanan
   - CM: Eustáquio · CM: Koné
-  - LB: Davies · CB: Cornelius · CB: Bombito · RB: Johnston
-  - GK: St. Clair
-  - **Bench:** Crépeau, Vitória, Adekugbe, Choinière, Millar, Cavallini, Shaffelburg
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - LB: Laryea · CB: Cornelius · CB: Bombito (backup: Sigur) · RB: Johnston
+  - GK: St. Clair (backup: Crépeau)
+  - **Bench:** Vitória, Adekugbe, Choinière, Hoilett, Cavallini, Shaffelburg, Brym
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Bosnia
 
@@ -402,13 +402,13 @@
 - **Group winner odds (Pinnacle snapshot):** 16/1
 - **Likely XI (4-3-2-1):**
   - ST: Almoez Ali
-  - LAM: Al Mannai · RAM: Afif
+  - LAM: Al-Haydos · RAM: Akram Afif
   - CM: Madibo · CM: Edmilson
-  - CDM: Boudiaf
-  - LB: Miquel · CB: Mendes · CB: Khoukhi · RB: Al Ouwi
+  - CDM: Boudiaf (backup: Hatem)
+  - LB: Lucas Mendes · CB: Khoukhi · CB: Pedro Miguel · RB: Al Amin
   - GK: Barsham
-  - **Bench:** Salah Zakaria, Pedro Miguel, Salman, Hatem, Asad, Al-Haydos, Muntari
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Salah Zakaria, Salman, Abdurisag, Asad, Muntari, Almahdi, Khoukhi (jr)
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Switzerland
 
@@ -427,13 +427,13 @@
 - **Outright odds:** 66/1 (67.00 dec, 1.5% implied) · best 95.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 8/11
 - **Likely XI (4-2-3-1):**
-  - ST: Embolo
-  - LW: Ndoye · CAM: Rieder · RW: Vargas
+  - ST: Embolo (backup: Okafor)
+  - LW: Vargas · CAM: Rieder (backup: Zakaria / Sow) · RW: Ndoye
   - CM: Xhaka · CM: Freuler
-  - LB: Rodríguez · CB: Akanji · CB: Schär · RB: Widmer
-  - GK: Kobel
-  - **Bench:** Sommer, Cömert, Aebischer, Sow, Zakaria, Itten, Seferović
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - LB: Rodríguez · CB: Elvedi · CB: Akanji · RB: Widmer
+  - GK: Kobel (backup: Mvogo)
+  - **Bench:** Sommer, Cömert, Aebischer, Amdouni, Itten, Seferović, Jashari
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -492,13 +492,13 @@
 - **Outright odds:** 50/1 (51.00 dec, 2.0% implied) · best 67.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 5/2
 - **Likely XI (4-1-2-3):**
-  - LW: Ezzalzouli · ST: El Kaabi · RW: Brahim Díaz
-  - CM: Ounahi · CM: Saïbari
-  - CDM: El Aynaoui
-  - LB: Mazraoui · CB: Saïss · CB: Aguerd · RB: Hakimi
-  - GK: Bounou
-  - **Bench:** Munir, Benoun, Adli, Bilal El Khannouss, Ben Seghir, Aboukhlal, En-Nesyri
-  - **Lineup source:** ESPN lineup tool (May 2026 best-guess) (as of 2026-05-10)
+  - LW: Abde · ST: El Kaabi (backup: En-Nesyri) · RW: Brahim
+  - CM: Ounahi · CM: El Khannouss
+  - CDM: S. Amrabat (backup: El Aynaoui)
+  - LB: Mazraoui · CB: Aguerd · CB: Chadi Riad (backup: Diop) · RB: Achraf
+  - GK: Bono
+  - **Bench:** Munir, Benoun, Saïss, Adli, Ben Seghir, Aboukhlal, Saïbari
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Haiti
 
@@ -517,13 +517,14 @@
 - **Outright odds:** 100/1 (2001.00 dec, 0.0% implied) · best 3001.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 100/1
 - **Likely XI (4-2-3-1):**
-  - ST: Isidor
-  - LW: Providence · CAM: Casimir · RW: Deedson
-  - CM: Pierre · CM: Bellegarde
-  - LB: Lacroix · CB: Delcroix · CB: Ade · RB: Arcus
+  - ST: Isidor (backup: Etienne Jr)
+  - LW: Deedson L. · CAM: Providence · RW: Pierrot (backup: Nazon)
+  - CM: Bellegarde · CM: Jean Jacques
+  - CDM: Expérience
+  - LB: Pierre · CB: Adé · CB: Duverne (backup: Delcroix) · RB: Arcus
   - GK: Placide
-  - **Bench:** Genevois, Pierre-Gabriel, Belfort, Sainté, Pierrot, Charles, Boniface
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Genevois, Pierre-Gabriel, Belfort, Sainté, Casimir, Charles, Boniface
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Scotland
 
@@ -541,14 +542,14 @@
   - Clean sheets: 2
 - **Outright odds:** 100/1 (250.00 dec, 0.4% implied) · best 251.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 12/1
-- **Likely XI (4-2-3-1):**
-  - ST: Adams
-  - LW: Gilmour · CAM: McTominay · RW: McGinn
-  - CM: Ferguson · CM: Christie
-  - LB: Robertson · CB: Hanley · CB: Souttar · RB: Ralston
+- **Likely XI (3-4-2-1):**
+  - ST: Adams (backup: Dykes)
+  - LAM: McGinn · RAM: Christie
+  - LWB: Hickey (backup: Robertson) · CM: Gilmour · CM: McTominay · RWB: Ralston (backup: Patterson)
+  - LCB: Tierney · CB: Hendry · RCB: Souttar
   - GK: Gunn
-  - **Bench:** Kelly, Tierney, Cooper, Doak, Armstrong, Dykes, Forrest
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Kelly, Cooper, Hanley, Ferguson, Doak, Armstrong, Forrest
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -590,14 +591,14 @@
   - Clean sheets: 10
 - **Outright odds:** 100/1 (151.00 dec, 0.7% implied) · best 300.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 3/1
-- **Likely XI (4-2-2-2):**
-  - ST: Enciso · ST: Sanabria
-  - LAM: Almirón · RAM: Sosa
-  - CM: Cubas · CM: D. Gómez
+- **Likely XI (4-2-3-1):**
+  - ST: Sanabria (backup: Bobadilla)
+  - LW: Enciso (backup: Sosa) · CAM: Almirón · RW: Diego Gómez
+  - CM: Cubas · CM: Ojeda
   - LB: Alonso · CB: G. Gómez · CB: Alderete · RB: Cáceres
-  - GK: Gill
-  - **Bench:** Olivier, R. Rojas, Caballero, Bobadilla, Galarza, Avalos, Bareiro
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - GK: Fernández (backup: Gill)
+  - **Bench:** Olivier, R. Rojas, Caballero, Galarza, Avalos, Bareiro, Sanabria (V)
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Australia
 
@@ -617,12 +618,12 @@
 - **Group winner odds (Pinnacle snapshot):** 15/2
 - **Likely XI (3-4-2-1):**
   - ST: Touré
-  - LAM: Irankunda · RAM: Boyle
-  - LWB: Bos · CM: Irvine · CM: McGree · RWB: Italiano
-  - LCB: Burgess · CB: Souttar · RCB: Circati
+  - LAM: Irankunda · RAM: Hrustic
+  - LWB: Bos (backup: Trewin) · CM: Irvine · CM: O’Neill (backup: Metcalfe) · RWB: Italiano
+  - LCB: Burgess · CB: Souttar · RCB: Circati (backup: Rowles)
   - GK: Ryan
-  - **Bench:** Vukovic, Rowles, Behich, Hrustic, Mooy, Duke, Borello
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Vukovic, Behich, Mooy, Duke, Borello, Boyle, Velupillay
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Turkey
 
@@ -666,14 +667,14 @@
 - **Outright odds:** 12/1 (13.00 dec, 7.7% implied) · best 18.50 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 2/7
 - **Likely XI (4-2-3-1):**
-  - ST: Woltemade (backup: Havertz)
+  - ST: Havertz (backup: Woltemade)
   - LW: Musiala · RW: Sané
   - CAM: Wirtz
   - CM: Goretzka (backup: Groß / Stiller) · CM: Pavlovic
   - LB: Raum · CB: Schlotterbeck · CB: Tah (backup: Rüdiger) · RB: Kimmich
-  - GK: Baumann
-  - **Bench:** ter Stegen, Kehrer, Anton, Andrich, Gnabry, Füllkrug, Beier
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - GK: Neuer (backup: Baumann)
+  - **Bench:** Rüdiger, Leweling, Karl, Thiaw, Beier, Anton, Stiller
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Curacao
 
@@ -709,14 +710,13 @@
   - Clean sheets: 13
 - **Outright odds:** 100/1 (100.00 dec, 1.0% implied) · best 101.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 7/2
-- **Likely XI (4-2-2-2):**
-  - ST: Valencia · ST: Plata
-  - LAM: Angulo · RAM: Franco
-  - CM: Vite · CM: Caicedo
-  - LB: Estupiñán · CB: Hincapié · CB: Pacho · RB: Ordoñez
+- **Likely XI (4-3-3):**
+  - LW: Angulo · ST: Enner Valencia (backup: Yeboah) · RW: Plata
+  - CM: Caicedo · CM: A. Franco · CM: Vite
+  - LB: Estupiñán · CB: Hincapié · CB: Pacho · RB: Ordóñez
   - GK: Galíndez
   - **Bench:** Domínguez, Preciado, Cifuentes, Sarmiento, Sornoza, Mena, Rodríguez
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -752,12 +752,12 @@
 - **Outright odds:** 20/1 (21.00 dec, 4.8% implied) · best 28.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 8/11
 - **Likely XI (4-3-3):**
-  - LW: Gakpo · ST: Depay · RW: Malen
-  - CM: Reijnders · CM: De Jong · CM: Gravenberch
-  - LB: Van de Ven · CB: Van Dijk · CB: Timber · RB: Dumfries
+  - LW: Gakpo · ST: Memphis (backup: Zirkzee) · RW: Malen
+  - CM: Reijnders · CM: F. de Jong · CM: Gravenberch
+  - LB: Aké (backup: Van de Ven) · CB: Van Dijk · CB: Timber (backup: Van Hecke) · RB: Dumfries
   - GK: Verbruggen
-  - **Bench:** Flekken, Aké, Hato, Schouten, Xavi Simons, Brobbey, Weghorst
-  - **Lineup source:** ESPN lineup tool (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Flekken, Hato, Schouten, Xavi Simons, Brobbey, Weghorst, Frimpong
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Japan
 
@@ -776,13 +776,13 @@
 - **Outright odds:** 50/1 (51.00 dec, 2.0% implied) · best 67.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 6/4
 - **Likely XI (3-4-2-1):**
-  - ST: Ueda
+  - ST: Ueda (backup: Maeda)
   - LAM: Kamada · RAM: Kubo
-  - LWB: Mitoma · CM: Sano · CM: Endo · RWB: Doan
-  - LCB: Ito · CB: Tomiyasu · RCB: Taniguchi
+  - LWB: Sugawara · CM: Endo · CM: Ao Tanaka (backup: K. Nakamura) · RWB: Doan
+  - LCB: H. Ito · CB: Tomiyasu · RCB: Watanabe (backup: Itakura)
   - GK: Suzuki
-  - **Bench:** D. Suzuki, Itakura, Sakai, Tanaka, Morita, Minamino, Asano
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** D. Suzuki, Sakai, Morita, Minamino, Asano, Mitoma, Y. Suzuki
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Sweden
 
@@ -803,11 +803,11 @@
 - **Likely XI (3-4-2-1):**
   - ST: Gyökeres
   - LAM: Isak · RAM: Elanga
-  - LWB: Gudmundsson · CM: Ayari · CM: Karlström · RWB: Svensson
-  - LCB: Lindelöf · CB: Starfelt · RCB: Hien
+  - LWB: D. Svensson · CM: Ayari (backup: Gudmundsson) · CM: Karlström · RWB: H. Johansson
+  - LCB: Lindelöf · CB: Starfelt · RCB: Hien (backup: Lagerbielke)
   - GK: Nordfeldt
-  - **Bench:** Olsen, Augustinsson, Bengtsson, Ekdal, Bergvall, Kulusevski, Forsberg
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Olsen, Augustinsson, Ekdal, Bergvall, Kulusevski, Forsberg, Bengtsson
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Tunisia
 
@@ -823,15 +823,14 @@
   - Clean sheets: 10
 - **Outright odds:** 100/1 (501.00 dec, 0.2% implied) · best 870.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 16/1
-- **Likely XI (4-3-2-1):**
-  - ST: Mastouri
-  - LAM: Saad · RAM: Ben Slimane
-  - CM: Hannibal · CM: Skhiri
-  - CDM: Khedira
-  - LB: El Abdi · CB: Bronn · CB: Talbi · RB: Zaalouni
+- **Likely XI (4-2-3-1):**
+  - ST: Mastouri (backup: Chaouat)
+  - LW: Tounekti · CAM: Ben Slimane (backup: Mejbri) · RW: Gharbi
+  - CM: Skhiri (backup: Laïdouni) · CM: Khedira
+  - LB: Abdi · CB: Talbi · CB: Bronn (backup: Rekik) · RB: Valery
   - GK: Dahmen
-  - **Bench:** Ben Mustapha, Drager, Maaloul, Laidouni, Sliti, Khazri, Msakni
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Ben Mustapha, Drager, Maaloul, Elias Saad, Achouri, Khazri, Msakni
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -867,18 +866,18 @@
 - **Outright odds:** 33/1 (34.00 dec, 2.9% implied) · best 50.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 1/3
 - **Likely XI (4-2-3-1):**
-  - ST: De Ketelaere (backup: Lukaku)
-  - LW: Doku · CAM: De Bruyne · RW: Trossard
+  - ST: Lukaku (backup: De Ketelaere)
+  - LW: Doku · CAM: De Bruyne (backup: De Ketelaere) · RW: Trossard (backup: Lukebakio)
   - CM: Tielemans · CM: Onana
-  - LB: De Cuyper · CB: Theate · CB: Mechele · RB: Meunier
+  - LB: Theate (backup: De Cuyper) · CB: Debast · CB: Castagne · RB: Meunier
   - GK: Courtois
-  - **Bench:** Sels, Faes, Castagne, Vanaken, Saelemaekers, Openda, Bakayoko
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) — Lukaku as backup CF per Neil (as of 2026-05-10)
+  - **Bench:** Sels, Faes, Mechele, Vanaken, Saelemaekers, Openda, Bakayoko
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Egypt
 
 - **Confederation / Group:** CAF / Group G
-- **Manager:** Hossam Hassan · 2.1y in post · 28 matches · 2.07 PPM · tier SOLID
+- **Manager:** Hossam Hassan · 2.2y in post · 28 matches · 2.07 PPM · tier SOLID
   - **Manager note:** Easy qualifying group inflated PPM. AFCON 2025 disaster (3rd place playoff). Salah-dependent.
 - **Elo:** 1689 (rank #51, +23 / yr, 883 matches all-time)
 - **Squad market value:** €108.0m (world #50)
@@ -894,11 +893,11 @@
 - **Likely XI (3-4-1-2):**
   - ST: Marmoush · ST: Salah
   - CAM: Ashour
-  - LM: El Fetouh · CM: Trezeguet · CM: Attia · RM: Hany
-  - LCB: Rabia · CB: Abdelmonem · RCB: El Hanafi
+  - LM: Fattouh · CM: Fathi · CM: Attia · RM: Trezeguet
+  - LCB: Hany · CB: Abdelmonem · RCB: Rabia (backup: Abdelmaguid)
   - GK: El Shenawy
-  - **Bench:** Gabaski, Hegazi, Sobhi, Mostafa Mohamed, Saleh Gomaa, Tarek Hamed, Mahmoud Hassan
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Gabaski, Hegazi, Sobhi, Mostafa Mohamed, Saleh Gomaa, Tarek Hamed, Soliman
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Iran
 
@@ -917,14 +916,14 @@
 - **Outright odds:** 100/1 (501.00 dec, 0.2% implied) · best 800.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 14/1
 - **Likely XI (4-3-2-1):**
-  - ST: Taremi
-  - LAM: Hosseinzadeh · RAM: Ghayedi
-  - CM: Noorafkan · CM: Ghoddos
+  - ST: Taremi (backup: Mohebi)
+  - LAM: Hosseinzadeh · RAM: Ghayedi (backup: Gholizadeh)
+  - CM: Jahanbakhsh · CM: Ghoddos
   - CDM: Ezatolahi
-  - LB: Mohammadi · CB: Khalilzadeh · CB: Nemati · RB: Esmaeilifar
+  - LB: Mohammadi · CB: Kanaani · CB: Kanaanizadegan (backup: Khalilzadeh) · RB: Hardani (backup: Rezaeian)
   - GK: Beiranvand
-  - **Bench:** Hosseini, Pouraliganji, Hajsafi, Azmoun, Jahanbakhsh, Karimi, Mohebi
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Hosseini, Pouraliganji, Hajsafi, Azmoun, Karimi, Habibinejad, Cheshmi
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### New Zealand
 
@@ -940,14 +939,14 @@
   - Clean sheets: 1
 - **Outright odds:** 100/1 (1001.00 dec, 0.1% implied) · best 1501.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 33/1
-- **Likely XI (4-2-3-1):**
-  - ST: Wood
-  - LW: Singh · CAM: Garbett · RW: Just
-  - CM: Bell · CM: Stamenic
-  - LB: Old · CB: Bindon · CB: Boxall · RB: Cacace
+- **Likely XI (3-4-2-1):**
+  - ST: Wood (backup: Ben Old)
+  - LAM: Singh · RAM: Eli Just
+  - LWB: Cacace · CM: Bell · CM: Stamenic · RWB: McCowatt
+  - LCB: Bindon · CB: Boxall · RCB: Payne
   - GK: Crocombe
   - **Bench:** Sail, Tuiloma, Reid, Smith, Wynne, Surman, Waine
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -983,13 +982,13 @@
 - **Outright odds:** 5/1 (6.00 dec, 16.7% implied) · best 6.40 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 1/3
 - **Likely XI (4-1-2-3):**
-  - LW: N. Williams (backup: Fermín) · ST: Oyarzabal · RW: Yamal
+  - LW: N. Williams (backup: Olmo) · ST: Oyarzabal · RW: Ferran (backup: Yamal (injured))
   - CM: Fabián · CM: Pedri
   - CDM: Rodri (backup: Zubimendi)
-  - LB: Cucurella · CB: Laporte (backup: Eric García) · CB: Cubarsí · RB: M. Llorente
+  - LB: Cucurella · CB: Laporte (backup: Eric García) · CB: Cubarsí · RB: M. Llorente (backup: Porro / Víctor Muñoz)
   - GK: Unai Simón (backup: Joan García)
-  - **Bench:** Raya, Le Normand, Grimaldo, Mikel Merino, Olmo, Morata, Ferran Torres
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Raya, Le Normand, Grimaldo, Mikel Merino, Morata, Gavi, Baena
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Cape Verde
 
@@ -1019,14 +1018,14 @@
 - **Outright odds:** 100/1 (1001.00 dec, 0.1% implied) · best 1001.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 25/1
 - **Likely XI (4-3-2-1):**
-  - ST: Al Buraikan
+  - ST: Al-Buraikan
   - LAM: S. Al-Dawsari · RAM: N. Al-Dawsari
-  - CM: Al Juwayr · CM: Al-Khaibari
+  - CM: Al-Juwayr · CM: Al-Khaibari
   - CDM: Kanno
-  - LB: Boushal · CB: Ali Lajami · CB: Tambakti · RB: Abdulhamid
-  - GK: Al Aqidi
+  - LB: Al-Amri · CB: Thakri · CB: Tambakti · RB: Abdulhamid (backup: Al-Harbi)
+  - GK: Al-Aqidi
   - **Bench:** Al-Owais, Al-Bulaihi, Al-Faraj, Al-Sahafi, Al-Shehri, Al-Brikan, Al-Hamdan
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Uruguay
 
@@ -1046,12 +1045,12 @@
 - **Group winner odds (Pinnacle snapshot):** 3/1
 - **Likely XI (4-2-2-2):**
   - ST: Núñez · ST: De Arrascaeta
-  - LAM: F. Araújo · RAM: Canobbio
-  - CM: Ugarte · CM: Valverde
-  - LB: Olivera · CB: Giménez · CB: R. Araújo · RB: Valera
-  - GK: Muslera
-  - **Bench:** Rochet, Coates, Pellistri, Bentancur, De La Cruz, Vecino, Pereira
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - LAM: Pellistri · RAM: Canobbio (backup: M. Araújo)
+  - CM: Valverde · CM: Ugarte (backup: Bentancur)
+  - LB: M. Olivera · CB: R. Araújo · CB: Giménez · RB: Nández (backup: Varela)
+  - GK: Muslera (backup: Rochet)
+  - **Bench:** Coates, De La Cruz, Vecino, Pereira, Viñas, Cabral, Trezza
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -1088,18 +1087,18 @@
 - **Group winner odds (Pinnacle snapshot):** 8/15
 - **Likely XI (4-2-3-1):**
   - ST: Mbappé
-  - LW: Cherki (backup: Barcola) · RW: Dembélé
+  - LW: Cherki (backup: D. Doué) · RW: Dembélé
   - CAM: Olise
   - CM: Rabiot · CM: Tchouaméni
   - LB: Theo · CB: Upamecano (backup: Konaté) · CB: Saliba · RB: Koundé
   - GK: Maignan
-  - **Bench:** Samba, Pavard, Lucas Hernández, Camavinga, Zaire-Emery, Thuram, Kolo Muani
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Samba, B. Barcola, Lucas Hernández, Camavinga, Zaire-Emery, Thuram, Kolo Muani
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Senegal
 
 - **Confederation / Group:** CAF / Group I
-- **Manager:** Pape Thiaw · 2.1y in post · 19 matches · 2.37 PPM · tier STRONG (small sample — flagged)
+- **Manager:** Pape Thiaw · 2.2y in post · 19 matches · 2.37 PPM · tier STRONG (small sample — flagged)
   - **Manager note:** One match shy of suppression. Includes AFCON 2025 win (subsequently stripped on forfeit). Squad inherited from Cissé.
 - **Elo:** 1878 (rank #17, +119 / yr, 704 matches all-time)
 - **Squad market value:** €474.0m (world #12)
@@ -1113,12 +1112,12 @@
 - **Outright odds:** 100/1 (101.00 dec, 1.0% implied) · best 111.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 12/1
 - **Likely XI (4-3-3):**
-  - LW: Mané · ST: Jackson · RW: I. Ndiaye
-  - CM: P. Gueye · CM: I. Gueye · CM: Diarra
-  - LB: Diouf · CB: Niakhaté · CB: Koulibaly · RB: Diatta
-  - GK: Mendy
-  - **Bench:** Dieng, Seck, Sabaly, Pape Matar Sarr, Camara, I. Sarr, Dia
-  - **Lineup source:** ESPN lineup tool (May 2026 best-guess) (as of 2026-05-10)
+  - LW: Mané · ST: Jackson · RW: I. Sarr (backup: Ndiaye)
+  - CM: Pape Gueye · CM: Gana Gueye · CM: Diarra (backup: Camara)
+  - LB: Malick Diouf · CB: Niakhaté (backup: M. Sarr) · CB: Koulibaly · RB: Diatta
+  - GK: É. Mendy
+  - **Bench:** Dieng, Seck, Sabaly, Pape Matar Sarr, Dia, Boulaye Dia, Lopy
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Iraq
 
@@ -1137,13 +1136,13 @@
 - **Outright odds:** 100/1 (1000.00 dec, 0.1% implied) · best 1501.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 100/1
 - **Likely XI (4-2-2-2):**
-  - ST: Al Hamadi · ST: Aymen Hussein
-  - LAM: Ibrahim Bayesh · RAM: Youssef Amyn
-  - CM: Al Ammari · CM: Iqbal
-  - LB: Merchas Doski · CB: Hashim Rahman · CB: Zaid Tahseen · RB: Hussein Ali
-  - GK: Al Fadhli
-  - **Bench:** Jalal Hassan, Bayar Tahir, Maranan, Mohanad Ali, Salem Al-Ferdaws, Mostafa Saadoun, Akam Hashim
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - ST: Hussein · ST: Al-Hamadi
+  - LAM: Bayesh · RAM: Amyn (backup: Ali Jasim)
+  - CM: Al-Ammari · CM: Aimar Sher
+  - LB: Doski · CB: Hashem · CB: Tahseen · RB: Hussein Ali (backup: Ahmed Basil)
+  - GK: Hassan
+  - **Bench:** Al Fadhli, Bayar Tahir, Iqbal, Mohanad Ali, Salem Al-Ferdaws, Mostafa Saadoun, Akam Hashim
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Norway
 
@@ -1166,10 +1165,10 @@
   - LAM: Nusa · RAM: Sørloth
   - CM: Berg · CM: Ødegaard
   - CDM: Berge
-  - LB: Wolfe · CB: Østgaard · CB: Ajer · RB: Ryerson
+  - LB: Møller Wolfe · CB: Heggem · CB: Østigård (backup: Ajer) · RB: Ryerson
   - GK: Nyland
   - **Bench:** Dyngeland, Strandberg, Bjørkan, Bobb, Vetlesen, Strand Larsen, Solbakken
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -1205,13 +1204,13 @@
 - **Outright odds:** 8/1 (9.50 dec, 10.5% implied) · best 11.50 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 1/3
 - **Likely XI (4-2-3-1):**
-  - ST: L. Martínez
-  - LW: Álvarez · CAM: Mac Allister · RW: Messi
-  - CM: De Paul · CM: Fernández
-  - LB: Tagliafico · CB: Otamendi · CB: Romero · RB: Molina
+  - ST: L. Martínez (backup: Almada)
+  - LW: Messi · CAM: Mac Allister · RW: Álvarez
+  - CM: De Paul (backup: Paredes) · CM: Enzo Fernández
+  - LB: Tagliafico · CB: Romero · CB: Lisandro Martínez (backup: Otamendi) · RB: Molina
   - GK: E. Martínez
-  - **Bench:** Rulli, Lisandro Martínez, Paredes, Lo Celso, Almada, Garnacho, N. González
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Rulli, Lo Celso, Garnacho, N. González, Mastantuono, Acuña, Quintero
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Algeria
 
@@ -1229,19 +1228,18 @@
   - Clean sheets: 3
 - **Outright odds:** 100/1 (401.00 dec, 0.2% implied) · best 600.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 10/1
-- **Likely XI (4-2-2-2):**
-  - ST: Gouiri · ST: Amoura
-  - LAM: Aouar · RAM: Mahrez
-  - CM: Bennacer · CM: Boudaoui
-  - LB: Aït Nouri · CB: Bensebaini · CB: Mandi · RB: Belghali
-  - GK: Zidane
-  - **Bench:** M’Bolhi, Atal, Tougai, Zorgane, Brahimi, Belaili, Slimani
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+- **Likely XI (4-3-3):**
+  - LW: Maza · ST: Gouiri (backup: Amoura) · RW: Mahrez (backup: Chaïbi)
+  - CM: Bennacer · CM: Boudaoui · CM: Chergui
+  - LB: Aït-Nouri · CB: Bensebaïni (backup: Belaïd) · CB: Mandi · RB: Belghali
+  - GK: Luca Zidane
+  - **Bench:** M’Bolhi, Atal, Tougai, Zorgane, Brahimi, Belaili, Aouar
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Austria
 
 - **Confederation / Group:** UEFA / Group J
-- **Manager:** Ralf Rangnick · 4.1y in post · 44 matches · 1.95 PPM · tier SOLID
+- **Manager:** Ralf Rangnick · 4.2y in post · 44 matches · 1.95 PPM · tier SOLID
   - **Manager note:** Trajectory strongly upward — recent form likely STRONG-equivalent. Won group of death at Euro 2024.
 - **Elo:** 1827 (rank #23, -10 / yr, 865 matches all-time)
 - **Squad market value:** €263.4m (world #27)
@@ -1256,12 +1254,12 @@
 - **Group winner odds (Pinnacle snapshot):** 9/2
 - **Likely XI (4-2-3-1):**
   - ST: Arnautović
-  - LW: Baumgartner · CAM: Sabitzer · RW: Schmid
+  - LW: Wimmer · CAM: Sabitzer · RW: Schmid (backup: Baumgartner)
   - CM: Seiwald · CM: X. Schlager
-  - LB: Mwene · CB: Danso · CB: Friedl · RB: Laimer
-  - GK: A. Schlager
-  - **Bench:** Pentz, Lindner, Trauner, Posch, Grillitsch, Gregoritsch, Adamu
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - LB: Mwene · CB: Alaba · CB: Danso · RB: Laimer
+  - GK: Pentz (backup: A. Schlager)
+  - **Bench:** Lindner, Trauner, Posch, Grillitsch, Gregoritsch, Adamu, Friedl
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Jordan
 
@@ -1280,13 +1278,13 @@
 - **Outright odds:** 100/1 (2001.00 dec, 0.0% implied) · best 2501.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 80/1
 - **Likely XI (3-4-2-1):**
-  - ST: Al Naimat
-  - LAM: Al Tamari · RAM: Al Olwan
-  - LM: Al Quraishi · CM: Jamous · CM: Al Rashdan · RM: Taha
-  - LCB: Al Dahab · CB: Nasib · RCB: Al Arab
-  - GK: Abulaila
-  - **Bench:** Al Fakhouri, Al Ajalin, Haddad, Al Mardi, Al Rawabdeh, Marei, Al Saify
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - ST: Ali Olwan (backup: Al-Mardi)
+  - LAM: Al-Taamari · RAM: Al-Rawabdeh
+  - LWB: Abu Hashish · CM: Assaf · CM: Al-Rashdan · RWB: Abu Taha
+  - LCB: Naseeb · CB: Al Arab · RCB: Al Nadi
+  - GK: Layla
+  - **Bench:** Al Fakhouri, Al Ajalin, Haddad, Sabra, Marei, Al Saify, Jamous
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -1322,13 +1320,13 @@
 - **Outright odds:** 11/1 (12.00 dec, 8.3% implied) · best 13.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 8/11
 - **Likely XI (4-2-3-1):**
-  - ST: Ronaldo
-  - LW: Leão · CAM: Fernandes · RW: Silva
+  - ST: Ronaldo (backup: G. Ramos)
+  - LW: Leão · CAM: Fernandes · RW: B. Silva
   - CM: J. Neves · CM: Vitinha
-  - LB: Mendes · CB: Inácio · CB: Dias · RB: Cancelo
-  - GK: Costa
-  - **Bench:** José Sá, A. Silva, Dalot, R. Neves, P. Neto, J. Félix, G. Ramos
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - LB: N. Mendes · CB: R. Dias · CB: Inácio · RB: Cancelo (backup: Dalot)
+  - GK: D. Costa
+  - **Bench:** José Sá, A. Silva, R. Neves, P. Neto, J. Félix, Veiga, Conceição
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### DR Congo
 
@@ -1348,12 +1346,12 @@
 - **Group winner odds (Pinnacle snapshot):** 20/1
 - **Likely XI (4-2-2-2):**
   - ST: Bakambu · ST: Wissa
-  - LAM: Elia · RAM: Mbuku
+  - LAM: Elia · RAM: Mbuku (backup: Cipenga)
   - CM: Moutoussamy · CM: Sadiki
   - LB: Masuaku · CB: Tuanzebe · CB: Mbemba · RB: Wan-Bissaka
   - GK: Mpasi
-  - **Bench:** Akolo, Bushiri, Bongonda, Bayo, Mukoko, Lukeba, Brym
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Akolo, Tshibola, Bongonda, Bayo, Mukoko, Lukeba, Brym
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Uzbekistan
 
@@ -1373,12 +1371,12 @@
 - **Group winner odds (Pinnacle snapshot):** 66/1
 - **Likely XI (3-4-2-1):**
   - ST: Shomurodov
-  - LAM: Urunov · RAM: Fayzullaev
-  - LWB: Nasrullayev · CM: Shukurov · CM: Khamrobekov · RWB: Alijonov
-  - LCB: Abdullaev · CB: Ashurmatov · RCB: Khusanov
-  - GK: Yusupov
-  - **Bench:** Nematov, Erkinov, Sergeev, Davronov, Yakhshiboev, Abdikholikov, Komilov
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - LAM: Urunov · RAM: Ganiev
+  - LWB: Urozov · CM: Shukurov · CM: Khamrobekov · RWB: Alijonov
+  - LCB: Karimov · CB: Ashurmatov (backup: Nasrullayev) · RCB: Khusanov
+  - GK: Nematov (backup: Yusupov)
+  - **Bench:** Erkinov, Sergeev, Davronov, Yakhshiboev, Abdikholikov, Komilov, Fayzullaev
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Colombia
 
@@ -1397,13 +1395,13 @@
 - **Outright odds:** 40/1 (41.00 dec, 2.4% implied) · best 48.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 7/4
 - **Likely XI (4-2-3-1):**
-  - ST: Suárez
-  - LW: Díaz · CAM: Rodríguez · RW: Arias
-  - CM: Lerma · CM: Ríos
-  - LB: Mojica · CB: Lucumí · CB: Sánchez · RB: Muñoz
+  - ST: Luis Suárez (backup: Córdoba)
+  - LW: Luis Díaz · CAM: James · RW: Jhon Arias
+  - CM: Lerma · CM: Richard Ríos
+  - LB: Mojica · CB: Lucumí · CB: Davinson (backup: Montero) · RB: Muñoz
   - GK: Vargas
   - **Bench:** Mier, Mina, Cuesta, Barrios, Uribe, Borja, Cuadrado
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
@@ -1440,17 +1438,17 @@
 - **Group winner odds (Pinnacle snapshot):** 4/9
 - **Likely XI (4-2-3-1):**
   - ST: Kane
-  - LW: Gordon · CAM: Bellingham · RW: Saka
-  - CM: Rice · CM: Anderson
-  - LB: O’Reilly · CB: Guéhi · CB: Konsa · RB: James
+  - LW: Rashford (backup: Gordon) · CAM: Bellingham (backup: Eze / Rogers) · RW: Saka
+  - CM: Rice · CM: Anderson (backup: Mainoo)
+  - LB: O’Reilly · CB: Guéhi · CB: Konsa (backup: Stones) · RB: James
   - GK: Pickford
-  - **Bench:** D. Henderson, Stones, Trippier, Mainoo, Foden, Watkins, Eze
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) — Palmer → Gordon swap per Neil (as of 2026-05-10)
+  - **Bench:** D. Henderson, Trippier, Foden, Watkins, Livramento, Burn, Madueke
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Croatia
 
 - **Confederation / Group:** UEFA / Group L
-- **Manager:** Zlatko Dalić · 8.6y in post · 105 matches · 1.88 PPM · tier SOLID
+- **Manager:** Zlatko Dalić · 8.7y in post · 105 matches · 1.88 PPM · tier SOLID
   - **Manager note:** Tournament overperformer. 2018 final/2022 third place suggest knockout pedigree above PPM.
 - **Elo:** 1930 (rank #10, +19 / yr, 398 matches all-time)
 - **Squad market value:** €283.3m (world #25)
@@ -1466,11 +1464,11 @@
 - **Likely XI (4-2-3-1):**
   - ST: Budimir
   - LW: Perišić · CAM: Kramarić · RW: Pašalić
-  - CM: Modrić · CM: Kovačić
-  - LB: Gvardiol · CB: Ćaleta-Car · CB: Vušković · RB: Stanišić
+  - CM: Modrić · CM: Kovačić (backup: L. Sučić)
+  - LB: Sosa · CB: Gvardiol · CB: Šutalo (backup: Ćaleta-Car / Vušković) · RB: Stanišić
   - GK: Livaković
-  - **Bench:** Ivušić, Erlić, Sosa, Sučić, Brozović, Petković, Baturina
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Ivušić, Erlić, Brozović, Petković, Baturina, Sučić, Pjaca
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Ghana
 
@@ -1490,12 +1488,12 @@
 - **Group winner odds (Pinnacle snapshot):** 12/1
 - **Likely XI (3-4-2-1):**
   - ST: Williams
-  - LAM: Ayew · RAM: Semenyo
-  - LM: Mensah · CM: Sibo · CM: Partey · RM: Yirenkyi
+  - LAM: J. Ayew · RAM: Semenyo (backup: Fatawu)
+  - LWB: Seidu · CM: Thomas · CM: Sibo (backup: Köhn) · RWB: Yirenkyi
   - LCB: Opoku · CB: Djiku · RCB: Adjetey
-  - GK: Asare
-  - **Bench:** Wollacott, J. Mensah, Salisu, Baba Rahman, Kudus, Sulemana, Bukari
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - GK: Asare (backup: Ati-Zigi)
+  - **Bench:** Wollacott, J. Mensah, Salisu, Baba Rahman, Owusu, Sulemana, Bukari
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ### Panama
 
@@ -1514,13 +1512,13 @@
 - **Outright odds:** 100/1 (1001.00 dec, 0.1% implied) · best 1501.00 · 9 books · source: live
 - **Group winner odds (Pinnacle snapshot):** 50/1
 - **Likely XI (4-2-3-1):**
-  - ST: Waterman
-  - LW: Díaz · CAM: Carrasquilla · RW: Rodríguez
-  - CM: Harvey · CM: Godoy
-  - LB: Davis · CB: Córdoba · CB: Andrade · RB: Murillo
+  - ST: Waterman (backup: Fajardo)
+  - LW: Ismael Díaz · CAM: Carrasquilla (backup: Bárcenas) · RW: Rodríguez
+  - CM: Blackman (backup: Harvey) · CM: Godoy
+  - LB: Davis · CB: Córdoba · CB: Andrade (backup: Escobar) · RB: Murillo
   - GK: Mosquera
-  - **Bench:** Mejía, Galindo, Bárcenas, Welch, Tanner, Fajardo, Watson
-  - **Lineup source:** futbolfantasy.com (May 2026 best-guess) (as of 2026-05-10)
+  - **Bench:** Mejía, Galindo, Welch, Tanner, Watson, Galván, Cox
+  - **Lineup source:** futbolfantasy.com (as of 2026-05-26)
 
 ---
 
