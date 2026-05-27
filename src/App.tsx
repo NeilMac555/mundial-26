@@ -5,6 +5,7 @@ import { Section } from './components/Section';
 import { Overview } from './sections/Overview';
 import { Elo } from './sections/Elo';
 import { Altitude } from './sections/Altitude';
+import { TravelRest } from './sections/TravelRest';
 import { Rules } from './sections/Rules';
 import { Compare } from './sections/Compare';
 import { Sos } from './sections/Sos';
@@ -22,6 +23,7 @@ const SECTION_COMPONENTS: Record<string, () => React.ReactElement> = {
   compare: Compare,
   elo: Elo,
   altitude: Altitude,
+  'travel-rest': TravelRest,
   rules: Rules,
   sos: Sos,
   history: History,

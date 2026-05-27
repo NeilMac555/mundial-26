@@ -67,6 +67,13 @@ export const SECTIONS: SectionMeta[] = [
     status: 'live',
   },
   {
+    id: 'travel-rest', group: 'Conditions',
+    title: 'Travel & Rest', navLabel: 'Travel & Rest',
+    blurb: 'Per-team km between base camp + group venues; rest days between fixtures.',
+    lede: 'A three-host World Cup makes travel a first-order variable. Per team: km from base camp through each group venue, calendar days between consecutive matches, and the longest single leg. Sortable by group; click a row for the per-fixture breakdown.',
+    status: 'live',
+  },
+  {
     id: 'americas', group: 'Conditions',
     title: 'Americas-Host Effect',
     blurb: 'Confederation skew when the WC is hosted in the Americas.',

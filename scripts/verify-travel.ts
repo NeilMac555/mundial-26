@@ -1,0 +1,50 @@
+import { BASE_CAMPS, baseCampByNation, haversineKm } from '../src/data/baseCamps';
+import { GROUPS, GROUP_KEYS, MATCHES } from '../src/data/fixtures';
+import { VENUES } from '../src/data/venues';
+
+const all = GROUP_KEYS.flatMap((k) => GROUPS[k]);
+const camps = new Set(BASE_CAMPS.map((b) => b.nation));
+const missing = all.filter((n) => !camps.has(n));
+const extra = [...camps].filter((n) => !all.includes(n));
+
+console.log('Total teams in groups:', all.length);
+console.log('Total base camps:     ', BASE_CAMPS.length);
+console.log('Teams missing a camp: ', missing);
+console.log('Camps with no group:  ', extra);
+
+// Verify stadium → venue mapping coverage
+const venueStadiums = new Set(VENUES.map((v) => v.stadium));
+const fixtureStadiums = new Set(MATCHES.map((m) => m.stadium));
+const stadiumMisses = [...fixtureStadiums].filter((s) => !venueStadiums.has(s));
+console.log('Fixture stadiums missing in VENUES:', stadiumMisses);
+
+// Compute top-5 most-traveled and bottom-5 lowest-traveled (group stage only)
+function travel(nation: string): { km: number; legs: number } {
+  const base = baseCampByNation(nation);
+  if (!base) return { km: 0, legs: 0 };
+  const fixtures = MATCHES.filter((m) => m.stage === 'GROUP' && (m.home === nation || m.away === nation))
+    .sort((a, b) => a.iso.localeCompare(b.iso));
+  let prev = { lat: base.lat, lng: base.lng };
+  let km = 0;
+  let legs = 0;
+  for (const m of fixtures) {
+    const v = VENUES.find((x) => x.stadium === m.stadium);
+    if (!v) continue;
+    km += haversineKm(prev, { lat: v.lat, lng: v.lng });
+    prev = { lat: v.lat, lng: v.lng };
+    legs++;
+  }
+  return { km, legs };
+}
+
+const travelTable = all.map((n) => ({ nation: n, ...travel(n) }));
+travelTable.sort((a, b) => b.km - a.km);
+
+console.log('\nTop 5 most-traveled:');
+travelTable.slice(0, 5).forEach((r) =>
+  console.log(`  ${r.nation.padEnd(28)} ${Math.round(r.km).toLocaleString().padStart(6)} km  (${r.legs} legs)`),
+);
+console.log('\nBottom 5 lowest-traveled:');
+travelTable.slice(-5).forEach((r) =>
+  console.log(`  ${r.nation.padEnd(28)} ${Math.round(r.km).toLocaleString().padStart(6)} km  (${r.legs} legs)`),
+);
