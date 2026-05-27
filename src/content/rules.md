@@ -186,7 +186,6 @@ previously, the only structured tactical window was half-time. now managers who 
 - de la Fuente (Spain, ELITE · 39m · 2.51 PPM) — Euro 2024 winner, highest PPM in the dataset
 - Martínez (Portugal, ELITE · 38m · 2.32 PPM) — granular structural tweaks, comfortable with high-press triggers
 - Nagelsmann (Germany, STRONG · 31m · 2.03 PPM) — tactically innovative, strong at reading games
-- (Note: Netherlands' manager is **Ronald Koeman** — SOLID tier 1.87 PPM — solid but not in the elite in-game-adjustment bracket)
 
 **it also favours squad COHESION:**
 - a 3-minute break is only useful if the players can absorb and execute new instructions quickly
