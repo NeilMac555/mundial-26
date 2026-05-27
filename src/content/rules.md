@@ -179,11 +179,13 @@ this is the big one. managers now get THREE guaranteed opportunities to reorgani
 
 previously, the only structured tactical window was half-time. now managers who are good at in-game adjustments get 3x the opportunity. this systematically favours:
 
-**tactically elite managers:**
-- Scaloni (Argentina) - 8 years in post, 90 matches, known for astute in-game management. this is a direct buff to our argentina BACK
-- Nagelsmann (Germany) - tactically innovative, strong at reading games
-- Slot (Netherlands) - systems-based approach, can communicate adjustments quickly
-- any manager who regularly makes effective tactical changes
+**tactically elite managers** (per `managers.json` — ELITE/STRONG tier with a track record of in-game adjustments):
+- Scaloni (Argentina, ELITE · 92m · 2.40 PPM) — 8 years in post, settled squad, known for astute in-game management. this is a direct buff to our argentina BACK
+- Tuchel (England, ELITE · 12m · 2.33 PPM) — Champions League winner with Chelsea, repeatedly switches shape mid-match (3-4-3 ↔ 4-2-3-1)
+- de la Fuente (Spain, ELITE · 39m · 2.51 PPM) — Euro 2024 winner, highest PPM in the dataset
+- Martínez (Portugal, ELITE · 38m · 2.32 PPM) — granular structural tweaks, comfortable with high-press triggers
+- Nagelsmann (Germany, STRONG · 31m · 2.03 PPM) — tactically innovative, strong at reading games
+- (Note: Netherlands' manager is **Ronald Koeman** — SOLID tier 1.87 PPM — solid but not in the elite in-game-adjustment bracket)
 
 **it also favours squad COHESION:**
 - a 3-minute break is only useful if the players can absorb and execute new instructions quickly
