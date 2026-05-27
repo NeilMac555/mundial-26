@@ -17,8 +17,253 @@ export function GoldenBoot() {
         <HeroStats />
         <HistoricalWinners />
         <KeyPatterns />
+        <AnytimePicks />
         <Candidates />
       </div>
+    </div>
+  );
+}
+
+/* ============================================================
+   ANYTIME'S PICKS — sourced from his Substack write-up
+   ============================================================ */
+
+const ANYTIME_SUBSTACK_URL = 'https://anytimegoalscorers.substack.com/p/mega-post-one-main-bet-five-outsiders';
+const ANYTIME_SUBSTACK_HOME = 'https://anytimegoalscorers.substack.com/';
+
+interface AnytimePick {
+  player: string;
+  nation: string;
+  odds: string;
+  stake: string;
+  role: 'MAIN BET' | 'OUTSIDER';
+  rationale: string;
+}
+
+const ANYTIME_PICKS: AnytimePick[] = [
+  {
+    player: 'Kylian Mbappé',
+    nation: 'France',
+    odds: '6/1 (7.00)',
+    stake: '2 units',
+    role: 'MAIN BET',
+    rationale:
+      'Ticks every box: penalty taker, peak age, France in moderate Group I, plays Iraq in Game 2 and could run up the score. 0.86 goals per 90 lifetime at World Cups. He has the same WC goal tally as Pelé — a strong tournament makes him the all-time leader. Boring chalk pick, but the boxes are all ticked.',
+  },
+  {
+    player: 'Raphinha',
+    nation: 'Brazil',
+    odds: '40/1',
+    stake: '1 unit',
+    role: 'OUTSIDER',
+    rationale:
+      'Brazil\'s qualifying mess was the dugout (Tite → 3 caretakers → Ancelotti), not the squad. Penalty taker, top scorer in qualifying, the closest thing Brazil has to a leader since Neymar. Crucially, Brazil play Haiti in Game 2 — no rotation risk. Market still pricing the qualifying chaos.',
+  },
+  {
+    player: 'Matheus Cunha',
+    nation: 'Brazil',
+    odds: '100/1',
+    stake: '0.5 units',
+    role: 'OUTSIDER',
+    rationale:
+      'The sprinkle. Likely starting #9 for Brazil, coming off a strong end to the season at Man United. Hasn\'t been prolific for the NT but if the team clicks under Ancelotti, he\'s in the right shirt at the right time at a price that pays.',
+  },
+  {
+    player: 'Cody Gakpo',
+    nation: 'Netherlands',
+    odds: '50/1',
+    stake: '0.5 units',
+    role: 'OUTSIDER',
+    rationale:
+      'Locked-in LW starter while everyone around him rotates (Malen, Brobbey, Weghorst, Depay). 6 goals across the last WC + Euros at 0.51 per 90. Scored 3 pens in qualifying. Netherlands pushed Argentina to the wire in Qatar — go deep again and Gakpo is among the goals.',
+  },
+  {
+    player: 'Patrik Schick',
+    nation: 'Czechia',
+    odds: '150/1',
+    stake: '0.25 units',
+    role: 'OUTSIDER',
+    rationale:
+      'Massive long-shot but the Czechs are a wildcard team. Friendly group (host Mexico, declining South Korea, South Africa). Penalty taker, nailed-on CF, 25 goals in 52 caps — only he and Souček have double-digit NT returns from the prelist. History of upsetting odds (Italia 90, Euro 96, Euro 2004, Euro 2020).',
+  },
+  {
+    player: 'Brahim Díaz',
+    nation: 'Morocco',
+    odds: '150/1',
+    stake: '0.25 units',
+    role: 'OUTSIDER',
+    rationale:
+      '13 goals in 24 NT appearances and on pens. Morocco have a sacrificial lamb in Haiti and can hold their own against Brazil + Scotland. Squad value €450m — higher than Japan, Croatia, Colombia, Switzerland, Uruguay, USA. They ground to the semis in 2022; this squad is arguably better.',
+  },
+];
+
+const ANYTIME_FADED: { player: string; reason: string }[] = [
+  { player: 'Harry Kane (7/1)', reason: 'Age 32 + grueling season + group lacks a whipping boy.' },
+  { player: 'Lionel Messi (14/1)', reason: 'Penalty share with Lautaro/Álvarez + Jordan game is Argentina\'s last (rotation risk).' },
+  { player: 'Erling Haaland (14/1)', reason: 'Norway\'s ceiling = R32/R16. Heat disadvantage vs South Americans + Africans.' },
+  { player: 'Lamine Yamal (16/1)', reason: 'Injury rush risk + not on pens + low xG ceiling.' },
+  { player: 'Oyarzabal (16/1)', reason: 'Will share minutes with Ferran Torres. Wants 40/1+ to be interested.' },
+  { player: 'Cristiano Ronaldo (25/1)', reason: '7 goals below xG for Portugal. Zero at the Euros, one (pen) at Qatar 22.' },
+  { player: 'Dembélé (33/1)', reason: 'Can\'t back him in a side with Mbappé. 7 goals in 58 caps. Never scored at a WC or Euros.' },
+  { player: 'Vinícius Jr (33/1)', reason: '8 goals in 47 NT caps — criminal for a player of his level. Never delivered on the international stage.' },
+  { player: 'Lukaku (33/1)', reason: 'Out of shape, Napoli letting him go, 80 mins of club football this season.' },
+];
+
+function AnytimePicks() {
+  return (
+    <div
+      style={{
+        background: 'linear-gradient(180deg, rgba(232,185,74,0.04), rgba(232,185,74,0.10))',
+        border: '1px solid rgba(232,185,74,0.40)',
+        borderRadius: 8,
+        padding: '20px 22px',
+      }}
+    >
+      <header
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'baseline',
+          justifyContent: 'space-between',
+          gap: 12,
+          marginBottom: 6,
+        }}
+      >
+        <div>
+          <div style={{ marginBottom: 4 }}>
+            <TLabel color="var(--color-gold)">Editor's picks · Anytime Goalscorers</TLabel>
+          </div>
+          <h3
+            style={{
+              margin: 0,
+              fontSize: 20,
+              fontWeight: 500,
+              color: 'var(--color-text)',
+              letterSpacing: '-0.012em',
+            }}
+          >
+            One main bet · five outsiders
+          </h3>
+        </div>
+        <a
+          href={ANYTIME_SUBSTACK_URL}
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            padding: '8px 16px',
+            background: 'var(--color-gold)',
+            color: 'var(--color-bg)',
+            border: 'none',
+            borderRadius: 4,
+            fontSize: 12,
+            fontWeight: 600,
+            cursor: 'pointer',
+            letterSpacing: '0.02em',
+            textDecoration: 'none',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          Read full write-up on Substack ↗
+        </a>
+      </header>
+
+      <p
+        style={{
+          margin: '8px 0 16px',
+          fontSize: 13,
+          color: 'var(--color-text-3)',
+          lineHeight: 1.55,
+        }}
+      >
+        Six backed picks from{' '}
+        <a href={ANYTIME_SUBSTACK_HOME} target="_blank" rel="noreferrer" style={{ color: 'var(--color-gold)' }}>
+          Anytime's Substack
+        </a>
+        . Stakes shown are author-stated. Prices are best-of-market at publish; verify before betting.
+      </p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 10 }}>
+        {ANYTIME_PICKS.map((p) => <AnytimePickCard key={p.player} pick={p} />)}
+      </div>
+
+      <details style={{ marginTop: 16 }}>
+        <summary
+          style={{
+            cursor: 'pointer',
+            fontSize: 11,
+            fontWeight: 500,
+            letterSpacing: '0.1em',
+            textTransform: 'uppercase',
+            color: 'var(--color-gold-2)',
+            fontFamily: 'var(--font-mono)',
+            padding: '4px 0',
+          }}
+        >
+          Faded — names he considered but passed on ({ANYTIME_FADED.length})
+        </summary>
+        <ul
+          style={{
+            marginTop: 10,
+            padding: 0,
+            listStyle: 'none',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 6,
+          }}
+        >
+          {ANYTIME_FADED.map((f) => (
+            <li
+              key={f.player}
+              style={{
+                fontSize: 12,
+                color: 'var(--color-text-2)',
+                lineHeight: 1.5,
+                paddingLeft: 14,
+                position: 'relative',
+              }}
+            >
+              <span style={{ position: 'absolute', left: 0, color: 'var(--color-red)' }}>−</span>
+              <strong style={{ color: 'var(--color-text)' }}>{f.player}</strong>{' '}
+              <span style={{ color: 'var(--color-text-3)' }}>· {f.reason}</span>
+            </li>
+          ))}
+        </ul>
+      </details>
+    </div>
+  );
+}
+
+function AnytimePickCard({ pick }: { pick: AnytimePick }) {
+  const isMain = pick.role === 'MAIN BET';
+  return (
+    <div
+      style={{
+        background: 'var(--color-surface)',
+        border: isMain
+          ? '1px solid rgba(232,185,74,0.55)'
+          : '1px solid var(--color-border)',
+        borderRadius: 6,
+        padding: 14,
+        boxShadow: isMain ? '0 0 12px rgba(232,185,74,0.10)' : undefined,
+      }}
+    >
+      <header style={{ marginBottom: 8, display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 10 }}>
+        <div style={{ minWidth: 0 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <Flag nation={pick.nation} size={20} />
+            <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--color-text)' }}>{pick.player}</span>
+          </div>
+          <div style={{ marginTop: 3 }}>
+            <TMono size={11} color="var(--color-text-3)">{pick.nation.toUpperCase()}</TMono>
+          </div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 4, flexShrink: 0 }}>
+          <TPill tone={isMain ? 'gold' : 'mute'} size="sm">{pick.role}</TPill>
+          <TMono size={13} color="var(--color-text)" weight={600}>{pick.odds}</TMono>
+          <TMono size={10} color="var(--color-gold-2)">{pick.stake}</TMono>
+        </div>
+      </header>
+      <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.5, color: 'var(--color-text-2)' }}>{pick.rationale}</p>
     </div>
   );
 }
