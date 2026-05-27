@@ -15,6 +15,7 @@ export function Altitude() {
 
       <div style={{ marginTop: 18, display: 'flex', flexDirection: 'column', gap: 24 }}>
         <HeroStats />
+        <WhyAltitudeMatters />
         <VenueOverview />
         <AdaptedTeams />
         <KeyMatches />
@@ -166,6 +167,101 @@ function SectionHeader({ title, subtitle, color }: { title: string; subtitle?: s
         {title}
       </h3>
       {subtitle && <TLabel>{subtitle}</TLabel>}
+    </div>
+  );
+}
+
+/* ============================================================
+   WHY ALTITUDE MATTERS — physiology distilled for bettors
+   ============================================================ */
+
+function WhyAltitudeMatters() {
+  return (
+    <div
+      style={{
+        background: 'linear-gradient(180deg, rgba(232,185,74,0.04), rgba(232,185,74,0.10))',
+        border: '1px solid rgba(232,185,74,0.40)',
+        borderRadius: 8,
+        padding: '20px 22px',
+      }}
+    >
+      <div style={{ marginBottom: 6 }}>
+        <TLabel color="var(--color-gold)">Why altitude matters · the physiology</TLabel>
+      </div>
+      <h3
+        style={{
+          margin: '4px 0 14px',
+          fontSize: 19,
+          fontWeight: 500,
+          color: 'var(--color-text)',
+          letterSpacing: '-0.012em',
+        }}
+      >
+        VO₂ max drops 8–11% for every 1,000m above 1,600m
+      </h3>
+      <p style={{ margin: '0 0 14px', fontSize: 14, lineHeight: 1.55, color: 'var(--color-text-2)' }}>
+        Air at altitude isn't <em>thinner</em> in oxygen content — the percentage stays the same (~21%).
+        What changes is air <strong style={{ color: 'var(--color-text)' }}>density</strong>: the lower
+        atmospheric pressure means less oxygen diffuses from lungs into blood. The body delivers less
+        O₂ to working muscles, so every burst, sprint and recovery costs more.
+      </p>
+
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          gap: 12,
+          marginBottom: 14,
+        }}
+      >
+        <PhysFact
+          headline="Reduced O₂ pressure"
+          body="Lower partial pressure of oxygen means less of it diffuses from lungs into the bloodstream — even though the air is still 21% O₂."
+        />
+        <PhysFact
+          headline="Lower blood oxygen"
+          body="Less O₂ in the bloodstream → less O₂ delivered to working muscles. Sprints feel heavier, recovery between them slows."
+        />
+        <PhysFact
+          headline="Decreased cardiac output"
+          body="Plasma volume drops to compensate, which lowers max heart rate + stroke volume. The aerobic ceiling shrinks."
+        />
+      </div>
+
+      <div
+        style={{
+          padding: '12px 14px',
+          background: 'var(--color-bg-2)',
+          border: '1px solid var(--color-border)',
+          borderRadius: 6,
+          fontSize: 13,
+          lineHeight: 1.55,
+          color: 'var(--color-text-2)',
+        }}
+      >
+        <strong style={{ color: 'var(--color-gold)' }}>Azteca-applied:</strong> at 2,240m, that's 640m
+        above the 1,600m threshold — roughly <strong style={{ color: 'var(--color-text)' }}>5–7% lower VO₂ max</strong>{' '}
+        for any non-acclimatised player from kick-off. Acclimatised sides (Mexico, Colombia, Ecuador) start
+        from baseline. Sea-level European teams pay the full tax for ~10–14 days of the tournament.
+      </div>
+    </div>
+  );
+}
+
+function PhysFact({ headline, body }: { headline: string; body: string }) {
+  return (
+    <div
+      style={{
+        background: 'var(--color-surface)',
+        border: '1px solid var(--color-border)',
+        borderRadius: 6,
+        padding: '12px 14px',
+      }}
+    >
+      <div style={{ marginBottom: 6 }}>
+        <TLabel color="var(--color-gold-2)">{headline}</TLabel>
+      </div>
+      <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.5, color: 'var(--color-text-2)' }}>{body}</p>
     </div>
   );
 }
