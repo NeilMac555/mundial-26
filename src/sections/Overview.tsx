@@ -130,16 +130,29 @@ function FilterRow({
           color: 'var(--color-text-3)',
         }}
       >
-        Tip · Click headers to sort · Highlighted rows = altitude ≥ 1500m or June high ≥ 32°C
+        Tip · Click headers to sort · Highlighted rows = altitude ≥ 1500m or June high ≥ 32°C · 🔥 ≥ 32°C heat · 💦 ≥ 75% humidity · faded emoji = roof can mitigate
       </span>
     </div>
   );
 }
 
+// Climate-load thresholds — open-roof venues get the strictest treatment because
+// closed/retractable can be mitigated on the day.
+function heatHumidityIcons(v: Venue): string {
+  const fire = v.juneAvgHighC >= 32 ? '🔥' : '';
+  const sweat = v.juneAvgHumidity >= 75 ? '💦' : '';
+  return fire + sweat;
+}
+
 function Row({ v, i, last }: { v: Venue; i: number; last: boolean }) {
   const heatFlag = v.juneAvgHighC >= 32;
+  const humidFlag = v.juneAvgHumidity >= 75;
   const altFlag = v.altitudeM >= 1500;
-  const flagged = heatFlag || altFlag;
+  const flagged = heatFlag || humidFlag || altFlag;
+  const icons = heatHumidityIcons(v);
+  // Open-roof venues with brutal heat/humidity get the strongest visual flag —
+  // closed/retractable venues can be climate-controlled on the day.
+  const openRoofBrutal = v.roof === 'open' && (heatFlag || humidFlag);
 
   return (
     <tr
@@ -149,7 +162,30 @@ function Row({ v, i, last }: { v: Venue; i: number; last: boolean }) {
       }}
     >
       <td style={{ padding: '11px 14px', fontSize: 13, color: 'var(--color-text)', fontWeight: 500 }}>
-        {v.city}
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+          {v.city}
+          {icons && (
+            <span
+              aria-label={
+                heatFlag && humidFlag
+                  ? 'High heat and humidity'
+                  : heatFlag
+                  ? 'High heat'
+                  : 'High humidity'
+              }
+              title={
+                heatFlag && humidFlag
+                  ? `High heat (${v.juneAvgHighC}°C) + humidity (${v.juneAvgHumidity}%)${openRoofBrutal ? ' · open roof' : ''}`
+                  : heatFlag
+                  ? `High heat (${v.juneAvgHighC}°C)`
+                  : `High humidity (${v.juneAvgHumidity}%)`
+              }
+              style={{ fontSize: 13, lineHeight: 1, opacity: openRoofBrutal ? 1 : 0.7 }}
+            >
+              {icons}
+            </span>
+          )}
+        </span>
       </td>
       <td style={{ padding: '11px 14px', fontSize: 13, color: 'var(--color-text-2)' }}>
         {v.stadium}
@@ -168,7 +204,9 @@ function Row({ v, i, last }: { v: Venue; i: number; last: boolean }) {
         </TMono>
       </td>
       <td style={{ padding: '11px 14px', textAlign: 'right' }}>
-        <TMono size={13} color="var(--color-text-2)">{v.juneAvgHumidity}</TMono>
+        <TMono size={13} color={humidFlag ? 'var(--color-gold)' : 'var(--color-text-2)'} weight={humidFlag ? 600 : 500}>
+          {v.juneAvgHumidity}
+        </TMono>
       </td>
       <td style={{ padding: '11px 14px' }}>
         <TPill tone={v.roof === 'closed' || v.roof === 'retractable' ? 'gold' : 'outline'} size="sm">
