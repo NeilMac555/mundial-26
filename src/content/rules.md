@@ -179,9 +179,10 @@ this is the big one. managers now get THREE guaranteed opportunities to reorgani
 
 previously, the only structured tactical window was half-time. now managers who are good at in-game adjustments get 3x the opportunity. this systematically favours:
 
-**tactically elite managers** (per `managers.json` — ELITE/STRONG tier with a track record of in-game adjustments):
+**tactically elite managers** (career CV + ELITE/STRONG tier in `managers.json` where the sample allows):
 - Scaloni (Argentina, ELITE · 92m · 2.40 PPM) — 8 years in post, settled squad, known for astute in-game management. this is a direct buff to our argentina BACK
 - Tuchel (England, ELITE · 12m · 2.33 PPM) — Champions League winner with Chelsea, repeatedly switches shape mid-match (3-4-3 ↔ 4-2-3-1)
+- Ancelotti (Brazil, SOLID · 10m · 1.70 PPM tagged small-sample) — career tier is elite-of-the-elite (5× Champions League, master of in-game tweaks). Brazil PPM is small-sample noise, not a true skill read. Buff applies to the manager; squad cohesion (see below) is the offsetting drag, not his tactical ability
 - de la Fuente (Spain, ELITE · 39m · 2.51 PPM) — Euro 2024 winner, highest PPM in the dataset
 - Martínez (Portugal, ELITE · 38m · 2.32 PPM) — granular structural tweaks, comfortable with high-press triggers
 - Nagelsmann (Germany, STRONG · 31m · 2.03 PPM) — tactically innovative, strong at reading games
@@ -193,8 +194,8 @@ previously, the only structured tactical window was half-time. now managers who 
 - teams with high manager tenure and stable squads (Argentina: Scaloni 8 years, 90 matches) will extract far more value from these breaks than teams with a new manager still building relationships
 - this DIRECTLY connects to the parked "manager tenure/cohesion analysis" idea - that research becomes more valuable now
 
-**managers/teams who DON'T benefit:**
-- newly appointed managers with limited time to build understanding (Ancelotti at Brazil - our fade gets slightly stronger)
+**teams who DON'T benefit (the LIMITING factor is squad cohesion, not the manager):**
+- newly appointed manager-squad pairings where the players are still learning the system (Brazil: Ancelotti is tactically elite but the *squad* has only had 10m to internalise his instructions — the break gives him the window, the team can't yet execute it)
 - teams with high squad turnover or internal disharmony
 - managers who are rigid tactically and don't adjust in-game
 
@@ -224,7 +225,7 @@ expect managers to make tactical substitutions immediately after the second hydr
 | Argentina BACK (8.980) | POSITIVE | benefits from anti-time-wasting rules + Scaloni will maximise hydration break tactical windows. 8 years tenure = squad cohesion to execute mid-game adjustments. strongest edge from the full rule package |
 | Colombia group winner | neutral | doesn't materially change the group dynamics |
 | Mexico QF | slightly positive | hydration breaks partially offset heat advantage at Azteca, but altitude is unaffected by rule changes |
-| Brazil FADE (8.990) | slightly more fadeable | Ancelotti is new appointment, limited time to build the communication pathways needed to exploit tactical breaks. squad still in transition |
+| Brazil FADE (8.990) | slightly more fadeable | Ancelotti himself is elite at exploiting tactical breaks, but the *squad* has only ~10m under him — the communication pathways to translate his half-time / hydration-break instructions into on-pitch execution aren't built yet. squad transition is the drag, not the manager |
 | Spain FADE (5.680) | neutral | spain benefit from possession rules but our fade is historical underperformance, unchanged |
 | France FADE (8.330) | neutral | our fade is about the draw, not playing style |
 | Ecuador FADE | neutral | xPts regression is the driver, not time-wasting |
@@ -233,7 +234,7 @@ expect managers to make tactical substitutions immediately after the second hydr
 
 ## Key Takeaway: Manager Tenure Analysis Just Got More Important
 
-the parked idea about mapping manager tenure and squad cohesion across all 48 teams is now MORE relevant, not less. with three tactical windows per match instead of one, the gap between a well-drilled squad (Argentina under Scaloni: 8 years, 90 matches, 2.39 PPM) and a squad still learning their manager's system (Brazil under Ancelotti) widens. this should be prioritised.
+the parked idea about mapping manager tenure and squad cohesion across all 48 teams is now MORE relevant, not less. with three tactical windows per match instead of one, the gap between a well-drilled squad (Argentina under Scaloni: 8 years, 90 matches, 2.39 PPM) and a squad still learning their elite manager's system (Brazil under Ancelotti) widens. the manager's quality is held constant — the variable is how long the squad has had to internalise it. this should be prioritised.
 
 ---
 
