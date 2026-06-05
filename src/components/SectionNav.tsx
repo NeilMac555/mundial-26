@@ -1,5 +1,6 @@
 import { sectionsByGroup, SECTION_GROUPS } from '../data/sections';
 import { TLabel, TMono } from './terminal/atoms';
+import { AmiupPill } from './AmiupLink';
 
 export function SectionNav({ activeId }: { activeId: string }) {
   const grouped = sectionsByGroup();
@@ -137,7 +138,7 @@ function FooterBlock() {
         borderTop: '1px solid var(--color-border)',
         display: 'flex',
         flexDirection: 'column',
-        gap: 6,
+        gap: 8,
       }}
     >
       <TLabel>Snapshot</TLabel>
@@ -153,6 +154,13 @@ function FooterBlock() {
           }}
         />
         <TMono size={10} color="var(--color-text-3)">FEED · LIVE</TMono>
+      </div>
+      <div style={{ marginTop: 6 }}>
+        <AmiupPill
+          source="sidebar"
+          label="Track your bets"
+          style={{ width: '100%', justifyContent: 'center', fontSize: 11.5 }}
+        />
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ import { Fixtures } from './sections/Fixtures';
 import { Americas } from './sections/Americas';
 import { Bracket } from './sections/Bracket';
 import { TEyebrow, TMono } from './components/terminal/atoms';
+import { AmiupPill } from './components/AmiupLink';
 
 const SECTION_COMPONENTS: Record<string, () => React.ReactElement> = {
   overview: Overview,
@@ -148,17 +149,7 @@ function Topbar({ active }: { active: typeof SECTIONS[number] }) {
           }} />
           <TMono size={10} color="var(--color-text-2)">FEED · LIVE</TMono>
         </div>
-        <div style={{
-          width: 28, height: 28,
-          borderRadius: '50%',
-          background: 'var(--color-surface-2)',
-          border: '1px solid var(--color-border-2)',
-          display: 'grid',
-          placeItems: 'center',
-          fontSize: 11,
-          fontWeight: 600,
-          color: 'var(--color-text-2)',
-        }}>F</div>
+        <AmiupPill source="topbar" label="Track on amiup.io" />
       </div>
     </header>
   );

@@ -22,6 +22,7 @@ import { teamXgByNation, aggregate, type TeamXg, type XgAggregate } from '../dat
 import { Flag } from '../components/Flag';
 import { flagEmoji } from '../data/flags';
 import { TLabel, TMono, TPill, type PillTone } from '../components/terminal/atoms';
+import { AmiupPill } from '../components/AmiupLink';
 import { fifaCodeForNation } from '../data/bracketTeams';
 import { getBracketOdds, type BracketOdds } from '../data/bracketOdds';
 import { lineupForNation, type Lineup } from '../data/lineups';
@@ -59,6 +60,28 @@ export function Compare() {
       </div>
 
       <Verdict a={a} b={b} />
+
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 12,
+          flexWrap: 'wrap',
+          padding: '12px 16px',
+          border: '1px solid var(--color-border)',
+          borderRadius: 6,
+          background: 'var(--color-surface)',
+        }}
+      >
+        <span style={{ fontSize: 12.5, color: 'var(--color-text-2)', lineHeight: 1.55 }}>
+          Backing the edge here?{' '}
+          <span style={{ color: 'var(--color-text-3)' }}>
+            Log the match-result, BTTS or over/under on Am I Up and the dashboard tracks CLV, win-rate and equity for you.
+          </span>
+        </span>
+        <AmiupPill source="compare" label="Track this matchup" />
+      </div>
 
       <div style={{ fontSize: 11, color: 'var(--color-text-3)', lineHeight: 1.55 }}>
         Manager + squad value sourced from{' '}

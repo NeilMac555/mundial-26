@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Flag } from '../components/Flag';
 import { TLabel, TMono, TPill, TCaption, TCaptionItem, type PillTone } from '../components/terminal/atoms';
+import { AmiupPill } from '../components/AmiupLink';
 
 export function GoldenBoot() {
   return (
@@ -184,6 +185,24 @@ function AnytimePicks() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 10 }}>
         {ANYTIME_PICKS.map((p) => <AnytimePickCard key={p.player} pick={p} />)}
+      </div>
+
+      <div
+        style={{
+          marginTop: 14,
+          paddingTop: 12,
+          borderTop: '1px solid rgba(232,185,74,0.25)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 12,
+          flexWrap: 'wrap',
+        }}
+      >
+        <span style={{ fontSize: 12, color: 'var(--color-text-3)', lineHeight: 1.5 }}>
+          Backing any of these? Log them so you can see the result without doing the spreadsheet bit.
+        </span>
+        <AmiupPill source="goldenboot-anytime" label="Track these picks" />
       </div>
 
       <details style={{ marginTop: 16 }}>

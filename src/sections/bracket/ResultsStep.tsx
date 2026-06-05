@@ -4,6 +4,7 @@ import { TOP_SCORERS } from '../../data/bracketTopScorers';
 import type { BracketData } from '../../lib/bracketEngine';
 import type { GroupRanking } from './state';
 import { TLabel, TMono, TPill } from '../../components/terminal/atoms';
+import { AmiupCallout } from '../../components/AmiupLink';
 
 interface Props {
   bracket: BracketData;
@@ -155,6 +156,19 @@ export function ResultsStep({ bracket, groupResults, topScorerName, onBack, onRe
           </div>
         )}
       </div>
+
+      {/* Track the picks this bracket implies */}
+      {winner && (
+        <div style={{ marginBottom: 28 }}>
+          <AmiupCallout
+            source="bracket-results"
+            eyebrow="Now turn it into bets"
+            headline={`Back ${winner.name} + your value group winners on Am I Up`}
+            sub="Paste the outright, the group winners, the top scorer — it logs them as structured rows. P/L, CLV and equity curve update live as results come in."
+            buttonLabel="Track this bracket"
+          />
+        </div>
+      )}
 
       {/* Final + top scorer summary cards */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 12, marginBottom: 28 }}>
